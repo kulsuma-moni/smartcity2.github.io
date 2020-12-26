@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart city</title>
+    <!--=== ALL CSS Here ===-->
+    <!--=== Bootstrap ===-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+    <!--=== Fontawesome icon ===-->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+	<!--=== slick slider ===-->
+	<link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+	<!--=== OWL CAROUSEL ===-->
+	<link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/plugin/owl.theme.default.min.css">
+    <!--=== wow animation ===-->
+    <link rel="stylesheet" href="assets//css/plugin/animate.css">
+    <!--=== Custom CSS ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	  <!-- LOADER AREA START -->
+	  <div class="loader_box">
+		<div class="loading">
+		  <div class="loading__ring">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M85.5,42c-0.2-0.8-0.5-1.7-0.8-2.5c-0.3-0.9-0.7-1.6-1-2.3c-0.3-0.7-0.6-1.3-1-1.9c0.3,0.5,0.5,1.1,0.8,1.7  c0.2,0.7,0.6,1.5,0.8,2.3s0.5,1.7,0.8,2.5c0.8,3.5,1.3,7.5,0.8,12c-0.4,4.3-1.8,9-4.2,13.4c-2.4,4.2-5.9,8.2-10.5,11.2  c-1.1,0.7-2.2,1.5-3.4,2c-0.5,0.2-1.2,0.6-1.8,0.8s-1.3,0.5-1.9,0.8c-2.6,1-5.3,1.7-8.1,1.8l-1.1,0.1L53.8,84c-0.7,0-1.4,0-2.1,0  c-1.4-0.1-2.9-0.1-4.2-0.5c-1.4-0.1-2.8-0.6-4.1-0.8c-1.4-0.5-2.7-0.9-3.9-1.5c-1.2-0.6-2.4-1.2-3.7-1.9c-0.6-0.3-1.2-0.7-1.7-1.1  l-0.8-0.6c-0.3-0.1-0.6-0.4-0.8-0.6l-0.8-0.6L31.3,76l-0.2-0.2L31,75.7l-0.1-0.1l0,0l-1.5-1.5c-1.2-1-1.9-2.1-2.7-3.1  c-0.4-0.4-0.7-1.1-1.1-1.7l-1.1-1.7c-0.3-0.6-0.6-1.2-0.9-1.8c-0.2-0.5-0.6-1.2-0.8-1.8c-0.4-1.2-1-2.4-1.2-3.7  c-0.2-0.6-0.4-1.2-0.5-1.9c-0.1-0.6-0.2-1.2-0.3-1.8c-0.3-1.2-0.3-2.4-0.4-3.7c-0.1-1.2,0-2.5,0.1-3.7c0.2-1.2,0.3-2.4,0.6-3.5  c0.1-0.6,0.3-1.1,0.4-1.7l0.1-0.8l0.3-0.8c1.5-4.3,3.8-8,6.5-11c0.8-0.8,1.4-1.5,2.1-2.1c0.9-0.9,1.4-1.3,2.2-1.8  c1.4-1.2,2.9-2,4.3-2.8c2.8-1.5,5.5-2.3,7.7-2.8s4-0.7,5.2-0.6c0.6-0.1,1.1,0,1.4,0s0.4,0,0.4,0h0.1c2.7,0.1,5-2.2,5-5  c0.1-2.7-2.2-5-5-5c-0.2,0-0.2,0-0.3,0c0,0-0.2,0.1-0.6,0.1c-0.4,0-1,0-1.8,0.1c-1.6,0.1-4,0.4-6.9,1.2c-2.9,0.8-6.4,2-9.9,4.1  c-1.8,1-3.6,2.3-5.4,3.8C26,21.4,25,22.2,24.4,23c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.5,0.4-0.6,0.7c-0.5,0.4-0.8,0.9-1.3,1.4  c-3.2,3.9-5.9,8.8-7.5,14.3l-0.3,1l-0.2,1.1c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.5-0.4,2.9-0.5,4.5c0,1.5-0.1,3,0.1,4.5  c0.2,1.5,0.2,3,0.6,4.6c0.1,0.7,0.3,1.5,0.4,2.3c0.2,0.8,0.5,1.5,0.7,2.3c0.4,1.6,1.1,3,1.7,4.4c0.3,0.7,0.7,1.4,1.1,2.1  c0.4,0.8,0.8,1.4,1.2,2.1c0.5,0.7,0.9,1.4,1.4,2s0.9,1.3,1.5,1.9c1.1,1.3,2.2,2.7,3.3,3.5l1.7,1.6c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0  c0,0,0,0,0,0l0.1,0.1l0.1,0.1h0.2l0.5,0.4l1,0.7c0.4,0.2,0.6,0.5,1,0.7l1.1,0.6c0.8,0.4,1.4,0.9,2.1,1.2c1.4,0.7,2.9,1.5,4.4,2  c1.5,0.7,3.1,1,4.6,1.5c1.5,0.3,3.1,0.7,4.7,0.8c1.6,0.2,3.1,0.2,4.7,0.2c0.8,0,1.6-0.1,2.4-0.1l1.2-0.1l1.1-0.1  c3.1-0.4,6.1-1.3,8.9-2.4c0.8-0.3,1.4-0.6,2.1-0.9s1.3-0.7,2-1.1c1.3-0.7,2.6-1.7,3.7-2.5c0.5-0.4,1-0.9,1.6-1.3l0.8-0.6l0.2-0.2  c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0,0,0,0v0.1l0.1-0.1l0.4-0.4c0.5-0.5,1-1,1.5-1.5c0.3-0.3,0.5-0.5,0.8-0.8l0.7-0.8  c0.9-1.1,1.8-2.2,2.5-3.3c0.4-0.6,0.7-1.1,1.1-1.7c0.3-0.7,0.6-1.2,0.9-1.8c2.4-4.9,3.5-9.8,3.7-14.4C87.3,49.7,86.6,45.5,85.5,42z"></path></svg>
+		  </div>
+		  <div class="loading__ring">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><path d="M85.5,42c-0.2-0.8-0.5-1.7-0.8-2.5c-0.3-0.9-0.7-1.6-1-2.3c-0.3-0.7-0.6-1.3-1-1.9c0.3,0.5,0.5,1.1,0.8,1.7  c0.2,0.7,0.6,1.5,0.8,2.3s0.5,1.7,0.8,2.5c0.8,3.5,1.3,7.5,0.8,12c-0.4,4.3-1.8,9-4.2,13.4c-2.4,4.2-5.9,8.2-10.5,11.2  c-1.1,0.7-2.2,1.5-3.4,2c-0.5,0.2-1.2,0.6-1.8,0.8s-1.3,0.5-1.9,0.8c-2.6,1-5.3,1.7-8.1,1.8l-1.1,0.1L53.8,84c-0.7,0-1.4,0-2.1,0  c-1.4-0.1-2.9-0.1-4.2-0.5c-1.4-0.1-2.8-0.6-4.1-0.8c-1.4-0.5-2.7-0.9-3.9-1.5c-1.2-0.6-2.4-1.2-3.7-1.9c-0.6-0.3-1.2-0.7-1.7-1.1  l-0.8-0.6c-0.3-0.1-0.6-0.4-0.8-0.6l-0.8-0.6L31.3,76l-0.2-0.2L31,75.7l-0.1-0.1l0,0l-1.5-1.5c-1.2-1-1.9-2.1-2.7-3.1  c-0.4-0.4-0.7-1.1-1.1-1.7l-1.1-1.7c-0.3-0.6-0.6-1.2-0.9-1.8c-0.2-0.5-0.6-1.2-0.8-1.8c-0.4-1.2-1-2.4-1.2-3.7  c-0.2-0.6-0.4-1.2-0.5-1.9c-0.1-0.6-0.2-1.2-0.3-1.8c-0.3-1.2-0.3-2.4-0.4-3.7c-0.1-1.2,0-2.5,0.1-3.7c0.2-1.2,0.3-2.4,0.6-3.5  c0.1-0.6,0.3-1.1,0.4-1.7l0.1-0.8l0.3-0.8c1.5-4.3,3.8-8,6.5-11c0.8-0.8,1.4-1.5,2.1-2.1c0.9-0.9,1.4-1.3,2.2-1.8  c1.4-1.2,2.9-2,4.3-2.8c2.8-1.5,5.5-2.3,7.7-2.8s4-0.7,5.2-0.6c0.6-0.1,1.1,0,1.4,0s0.4,0,0.4,0h0.1c2.7,0.1,5-2.2,5-5  c0.1-2.7-2.2-5-5-5c-0.2,0-0.2,0-0.3,0c0,0-0.2,0.1-0.6,0.1c-0.4,0-1,0-1.8,0.1c-1.6,0.1-4,0.4-6.9,1.2c-2.9,0.8-6.4,2-9.9,4.1  c-1.8,1-3.6,2.3-5.4,3.8C26,21.4,25,22.2,24.4,23c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0.2-0.5,0.4-0.6,0.7c-0.5,0.4-0.8,0.9-1.3,1.4  c-3.2,3.9-5.9,8.8-7.5,14.3l-0.3,1l-0.2,1.1c-0.1,0.7-0.3,1.4-0.4,2.1c-0.3,1.5-0.4,2.9-0.5,4.5c0,1.5-0.1,3,0.1,4.5  c0.2,1.5,0.2,3,0.6,4.6c0.1,0.7,0.3,1.5,0.4,2.3c0.2,0.8,0.5,1.5,0.7,2.3c0.4,1.6,1.1,3,1.7,4.4c0.3,0.7,0.7,1.4,1.1,2.1  c0.4,0.8,0.8,1.4,1.2,2.1c0.5,0.7,0.9,1.4,1.4,2s0.9,1.3,1.5,1.9c1.1,1.3,2.2,2.7,3.3,3.5l1.7,1.6c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0  c0,0,0,0,0,0l0.1,0.1l0.1,0.1h0.2l0.5,0.4l1,0.7c0.4,0.2,0.6,0.5,1,0.7l1.1,0.6c0.8,0.4,1.4,0.9,2.1,1.2c1.4,0.7,2.9,1.5,4.4,2  c1.5,0.7,3.1,1,4.6,1.5c1.5,0.3,3.1,0.7,4.7,0.8c1.6,0.2,3.1,0.2,4.7,0.2c0.8,0,1.6-0.1,2.4-0.1l1.2-0.1l1.1-0.1  c3.1-0.4,6.1-1.3,8.9-2.4c0.8-0.3,1.4-0.6,2.1-0.9s1.3-0.7,2-1.1c1.3-0.7,2.6-1.7,3.7-2.5c0.5-0.4,1-0.9,1.6-1.3l0.8-0.6l0.2-0.2  c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0,0,0,0v0.1l0.1-0.1l0.4-0.4c0.5-0.5,1-1,1.5-1.5c0.3-0.3,0.5-0.5,0.8-0.8l0.7-0.8  c0.9-1.1,1.8-2.2,2.5-3.3c0.4-0.6,0.7-1.1,1.1-1.7c0.3-0.7,0.6-1.2,0.9-1.8c2.4-4.9,3.5-9.8,3.7-14.4C87.3,49.7,86.6,45.5,85.5,42z"></path></svg>
+		  </div>
+		</div>
+	  </div>
+	  <!-- LOADER AREA END -->
+  <!-- TOP HEADER AREA START -->
+ <section class="top_bar">
+   <div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-4">
+				<div class="logo">
+					<a href="index.html"><img src="assets/image/logo_1.png" alt="logo"></a>
+				</div>
+			</div>
+			<div class="col-xl-7 col-lg-7 col-md-7 col-sm-8 col-8">
+				<div class="search_box">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<a href="#">
+							<i class="fa fa-search"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-2 col-md-2">
+				<div class="header_rt_box">
+					<div class="icons_box ">
+						<div class="wish_list menu_item">
+							<img src="assets/image/header/heart.png" alt="heart">
+							<span class="item_count">0</span>
+						</div>
+						<div class="cart menu_item">
+							<img src="assets/image/header/shopping-cart.png" alt="cart">
+							<span class="item_count">0</span>
+						</div>
+						<div class="notifiy menu_item">
+							<img src="assets/image/header/notification.png" alt="notification">
+							<span class="item_count">0</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+   </div>
+ </section>
+  <!-- TOP HEADER AREA END -->
+<!-- HEADER AREA START-->
+	<header class="header_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+				<div class="header_left">
+					<div class="header_left_titel">
+						<div id="nav_icon">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<h3>category</h3>
+					</div>
+					<nav class="left_menu">
+						<ul>
+							<li><a href="#">electronics <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li><a href="#">tv</a></li>
+									<li><a href="#">mobile</a></li>
+									<li><a href="#">security cameras</a></li>
+								</ul>
+							</li>
+							<li><a href="#">automotive & motorbike <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li><a href="#">interior accessories</a></li>
+									<li><a href="#">interior vehicle care</a></li>
+									<li><a href="#">motor parts & accessories</a></li>
+								</ul>
+							</li>
+							<li><a href="#">women's fashion <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li class="sub_item">
+										<a href="#" class="">panjabi</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="">shirts</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="">pant</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">babies & toys <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li class="sub_item">
+										<a href="#" class="sub_link">mother & baby</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="sub_link">feeding</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="sub_link">toys & games</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="sub_link">nursery</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">sports & outdoor <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li class="sub_item">
+										<a href="#" class="sub_link">cycling</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="sub_link">treadmils</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">home appliances <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li class="sub_item">
+										<a href="#" class="sub_link">demo item</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="sub_link">demo item</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">home & lifestyle <i class="fa fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li class="sub_item">
+										<a href="#" class="sub_link">demo item</a>
+									</li>
+									<li class="sub_item">
+										<a href="#" class="sub_link">demo item</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="col_xl_6 col-lg-6 col-md-6 col-sm-12 col-12">
+				<div class="top_mid_menu">
+					<ul>
+						<li><a href="#">customer care</a></li>
+						<li><a href="#">track my order</a></li>
+						<li><a href="#">gift card</a></li>
+                        <li><a href="#">contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col_xl_3 col-lg-3 col-md-3 col-sm-6 col-6">
+				<div class="top_bar_right">
+					<ul>
+						<li><a href="seller_signin.html" class="top_btn">sell sylcart</a></li>
+						<li><a href="login_registration.html" class="top_btn">log in / signup</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+<!-- HEADER AREA END-->
+<!-- MOBILE MENU AREA START -->
+  <!--MOBILE TOP HEADER AREA START -->
+  <section class="top_mb_bar">
+	<div class="container">
+		 <div class="row">
+			 <div class="col-md-4 col-sm-4 col-4">
+				 <div class="logo">
+					 <a href="index.html"><img src="assets/image/logo_1.png" alt="logo"></a>
+				 </div>
+			 </div>
+			 <div class="col-md-8 col-sm-8 col-8">
+				<div class="header_rt_box">
+					<ul>
+						<li>
+							<a href="wishlist.html">
+								<div class="wish_list menu_item" data-toggle="tooltip" data-placement="top" title="Wishlist">
+									<img src="assets/image/header/heart.png" alt="heart">
+									<span class="item_count">0</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="shopping_cart.html">
+								<div class="cart menu_item" data-toggle="tooltip" data-placement="top" title="Cart">
+									<img src="assets/image/header/shopping-cart.png" alt="cart">
+									<span class="item_count">0</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<div class="notifiy menu_item" data-toggle="tooltip" data-placement="top" title="Notification">
+									<img src="assets/image/header/notification.png" alt="notification">
+									<span class="item_count">0</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="seller_signin.html">
+								<div class="shopper menu_item" data-toggle="tooltip" data-placement="top" title="Sell Sylcart">
+									<img src="assets/image/header/businessman.png" alt="notification">
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="login_registration.html">
+								<div class="user menu_item" data-toggle="tooltip" data-placement="top" title="login/signup">
+									<img src="assets/image/header/user.png" alt="heart">
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			 </div>
+		 </div>
+	</div>
+  </section>
+   <!--MOBILE TOP HEADER AREA END -->
+   <!--MOBILE HEADER AREA START-->
+	<header class="mb_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-3">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn" data-toggle="modal" data-target="#mobile_menu">
+						<i class="fas fa-bars"></i>
+					</button>
+					
+					<!-- Modal -->
+					<div class="modal fade" id="mobile_menu" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<!-- <div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							</div> -->
+							<div class="modal-body">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item">
+									  <a class="nav-link active" id="menu_tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-selected="true">menu</a>
+									</li>
+									<li class="nav-item">
+									  <a class="nav-link" id="category_tab" data-toggle="tab" href="#category" role="tab" aria-controls="category" aria-selected="false">category</a>
+									</li>
+								  </ul>
+								  <div class="tab-content" id="myTabContent">
+									<div class="tab-pane show active" id="menu" role="tabpanel" aria-labelledby="menu_tab">
+										<div class="top_mid_menu">
+											<ul>
+												<li><a href="#">customer care</a></li>
+												<li><a href="#">track my order</a></li>
+												<li><a href="#">gift card</a></li>
+                                                <li><a href="#">contact us</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby="category_tab">
+										<nav class="left_menu">
+											<ul>
+												<li><a href="#">electronics <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li><a href="#">tv</a></li>
+														<li><a href="#">mobile</a></li>
+														<li><a href="#">security cameras</a></li>
+													</ul>
+												</li>
+												<li><a href="#">automotive & motorbike <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li><a href="#">interior accessories</a></li>
+														<li><a href="#">interior vehicle care</a></li>
+														<li><a href="#">motor parts & accessories</a></li>
+													</ul>
+												</li>
+												<li><a href="#">women's fashion <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li class="sub_item">
+															<a href="#" class="">panjabi</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="">shirts</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="">pant</a>
+														</li>
+													</ul>
+												</li>
+												<li><a href="#">babies & toys <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li class="sub_item">
+															<a href="#" class="sub_link">mother & baby</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="sub_link">feeding</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="sub_link">toys & games</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="sub_link">nursery</a>
+														</li>
+													</ul>
+												</li>
+												<li><a href="#">sports & outdoor <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li class="sub_item">
+															<a href="#" class="sub_link">cycling</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="sub_link">treadmils</a>
+														</li>
+													</ul>
+												</li>
+												<li><a href="#">home appliances <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li class="sub_item">
+															<a href="#" class="sub_link">demo item</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="sub_link">demo item</a>
+														</li>
+													</ul>
+												</li>
+												<li><a href="#">home & lifestyle <i class="fa fa-angle-down"></i></a>
+													<ul class="sub_menu">
+														<li class="sub_item">
+															<a href="#" class="sub_link">demo item</a>
+														</li>
+														<li class="sub_item">
+															<a href="#" class="sub_link">demo item</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-10 col-sm-10 col-9">
+					<div class="search_box">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<a href="#">
+								<i class="fa fa-search"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+	<!--MOBILE HEADER AREA END-->
+<!-- MOBILE MENU AREA END -->
+<!-- HOSPITAL LIST AREA START -->
+<section class="house_list_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                <div class="filter_area">
+                    <div class="row">
+                        <div class="col-sm-12 col-12 col-xl-12 col-lg-12 col-md-12">
+                            <div class="hospital_filter_box">
+                                <div class="box_ctn" id="pro_btn">
+                                    <ul class="property_type">
+                                        <li><a href="#" class="btn active">all</a></li>
+                                        <li><a href="#" class="btn">rent</a></li>
+                                        <li><a href="#" class="btn">sell</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 col-xl-12 col-lg-12 col-md-12">
+                            <div class="hospital_filter_box">
+                                <div class="box_ctn">
+									<div class="search_for">
+                                        <p><a href="#" class="btn" id="search_btn">division</a></p>
+                                    </div>
+                                    <div class="search_for">
+                                        <p><a href="#" class="btn" id="search_btn">district</a></p>
+                                    </div>
+                                    <div class="search_for">
+                                        <p><a href="#" class="btn" id="search_btn">area</a></p>
+                                    </div>
+                                    <div class="search_for">
+                                        <p><a href="#" class="btn" id="search_btn">road name</a></p>
+                                    </div>
+                                    <div class="search_for">
+                                        <p><a href="#" class="btn" id="search_btn">bedrooms</a></p>
+                                    </div>
+                                    <div class="search_for">
+                                        <p><a href="#" class="btn" id="search_btn">bathrooms</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 col-xl-12 col-lg-12 col-md-12">
+                            <div class="hospital_filter_box">
+                                <div class="titel">
+                                    <h5>type of house</h5>
+                                </div>
+                                <div class="box_ctn">
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>flat
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>office space
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>regular house
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>duplex house
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>female hostel
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>male hostel
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>bechelor house
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>sublet house
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item">
+                                        <div class="form-group">
+                                            <label>shop space
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hospital_filter_box">
+                                <div class="titel">
+                                    <h5>price rang</h5> 
+                                </div>
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from" value="0" />
+                                    <input type="text" class="js-input-to" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hospital_filter_box">
+                                <div class="titel">
+                                    <h5>Sq Ft</h5> 
+                                </div>
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider_2" value="" />
+                                </div>
+                                <div class="extra-controls">
+                                    <input type="text" class="js-input-from_2" value="0" />
+                                    <input type="text" class="js-input-to_2" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-7 col-12 px-0 px-lg-3 px-xl-0">
+                <div class="house_list">	
+                    <div class="listing_ctn">
+                        <ul>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>16 badon, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2200 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_3.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$300</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>16 kutir, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2000 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="smart_house_list.html">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+                                            <img src="assets/image/smart_city_object/house/house_3.jpg" alt="image">
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="load_more_btn text-center">
+                        <a href="#" class="btn">load more <i class="fas fa-redo-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- HOSPITAL LIST AREA END -->
+	<!-- FOOTER AREA START -->
+	<section class="sm_footer_area sm_section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12 px-3 px-lg-3 px-md-0">
+					<div class="fotter_ctn wow fadeInLeft">
+						<div class="footer_logo">
+							<h4><a href="#"><img src="assets/image/logo_1.png" alt="logo"></a></h4>
+						</div>
+						<div class="newsletter-area">
+							<h4>Subscribe Our Newsletter</h4>
+							<input type="email" placeholder="Email Address">
+							<button>Subscribe</button>
+							<p>Get started for 1 Month free trial No <br> Purchace required.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInUp">
+						<div class="footer_titel">
+							<h4>Our services</h4>
+						</div>
+						<div class="footer_links">
+							<ul>
+								<li><a href="#">Smart home</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Hospital</a></li>
+								<li><a href="#">Hotel</a></li>
+								<li><a href="#">shopping</a></li>
+								<li><a href="#">Restaurant</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInUp">
+						<div class="footer_titel">
+							<h4>useful links</h4>
+						</div>
+						<div class="footer_links">
+							<ul>
+								<li><a href="index.html">home</a></li>
+								<li><a href="">blog</a></li>
+								<li><a href="">F.A.Q.</a></li>
+								<li><a href="#">about us</a></li>
+								<li><a href="">contact us</a></li>
+								<li><a href="">castomer care</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInRight">
+						<div class="footer_titel">
+							<h4>get in touch</h4>
+						</div>
+						<div class="footer_links contact_link">
+							<ul>
+								<li><a href="#"><i class="fas fa-headset"></i> (+0214)0 315 215</a></li>
+								<li><a href=""><i class="fas fa-envelope-open-text"></i> help_sylcart@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="footer_links social_media">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="far fa-envelope"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+						<div class="apps_download">
+							<ul>
+								<li><a href="#" class="payment_1"><img src="assets/image/footer/app-store.png" alt="apps"></a></li>
+								<li><a href="#" class="payment_2"><img src="assets/image/footer/play-store-logo.png" alt="apps"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER AREA END -->
+   <!--===  Copyright Area start ===-->
+   <section>
+	<div class="sm_copyright_area">
+		<div class="container">
+			<div class="copyright text-center">
+				<p>&copy; Copyright Reserved. <a href="#"> 2021 Smart City.</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--===  Copyright Area End ===-->
+<!-- Scroll to Top button selector -->
+<a class="to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+
+
+
+    <!--=== ALL JS Here ===-->
+    <!--=== jQuery 3.4.1 ===-->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<!--=== Bootstrap js ===-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--=== All Plugin Js===-->
+	<script src="assets/js/plugin/wow.min.js"></script>
+	<script src="assets/js/plugin/owl.carousel.min.js"></script>
+	<script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/jquery.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/plugin/rangerslider.js"></script>
+    <!--=== to top  js===-->
+    <script src="assets/js/plugin/jquery.toTop.min.js"></script>
+      <!--=== smooth scroll js===-->
+      <script src="assets/js/plugin/smoothscroll.js"></script>
+    <!--=== Custom JS ===-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+    </script>
+</body>
+</html>
