@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/image/favicon.ico">
     <title>smart city</title>
     <!--=== ALL CSS Here ===-->
     <!--=== Bootstrap ===-->
@@ -14,6 +15,7 @@
 	<!--=== slick slider ===-->
 	<link rel="stylesheet" href="assets/css/plugin/slick.css">
 	<link rel="stylesheet" href="assets/css/plugin/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/plugin/meanmenu.css">
 	<!--=== OWL CAROUSEL ===-->
 	<link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/plugin/owl.theme.default.min.css">
@@ -37,7 +39,48 @@
 	  </div>
 	  <!-- LOADER AREA END -->
 <!-- HEADER AREA START-->
-	<header class="sm_header_area">
+<header class="sm_header_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+				<div class="logo">
+					<a href="index.html"><img src="assets/image/logo-1.png" alt="logo"></a>
+				</div>
+			</div>
+			<div class="col_xl_6 col-lg-6 col-md-6 col-sm-12 col-12">
+				<div class="top_mid_menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>
+							<a href="#">Category <i class="fas fa-angle-down"></i></a>
+							<ul class="sub_menu">
+								<li><a href="#">Smart house</a></li>
+								<li><a href="#">Hotel</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Shopping</a></li>
+								<li><a href="#">Hospital</a></li>
+								<li><a href="#">Restaurant</a></li>
+							</ul>
+						</li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col_xl_3 col-lg-3 col-md-6 col-sm-6 col-6">
+				<div class="top_bar_right">
+					<ul>
+						<li><a href="seller_signin.html" class="log_btn"><i class="far fa-user"></i></a></li>
+						<li><a href="#" class="top_btn"><i class="fas fa-plus"></i> Add listing</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
+	<!-- <header class="sm_header_area">
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
@@ -66,11 +109,8 @@
 			</div>
 		</div>
 	</div>
-	</header>
+	</header> -->
 <!-- HEADER AREA END-->
-<!-- MOBILE MENU AREA START -->
-
-<!-- MOBILE MENU AREA END -->
 	<!-- SMART CITY  AREA START -->
 	<section class="smart_city_area" data-background="assets/image/smart_city_object/1540.jpg">
 		<div class="container-fluid">
@@ -78,9 +118,6 @@
 			<div class="search_box">
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="What are you looking for?">
-					<a href="#" class="search_btn">
-						<i class="fa fa-search"></i>
-					</a>
 					<select>
 						<option>All Categories</option>
 						<option>2</option>
@@ -89,6 +126,9 @@
 						<option>5</option>
 					</select>
 					<a href="#" class="loc_btn"><i class="fas fa-map-marker-alt"></i> location</a>
+					<a href="#" class="search_btn">
+						<i class="fa fa-search"></i>
+					</a>
 				</div>
 			</div>
 			<div class="bg_animation">
@@ -411,70 +451,93 @@
 		<div class="container">
 			<div class="section_titel text-center wow fadeInUp">
 				<h4><span>Find by</span> location</h4>
+				<p>Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
 			</div>
 			<div class="row" style="margin-bottom: 15px;">
-				<div class="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-12 firstbanner">
+				<div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 firstbanner">
 					<div class="offer_box location_img_1 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_1.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Dhaka</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_1.jpg" alt="offer"></a>
+							<div class="loc_titel">
+								<a href="">Dhaka</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12 secondbanner">
+				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 secondbanner">
 					<div class="offer_box middle_offer_box location_img_2 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_2.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Sylhet</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_2.jpg" alt="offer"></a>
+							<div class="loc_titel-1">
+								<a href="">Sylhet</a>
+							</div>
 						</div>
 					</div>
 					<div class="offer_box location_img_2 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_3.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Rajshahi</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_3.jpg" alt="offer"></a>
+							<div class="loc_titel-1">
+								<a href="">Rajshahi</a>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row" style="margin-bottom: 15px;">
-				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12 firstbanner">
+				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 firstbanner">
 					<div class="offer_box middle_offer_box location_img_2 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_4.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Chittagong</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_4.jpg" alt="offer"></a>
+							<div class="loc_titel-1">
+								<a href="">Chittagong</a>
+							</div>
 						</div>
+						
 					</div>
 					<div class="offer_box location_img_2 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_5.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Mymensingh</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_5.jpg" alt="offer"></a>
+							<div class="loc_titel-1">
+								<a href="">Mymensingh</a>
+							</div>
 						</div>
+						
 					</div>
 				</div>
-				<div class="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-12 secondbanner">
+				<div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 secondbanner">
 					<div class="offer_box location_img_1 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_6.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Khulna</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_6.jpg" alt="offer"></a>
+							<div class="loc_titel">
+								<a href="">Khulna</a>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-12 firstbanner">
+				<div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 firstbanner">
 					<div class="offer_box middle_offer_box location_img_1 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_2.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Barishal</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_2.jpg" alt="offer"></a>
+							<div class="loc_titel">
+								<a href="">Barishal</a>
+							</div>
 						</div>
+						
 					</div>
 				</div>
-				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12 secondbanner">
+				<div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 secondbanner">
 					<div class="offer_box location_img_1 wow fadeInUp">
-						<a href="#"><img src="assets/image/smart_city_object/main_page/image_1.jpg" alt="offer"></a>
-						<div class="loc_titel">
-							<h5>Rangpur</h5>
+						<div class="offer-img">
+							<a href="#"><img src="assets/image/smart_city_object/main_page/image_1.jpg" alt="offer"></a>
+							<div class="loc_titel">
+								<a href="">Rangpur</a>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -485,11 +548,12 @@
 	<section class="choose-area sm_section_padding">
 		<div class="container">
 			<div class="section_titel text-center wow fadeInUp">
-				<h2><span>Why Choose </span>Us</h2>
+				<h4><span>Why Choose </span>Us</h4>
+				<p>Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="single-choose wow fadeInUp">
+				<div class="col-md-6 col-sm-12 col-lg-4 ">
+					<div class="single-choose wow fadeInLeft">
 						<div class="choose img">
 						<img src="assets/image/main_home/sin1.png" alt="">
 						</div>
@@ -502,7 +566,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6 col-sm-12 col-lg-4 ">
 					<div class="single-choose wow fadeInUp">
 						<img src="assets/image/main_home/sin2.png" alt="">
 						<div class="text">
@@ -514,8 +578,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="single-choose wow fadeInUp">
+				<div class="col-md-12 col-sm-12 col-lg-4 ">
+					<div class="single-choose wow fadeInRight">
 						<img src="assets/image/main_home/sin3.png" alt="">
 						<div class="text">
 							<h3>Multi Device Supported</h3>
@@ -537,19 +601,22 @@
 	<section class="video-section sm_section_padding">
 		<div class="container">
 			<div class="section_titel text-center wow fadeInUp">
-				<h4><span>Watch our </span>Platform</h4>
+				<h4><span>How It </span>Works</h4>
+				<p>Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
 			</div> 
 			<div class="video-area">
+				<div class="left-title">Watch how</div>
 				<a id="play-video" class="video-play-button" href="#">
 					<span></span>
 				  </a>
+				<div class="right-title">listing works</div>
 				  <div id="video-overlay" class="video-overlay">
 					<a class="video-overlay-close">&times;</a>
 				  </div>
 			</div>
 			<div class="video-shapes">
-				<img class="shape-1" src="assets/image/main_home/shape_2.png" alt="">
-				<img class="shape-2" src="assets/image/main_home/shape_2.png" alt="">
+				<img class="shape-1 wow fadeInLeft" src="assets/image/main_home/shape_2.png" alt="">
+				<img class="shape-2 wow fadeInRight" src="assets/image/main_home/shape_3.png" alt="">
 				<img class="shape-3 wow fadeInLeft" src="assets/image/main_home/ct-shape1.png" alt="">
 				<img class="shape-4 wow fadeInRight" src="assets/image/main_home/ct-shape2.png" alt="">
 			</div>
@@ -557,108 +624,81 @@
 	</section>
 <!-- Video Area Start -->
 <!-- Service Section Area Start -->
-	<section class="service-section section-padding-2">
-		 <div class="container">
-			<div class="section_titel text-center wow fadeInUp">
-				<h4><span>Services We </span>Provide</h4>
-			</div> 
-			<div class="row">
-				<div class="col-md-5">
-					<div class="service-img wow fadeInLeft">
-						<img src="assets/image/main_home/img_1.png" alt="">
+<section class="service-section section-padding-2">
+	<div class="container">
+	   <div class="section_titel text-center wow fadeInUp">
+		   <h4><span>Services We </span>Provide</h4>
+		   <p>Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum</p>
+	   </div> 
+	   <div class="row">
+		   <div class="col-md-12 col-lg-5">
+			   <div class="service-img wow fadeInLeft">
+				   <img src="assets/image/main_home/img_1.png" alt="">
+			   </div>
+		   </div>
+		   <div class="col-md-12 col-lg-7">
+			   <div class="row">
+				   <div class="col-md-6">
+					   <div class="single-service wow fadeInRight">
+						   <div class="icon red"><i class="fas fa-mobile-alt"></i></div>
+						   <h3><a href=""> Mobile App</a></h3>
+						   <p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
+					   </div>
+				   </div>
+				   <div class="col-md-6">
+					   <div class="single-service wow fadeInRight">
+						   <div class="icon green"><i class="fab fa-sketch"></i></div>
+						   <h3><a href=""> UI/UX Design</a></h3>
+						   <p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
+					   </div>
+				   </div>
+				   <div class="col-md-6">
+					   <div class="single-service wow fadeInRight">
+						   <div class="icon orange"><i class="fas fa-cloud-download-alt"></i></div>
+						   <h3><a href="">Cloud Service</a></h3>
+						   <p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
+					   </div>
+				   </div>
+				   <div class="col-md-6">
+					   <div class="single-service wow fadeInRight">
+						   <div class="icon purple"><i class="fas fa-rocket"></i></div>
+						   <h3><a href="">Digital Marketing</a></h3>
+						   <p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
+					   </div>
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+	</div>
+</section>
+	<!-- Service Section Area End -->
+		<!-- NEWSLETTER AREA START -->
+		<section class="newsletter-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="newsletter-text">
+							<h3>Let’s make the world more productive, together.</h3>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-7">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="single-service wow fadeInRight">
-								<div class="icon red"><i class="fas fa-mobile-alt"></i></div>
-								<h3><a href=""> Mobile App</a></h3>
-								<p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="single-service wow fadeInRight">
-								<div class="icon green"><i class="fab fa-sketch"></i></div>
-								<h3><a href=""> UI/UX Design</a></h3>
-								<p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="single-service wow fadeInRight">
-								<div class="icon orange"><i class="fas fa-cloud-download-alt"></i></div>
-								<h3><a href="">Cloud Service</a></h3>
-								<p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="single-service wow fadeInRight">
-								<div class="icon purple"><i class="fas fa-rocket"></i></div>
-								<h3><a href="">Digital Marketing</a></h3>
-								<p>Why I say old chap that is spiffing bodge blag pardon med buggered mufty Oxfords butty</p>
-							</div>
+					<div class="col-md-6">
+						<div class="newsletter-from">
+							<input type="text" placeholder="Enter Email Address">
+							<button>Subscribe Now</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		 </div>
-	</section>
-	<!-- Service Section Area End -->
+		</section>
+		<!-- NEWSLETTER AREA END -->
 	<!-- FOOTER AREA START -->
 	<section class="sm_footer_area sm_section_padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-6 col-12 px-3 px-lg-3 px-md-0">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 px-3 px-lg-3 px-md-0">
 					<div class="fotter_ctn wow fadeInLeft">
 						<div class="footer_logo">
-							<h4><a href="#"><img src="assets/image/logo_1.png" alt="logo"></a></h4>
-						</div>
-						<div class="newsletter-area">
-							<h4>Subscribe Our Newsletter</h4>
-							<input type="email" placeholder="Email Address">
-							<button>Subscribe</button>
-							<p>Get started for 1 Month free trial No <br> Purchace required.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12">
-					<div class="fotter_ctn wow fadeInUp">
-						<div class="footer_titel">
-							<h4>Our services</h4>
-						</div>
-						<div class="footer_links">
-							<ul>
-								<li><a href="#">Smart home</a></li>
-								<li><a href="#">Education</a></li>
-								<li><a href="#">Hospital</a></li>
-								<li><a href="#">Hotel</a></li>
-								<li><a href="#">shopping</a></li>
-								<li><a href="#">Restaurant</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-12">
-					<div class="fotter_ctn wow fadeInUp">
-						<div class="footer_titel">
-							<h4>useful links</h4>
-						</div>
-						<div class="footer_links">
-							<ul>
-								<li><a href="index.html">home</a></li>
-								<li><a href="">blog</a></li>
-								<li><a href="">F.A.Q.</a></li>
-								<li><a href="#">about us</a></li>
-								<li><a href="">contact us</a></li>
-								<li><a href="">castomer care</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-					<div class="fotter_ctn wow fadeInRight">
-						<div class="footer_titel">
-							<h4>get in touch</h4>
+							<h4><a href="#"><img src="assets/image/logo-1.png" alt="logo"></a></h4>
 						</div>
 						<div class="footer_links contact_link">
 							<ul>
@@ -679,6 +719,76 @@
 								<li><a href="#" class="payment_1"><img src="assets/image/footer/app-store.png" alt="apps"></a></li>
 								<li><a href="#" class="payment_2"><img src="assets/image/footer/play-store-logo.png" alt="apps"></a></li>
 							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInUp">
+						<div class="footer_titel">
+							<h4>Our services</h4>
+						</div>
+						<div class="footer_links">
+							<ul>
+								<li><a href="#">Smart home</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Hospital</a></li>
+								<li><a href="#">Hotel</a></li>
+								<li><a href="#">shopping</a></li>
+								<li><a href="#">Restaurant</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInUp">
+						<div class="footer_titel">
+							<h4>useful links</h4>
+						</div>
+						<div class="footer_links">
+							<ul>
+								<li><a href="index.html">home</a></li>
+								<li><a href="">blog</a></li>
+								<li><a href="">F.A.Q.</a></li>
+								<li><a href="#">about us</a></li>
+								<li><a href="">contact us</a></li>
+								<li><a href="">castomer care</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInRight">
+						<div class="footer_titel">
+							<h4>News Feeds</h4>
+						</div>
+						<div class="footer_news">
+							<div class="single-news">
+								<div class="news-img">
+									<a href="#"><img src="assets/image/main_home/br1.jpg" alt=""></a>
+								</div>
+								<div class="news-text">
+									<span class="date"><i class="far fa-calendar-alt"></i>24th November 2020</span>
+									<a href="#">Lorem ipsum dolor sit amet ipsum</a>
+								</div>
+							</div>
+							<div class="single-news">
+								<div class="news-img">
+									<a href="#"><img src="assets/image/main_home/br1.jpg" alt=""></a>
+								</div>
+								<div class="news-text">
+									<span class="date"><i class="far fa-calendar-alt"></i>24th November 2020</span>
+									<a href="#">Lorem ipsum dolor sit amet ipsum</a>
+								</div>
+							</div>
+							<div class="single-news mb-0">
+								<div class="news-img">
+									<a href="#"><img src="assets/image/main_home/br1.jpg" alt=""></a>
+								</div>
+								<div class="news-text">
+									<span class="date"><i class="far fa-calendar-alt"></i>24th November 2020</span>
+									<a href="#">Lorem ipsum dolor sit amet ipsum</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -714,6 +824,7 @@
 	<script src="assets/js/plugin/owl.carousel.min.js"></script>
 	<script src="assets/js/plugin/slick.js"></script>
 	<script src="assets/js/plugin/jquery.carousel.js"></script>
+	<script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
     <!--=== to top  js===-->
     <script src="assets/js/plugin/jquery.toTop.min.js"></script>
       <!--=== smooth scroll js===-->

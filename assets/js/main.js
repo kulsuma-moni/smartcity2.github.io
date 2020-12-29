@@ -1,11 +1,21 @@
+
+
 (function($){
-    "use strict";
+	"use strict";
+	
+
+	
     	 // PRELOADER JS CODE
 	 jQuery(window).on('load',function(){
 		jQuery(".loader_box").fadeOut(500);
 		});
 	// END PRELOADER JS CODE
-
+	// START MEANMENU JS CODE
+    jQuery(document).ready(function () {
+        jQuery('.top_mid_menu').meanmenu();
+	});
+	// END MEANMENU JS CODE
+	
 	// START MENU JS CODE
 	$(window).on('scroll', function() {
 		if ($(this).scrollTop() > 100) {
@@ -14,6 +24,23 @@
 			$('.top_bar').removeClass('menu-shrink animated slideInUp');
 		}
 	});
+
+	$(window).on('scroll', function() {
+		if ($(this).scrollTop() > 100) {
+			$('header.sm_header_area').addClass('menu-shrink animated slideInDown');
+		} else {
+			$('header.sm_header_area').removeClass('menu-shrink animated slideInUp');
+		}
+	});
+	// // SMART CITY
+	// 	// START MENU JS CODE
+	// 	$(window).on('scroll', function() {
+	// 		if ($(this).scrollTop() > 100) {
+	// 			$('.sm_header_area').addClass('sm_menu-shrink animated slideInDown');
+	// 		} else {
+	// 			$('.sm_header_area').removeClass('sm_menu-shrink animated slideInUp');
+	// 		}
+	// 	});
 
 	// data-background
 	$("[data-background]").each(function(){
@@ -208,25 +235,26 @@ $('.banner_2_img').owlCarousel({
         }
     }
 })
-// Video Play Button Js
-$('#play-video').on('click', function(e){
-	e.preventDefault();
-	$('#video-overlay').addClass('open');
-	$("#video-overlay").append('<iframe width="700" height="400" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
-  });
+	// Start Play Video JS Start
+	$('#play-video').on('click', function(e){
+		e.preventDefault();
+		$('#video-overlay').addClass('open');
+		$("#video-overlay").append('<iframe width="700" height="400" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
+  	});
   
-  $('.video-overlay, .video-overlay-close').on('click', function(e){
-	e.preventDefault();
-	close_video();
-  });
-  
-  $(document).keyup(function(e){
-	if(e.keyCode === 27) { close_video(); }
-  });
-  
-  function close_video() {
-	$('.video-overlay.open').removeClass('open').find('iframe').remove();
-  };
+	$('.video-overlay, .video-overlay-close').on('click', function(e){
+		e.preventDefault();
+		close_video();
+	});
+	
+	$(document).keyup(function(e){
+		if(e.keyCode === 27) { close_video(); }
+	});
+	
+	function close_video() {
+		$('.video-overlay.open').removeClass('open').find('iframe').remove();
+	};
+ 	// End Play Video JS 
 // WOW JS
 new WOW().init();
 
