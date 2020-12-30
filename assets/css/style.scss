@@ -129,54 +129,181 @@ outline:0;
         letter-spacing: 1px;
     }
 }
-// LOADER CSS START
 
-.loader_box{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-  }
-  
-  /* Animation */
-  @keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  
-  /* Loading Icon */
-  .loading {
-    width: $loader-size;
-    height: $loader-size;
-  
-    &__ring {
-      position: absolute;
-      width: $loader-size;
-      height: $loader-size;
-      
-      &:first-child {
-        transform: skew(30deg,20deg);
+.section_titel_2{
+  margin-bottom: 40px;
+  h4{
+      span{
+          font-weight: 700;
+          color: $text_color;
       }
-  
-      &:last-child {
-        transform: skew(-30deg,-20deg) scale(-1, 1);
-  
-        svg {
-          animation-delay: -0.5s;
+      font-size: 40px;
+      line-height: 1.5;
+      text-transform: capitalize;
+      color: $basic_color_3;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: 1px;
+  }
+}
+// LOADER CSS START
+.loader_box{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;   
+  z-index: 99;
+  top: 0;
+  position: relative;
+  // main controls
+  $shape-size: 10vmin;
+  $animation-duration: 3s;
+  $color-set: #2B6CB0 , #3E0478, #06acde;
+
+    @mixin animation($a) {
+      -webkit-animation: $a;
+      animation: $a;
+    }
+
+    @mixin animation-delay($a) {
+      -webkit-animation-delay: $a;
+      animation-delay: $a;
+    }
+
+    @mixin clip-path($c) {
+      -webkit-clip-path: $c;
+      clip-path: $c;
+    }
+
+    @mixin transform($t){
+      -webkit-transform: $t;
+      -ms-transform: $t;
+      transform: $t;
+    }
+
+    @for $i from 2 through 5 {
+      @keyframes small-shape#{$i} {
+        $shape-size-mod: $shape-size / 6;
+        $left-movement: "";
+        $top-movement: "";
+        
+        @if $i < 4 {
+          $top-movement: $shape-size-mod ;
+        } @else {
+          $top-movement: -$shape-size-mod;
+        }
+        @if ($i % 2 == 0) {
+          $left-movement: $shape-size-mod;  
+        } @else {
+          $left-movement: -$shape-size-mod;
+        }
+      
+        0%,100% {
+          opacity: 1;
+          @include clip-path(polygon(0% 0%,50% 0, 100% 0%, 100% 50%, 100% 100%,50% 100%, 0% 100%, 0% 50%));
+          background-color: nth($color-set, 1);
+        }
+        25% {
+          @include clip-path(polygon(25% 25%, 50% 0%, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 25% 75%, 0% 50% )); 
+        }
+        25.1% {
+          @include clip-path(polygon(50% 0%,  100% 50%, 50% 100%, 0% 50% ));
+          @include transform(scale(1));
+        }
+        50% {
+          @include clip-path(polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%));
+          @include transform(scale(.75) translateX(0) translateY(0));
+          background-color: nth($color-set, 2);
+        }
+        75% {
+          @include transform(scale(.75)  translateX($left-movement) translateY($top-movement));
+          opacity:1; 
+          background-color: nth($color-set,3);
+        }
+        75.1%{
+          opacity:0;
+        }
+        99.9% {
+          @include transform(scale(.75)  translateX($left-movement) translateY($top-movement));
+          opacity: 0;
         }
       }
-  
-      svg {
-        animation: rotate 1s linear infinite;
-        fill: $basic_color_3;
+    }
+
+    @keyframes container-movement {
+      0% {
+        @include transform(rotate(0deg));
+      }
+      50% {
+        @include transform(rotate(0deg));
+      }
+      75% {
+        @include transform(rotate(45deg));
+      }
+      100% {
+        @include transform(rotate(0deg));
+      }
+    }
+
+    @keyframes bigger-shape {
+      0% {
+        @include clip-path(polygon(25% 25%, 50% 0%, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 25% 75%, 0% 50% ));
+        @include transform(scale(2.125));
+        opacity: 0;
+      }
+      75% {
+        @include clip-path(polygon(25% 25%, 50% 0%, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 25% 75%, 0% 50% ));
+        @include transform(scale(2.125));
+        opacity: 0;
+        background-color: nth($color-set,3);
+      }
+      75.1% {
+        opacity: 1;
+      }
+      99.9%{
+        @include clip-path(polygon(0% 0%,50% 0, 100% 0%, 100% 50%, 100% 100%,50% 100%, 0% 100%, 0% 50%));  
+        @include transform(scale(2));
+        opacity: 1;
+        background-color: nth($color-set,1);
+      }
+    }
+
+    .container {
+      @include animation(container-movement $animation-duration infinite linear);
+      width: 100%; height: 100%;
+    }
+
+    [class^="box"] {
+      //background: rgba(255, 255, 255, 0.12);
+      width: $shape-size; height: $shape-size; 
+      position: absolute;
+      top:0; right:0; left:0; bottom:0; margin: auto;
+      
+      &[class*="1"] {
+        @include animation(bigger-shape $animation-duration infinite linear);
+      }
+      
+      @for $i from 2 through 5 {
+        &[class*="#{$i}"]{
+          @include animation(small-shape#{$i} $animation-duration infinite linear);
+          
+          @if $i < 4 {
+            top: -$shape-size;
+          } @else {
+            top: $shape-size;
+          }
+          @if ($i % 2 == 0) {
+            left: -$shape-size;  
+          } @else {
+            left: $shape-size;
+          }
+        }
       }
     }
   }
-  
 //   LOADER CSS END
+
 // TOPBAR CSS START
 .top_bar{
     padding: 10px 0px 10px 0px;
@@ -443,6 +570,7 @@ header.header_area{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 // HEADER AREA END
+
 // MOBILE MENU AREA START
 // MOBILE TOP HEADER AREA START
 .top_mb_bar{
@@ -740,6 +868,9 @@ header.sm_header_area{
                 -moz-transition: .3s;
                 -ms-transition: .3s;
                 -o-transition: .3s;
+                li{
+                  display: block;
+                }
               }
               &:hover .sub_menu{
                   visibility: visible;
@@ -2286,6 +2417,41 @@ a.to-top {
             -o-transform: rotate(60deg);
         }
     }
+}
+.load_more_btn_2{
+  margin-top: 30px;
+  .btn{
+      text-transform: capitalize;
+      font-weight: 600;
+      line-height: 1;
+      background: $basic_color_3;
+      padding: 10px 26px;
+      font-size: 20px;
+      color: #fff;
+      i{
+          font-size: 16px;
+
+      }
+      &:hover{
+          transform: translateY(-3px);
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          -o-transform: translateY(-3px);
+          transition: .2s;
+          -webkit-transition: .2s;
+          -moz-transition: .2s;
+          -ms-transition: .2s;
+          -o-transition: .2s;
+      }
+      &:hover i{
+          transform: rotate(60deg);
+          -webkit-transform: rotate(60deg);
+          -moz-transform: rotate(60deg);
+          -ms-transform: rotate(60deg);
+          -o-transform: rotate(60deg);
+      }
+  }
 }
 .sort_by_ctn{
     position: relative;
