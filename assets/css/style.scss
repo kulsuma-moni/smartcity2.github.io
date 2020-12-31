@@ -3560,7 +3560,8 @@ a.to-top {
                     font-weight: 300;
                     text-transform: uppercase;
                     letter-spacing: 2px;
-                    white-space: 4px;
+                    // white-space: 4px;
+                    
                   }
              }
         
@@ -3870,7 +3871,7 @@ a.to-top {
                             line-height: 1.5;
                             color: $text_color;
                             font-weight: 600;
-                            letter-spacing:.4;
+                            letter-spacing:.4px;
                             text-decoration: none;
                             cursor: pointer;
                         }
@@ -3881,7 +3882,7 @@ a.to-top {
                         line-height: 1.5;
                         color: $color1;
                         font-weight: 600;
-                        letter-spacing:.4;
+                        letter-spacing:.4px;
                     }
                     .size{
                         font-size: 14px;
@@ -3889,7 +3890,7 @@ a.to-top {
                         line-height: 1.5;
                         color: $color1;
                         font-weight: 600;
-                        letter-spacing:.4;
+                        letter-spacing:.4px;
                     }
                 }
             }
@@ -4404,7 +4405,7 @@ a.to-top {
                         }
                         tbody{
                             font-weight: 400;
-                            font-size: 400;
+                            // font-size: 400;
                             line-height: 1.5;
                             color: $text_color;
                         }
@@ -4518,7 +4519,7 @@ a.to-top {
                tr{
                    td{
                     font-weight: 400;
-                    font-size: 400;
+                    // font-size: 400;
                     line-height: 1.5;
                     color: $text_color;
                    }
@@ -4662,7 +4663,7 @@ a.to-top {
                 text-transform: capitalize;
                 color: $text_color;
                 font-weight: 400;
-                margin-bottom: 10;
+                margin-bottom: 10px;
             }
             p{
                 font-size: 16px;
@@ -6147,10 +6148,12 @@ a.to-top {
                         color: $text_color;
                         font-size: 14px;
                         line-height:1.4;
-                        text-decoration: underline dotted $basic_color 1px;
+                        text-decoration: underline dotted $basic_color;
+                        // text-decoration-thickness: 1px;
                         &:hover{
                             color: $basic_color;
-                            text-decoration:underline solid $basic_color 1px;
+                            text-decoration:underline solid $basic_color;
+                            // text-decoration-thickness: 1px;
                         }
                     }
                 }
