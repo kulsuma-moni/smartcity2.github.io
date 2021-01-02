@@ -30,7 +30,7 @@
 </head>
 <body>
 	<!-- LOADER AREA START -->
-	<div class="loader_box">
+	<!-- <div class="loader_box">
 		<div class='box1'></div>
 		<div class='container'>
 			<div class='box2'></div>
@@ -38,7 +38,7 @@
 			<div class='box4'></div>
 			<div class='box5'></div>
 		</div>
-	</div>
+	</div> -->
     <!-- LOADER AREA END -->
     
 <!-- HEADER AREA START-->
@@ -56,14 +56,14 @@
 						<li><a href="#">Home</a></li>
 						<li>
 							<a href="#">Category <i class="fas fa-angle-down"></i></a>
-							<ul class="sub_menu">
-								<li><a href="smart_house.html">Smart house</a></li>
-								<li><a href="hotel.html">Hotel</a></li>
-								<li><a href="education.html">Education</a></li>
-								<li><a href="int_shopping.html">Shopping</a></li>
-								<li><a href="hospital.html">Hospital</a></li>
-								<li><a href="restaurant.html">Restaurant</a></li>
-							</ul>
+                            <ul class="sub_menu">
+                                <li class="item_1"><a href="smart_house.html">Smart house</a></li>
+                                <li class="item_2"><a href="hotel.html">Hotel</a></li>
+                                <li class="item_3"><a href="education.html">Education</a></li>
+                                <li class="item_4"><a href="int_shopping.html">Shopping</a></li>
+                                <li class="item_5"><a href="hospital.html">Hospital</a></li>
+                                <li class="item_6"><a href="restaurant.html">Restaurant</a></li>
+                            </ul>
 						</li>
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">About</a></li>
@@ -129,7 +129,15 @@
                                 <div class="titel">
                                     <h5>Types of institutions</h5>
                                 </div>
-                                <div class="box_ctn">
+                                <div class="box_ctn filter_btn">
+                                    <div class="brand_item" data-filter="*">
+                                        <div class="form-group">
+                                            <label>All
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
                                     <div class="brand_item">
                                         <div class="form-group">
                                             <label>university
@@ -139,7 +147,7 @@
                                         </div>
                                     </div>
                                     <div class="sub_cat_htel sub_cat_htel_1">
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".pubuni">
                                             <div class="form-group">
                                                 <label>public university
                                                     <input type="checkbox">
@@ -147,7 +155,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".pruni">
                                             <div class="form-group">
                                                 <label>private university
                                                     <input type="checkbox">
@@ -155,7 +163,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".nuni">
                                             <div class="form-group">
                                                 <label>national university
                                                     <input type="checkbox">
@@ -173,7 +181,7 @@
                                         </div>
                                     </div>
                                     <div class="sub_cat_htel sub_cat_htel_2">
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".gclg">
                                             <div class="form-group">
                                                 <label>Govt. college
                                                     <input type="checkbox">
@@ -181,7 +189,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".prclg">
                                             <div class="form-group">
                                                 <label>private college
                                                     <input type="checkbox">
@@ -199,7 +207,7 @@
                                         </div>
                                     </div>
                                     <div class="sub_cat_htel sub_cat_htel_3">
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".gsc">
                                             <div class="form-group">
                                                 <label>Govt. school
                                                     <input type="checkbox">
@@ -207,7 +215,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".prsc">
                                             <div class="form-group">
                                                 <label>private school
                                                     <input type="checkbox">
@@ -225,7 +233,7 @@
                                         </div>
                                     </div>
                                     <div class="sub_cat_htel sub_cat_htel_4">
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".gmdh">
                                             <div class="form-group">
                                                 <label>Govt. madrasha
                                                     <input type="checkbox">
@@ -233,7 +241,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".prmdh">
                                             <div class="form-group">
                                                 <label>private madrasha
                                                     <input type="checkbox">
@@ -242,7 +250,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".poli">
                                         <div class="form-group">
                                             <label>politechnical
                                                 <input type="checkbox">
@@ -250,7 +258,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".opuni">
                                         <div class="form-group">
                                             <label>open university
                                                 <input type="checkbox">
@@ -258,7 +266,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".spc">
                                         <div class="form-group">
                                             <label>school for special child
                                                 <input type="checkbox">
@@ -266,7 +274,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".kinder">
                                         <div class="form-group">
                                             <label>kindergarten
                                                 <input type="checkbox">
@@ -283,7 +291,7 @@
                                         </div>
                                     </div>
                                     <div class="sub_cat_htel sub_cat_htel_5">
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".ielts">
                                             <div class="form-group">
                                                 <label>IELTS
                                                     <input type="checkbox">
@@ -291,7 +299,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".art">
                                             <div class="form-group">
                                                 <label>art
                                                     <input type="checkbox">
@@ -299,7 +307,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".club">
                                             <div class="form-group">
                                                 <label>club
                                                     <input type="checkbox">
@@ -307,7 +315,7 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="brand_item">
+                                        <div class="brand_item" data-filter=".self">
                                             <div class="form-group">
                                                 <label>self protection
                                                     <input type="checkbox">
@@ -326,8 +334,8 @@
                                 <div class="titel">
                                     <h5>Educational boards</h5>
                                 </div>
-                                <div class="box_ctn">
-                                    <div class="brand_item">
+                                <div class="box_ctn filter_btn">
+                                    <div class="brand_item" data-filter=".dh">
                                         <div class="form-group">
                                             <label>Dhaka
                                                 <input type="checkbox">
@@ -335,7 +343,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".sy">
                                         <div class="form-group">
                                             <label>Sylhet
                                                 <input type="checkbox">
@@ -343,7 +351,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".com">
                                         <div class="form-group">
                                             <label>comilla
                                                 <input type="checkbox">
@@ -351,7 +359,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".din">
                                         <div class="form-group">
                                             <label>Dinajpur
                                                 <input type="checkbox">
@@ -359,7 +367,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".raj">
                                         <div class="form-group">
                                             <label>Rajshahi
                                                 <input type="checkbox">
@@ -367,7 +375,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".jes">
                                         <div class="form-group">
                                             <label>jessore
                                                 <input type="checkbox">
@@ -375,7 +383,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".bari">
                                         <div class="form-group">
                                             <label>Barisal
                                                 <input type="checkbox">
@@ -383,7 +391,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".chit">
                                         <div class="form-group">
                                             <label>Chittagong
                                                 <input type="checkbox">
@@ -400,8 +408,8 @@
             <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12 px-3 px-lg-3 px-xl-0">
                 <div class="hotel_list restaurent_list">	
                     <div class="hotel_listing_ctn">
-                        <ul>
-                            <li>
+                        <div class="row house_iso_list">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item pubuni">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
@@ -430,158 +438,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_1.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_6.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_5.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_4.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_3.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item pruni">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
@@ -601,7 +459,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -610,98 +468,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_1.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_6.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_3.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item nuni">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
@@ -721,7 +489,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -730,38 +498,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_1.jpg" alt="image">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Cantonment public school</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>100 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">view details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item gclg dh">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
@@ -781,7 +519,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -790,11 +528,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item prclg sy">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_3.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -811,7 +549,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -820,11 +558,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item gsc com">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_1.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -841,7 +579,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -850,11 +588,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item prsc chit">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_4.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -871,7 +609,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -880,11 +618,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item gmdh bari">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_5.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -901,7 +639,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -910,11 +648,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item poli">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_6.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -931,7 +669,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -940,11 +678,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item opuni">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_3.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -961,7 +699,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -970,11 +708,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item spc">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_4.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -991,7 +729,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -1000,11 +738,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item kinder">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_5.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -1021,7 +759,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -1030,11 +768,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item ielts">
                                 <div class="listing_item">
                                     <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/education/education_6.jpg" alt="image">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
                                         <div class="grid-item__hover"></div>
                                     </div>
                                     <div class="listing_txt">
@@ -1051,7 +789,7 @@
                                         </div>
                                         <div class="location_map">
                                             <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
                                                 <li><a href="#">dhaka</a></li>
                                             </ul>
                                         </div>
@@ -1060,8 +798,248 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item art">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item club">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item self">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item gsc raj">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item din gsc">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item gclg sy">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item prmdh com">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item prclg dh">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/education/education_2.jpg" alt="image">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Cantonment public school</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>100 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                            <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">view details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="load_more_btn_2 text-center">
                         <a href="#" class="btn">load more <i class="fas fa-redo-alt"></i></a>
@@ -1211,6 +1189,8 @@
       <!--=== smooth scroll js===-->
       <script src="assets/js/plugin/smoothscroll.js"></script>
       <script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
+            		<!--=== Isotop Filtering JS===-->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!--=== Custom JS ===-->
     <script src="assets/js/main.js"></script>
 </body>

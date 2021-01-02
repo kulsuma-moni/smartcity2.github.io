@@ -28,7 +28,7 @@
 </head>
 <body>
 	<!-- LOADER AREA START -->
-	<div class="loader_box">
+	<!-- <div class="loader_box">
 		<div class='box1'></div>
 		<div class='container'>
 			<div class='box2'></div>
@@ -36,7 +36,7 @@
 			<div class='box4'></div>
 			<div class='box5'></div>
 		</div>
-	</div>
+	</div> -->
     <!-- LOADER AREA END -->
     
 <!-- HEADER AREA START-->
@@ -54,14 +54,14 @@
 						<li><a href="#">Home</a></li>
 						<li>
 							<a href="#">Category <i class="fas fa-angle-down"></i></a>
-							<ul class="sub_menu">
-								<li><a href="smart_house.html">Smart house</a></li>
-								<li><a href="hotel.html">Hotel</a></li>
-								<li><a href="education.html">Education</a></li>
-								<li><a href="int_shopping.html">Shopping</a></li>
-								<li><a href="hospital.html">Hospital</a></li>
-								<li><a href="restaurant.html">Restaurant</a></li>
-							</ul>
+                            <ul class="sub_menu">
+                                <li class="item_1"><a href="smart_house.html">Smart house</a></li>
+                                <li class="item_2"><a href="hotel.html">Hotel</a></li>
+                                <li class="item_3"><a href="education.html">Education</a></li>
+                                <li class="item_4"><a href="int_shopping.html">Shopping</a></li>
+                                <li class="item_5"><a href="hospital.html">Hospital</a></li>
+                                <li class="item_6"><a href="restaurant.html">Restaurant</a></li>
+                            </ul>
 						</li>
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">About</a></li>
@@ -106,9 +106,9 @@
                             <div class="hospital_filter_box">
                                 <div class="box_ctn" id="pro_btn">
                                     <ul class="property_type">
-                                        <li><a href="#" class="btn active">all</a></li>
-                                        <li><a href="#" class="btn">rent</a></li>
-                                        <li><a href="#" class="btn">sell</a></li>
+                                        <li><a href="#" data-filter="*" class="btn active">all</a></li>
+                                        <li><a href="#" data-filter=".rent" class="btn">rent</a></li>
+                                        <li><a href="#" data-filter=".sell" class="btn">sell</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -140,8 +140,16 @@
                                 <div class="titel">
                                     <h5>type of house</h5>
                                 </div>
-                                <div class="box_ctn">
-                                    <div class="brand_item">
+                                <div class="box_ctn filter_btn">
+                                    <div class="brand_item" data-filter="*">
+                                        <div class="form-group">
+                                            <label>all
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item" data-filter=".cat_1">
                                         <div class="form-group">
                                             <label>flat
                                                 <input type="checkbox">
@@ -149,7 +157,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_2">
                                         <div class="form-group">
                                             <label>office space
                                                 <input type="checkbox">
@@ -157,7 +165,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_3">
                                         <div class="form-group">
                                             <label>regular house
                                                 <input type="checkbox">
@@ -165,7 +173,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_4">
                                         <div class="form-group">
                                             <label>duplex house
                                                 <input type="checkbox">
@@ -173,7 +181,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_5">
                                         <div class="form-group">
                                             <label>female hostel
                                                 <input type="checkbox">
@@ -181,7 +189,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_6">
                                         <div class="form-group">
                                             <label>male hostel
                                                 <input type="checkbox">
@@ -189,7 +197,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_7">
                                         <div class="form-group">
                                             <label>bechelor house
                                                 <input type="checkbox">
@@ -197,7 +205,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_8">
                                         <div class="form-group">
                                             <label>sublet house
                                                 <input type="checkbox">
@@ -205,7 +213,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".cat_9">
                                         <div class="form-group">
                                             <label>shop space
                                                 <input type="checkbox">
@@ -254,8 +262,8 @@
             <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12 px-3 px-lg-3 px-xl-0">
                 <div class="house_list">	
                     <div class="listing_ctn">
-                        <ul>
-                            <li>
+                        <div class="row house_iso_list">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_1 rent">
                                 <a href="#">
                                     <div class="listing_item">
                                         <div class="listing_img">
@@ -284,78 +292,18 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_2 sell">
                                 <a href="#">
                                     <div class="listing_item">
                                         <div class="listing_img">
-											<img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
-											<div class="grid-item__hover"></div>
-                                            <div class="img_btn">
-                                                <span class="bage_btn">rent</span>
-                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
-                                            </div>
-                                            <div class="img_bttom">
-                                                <span class="price">$200</span>     
-                                                <div class="icon">
-                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
-                                                    <span><i class="fas fa-random"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="listing_txt">
-                                            <h6>Extension Newhaven</h6>
-                                            <p>16 badon, saplabag, sylhet</p>
-                                            <ul>
-                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
-                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
-                                                <li><i class="fas fa-newspaper"></i> <span>2200 sqft</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="listing_item">
-                                        <div class="listing_img">
-											<img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
 											<div class="grid-item__hover"></div>
                                             <div class="img_btn">
                                                 <span class="bage_btn">sell</span>
                                                 <span class="view_icon"><i class="far fa-eye"></i> 9</span>
                                             </div>
                                             <div class="img_bttom">
-                                                <span class="price">$300</span>     
-                                                <div class="icon">
-                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
-                                                    <span><i class="fas fa-random"></i></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="listing_txt">
-                                            <h6>Extension Newhaven</h6>
-                                            <p>16 kutir, saplabag, sylhet</p>
-                                            <ul>
-                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
-                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
-                                                <li><i class="fas fa-newspaper"></i> <span>2000 sqft</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="listing_item">
-                                        <div class="listing_img">
-											<img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
-											<div class="grid-item__hover"></div>
-                                            <div class="img_btn">
-                                                <span class="bage_btn">rent</span>
-                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
-                                            </div>
-                                            <div class="img_bttom">
                                                 <span class="price">$200</span>     
                                                 <div class="icon">
                                                     <span class="wish_icon"><i class="far fa-heart"></i></span>
@@ -374,8 +322,8 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_3 rent">
                                 <a href="#">
                                     <div class="listing_item">
                                         <div class="listing_img">
@@ -404,15 +352,15 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_4 sell">
                                 <a href="#">
                                     <div class="listing_item">
                                         <div class="listing_img">
-											<img src="assets/image/smart_city_object/house/house_2.jpg" alt="image">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
 											<div class="grid-item__hover"></div>
                                             <div class="img_btn">
-                                                <span class="bage_btn">rent</span>
+                                                <span class="bage_btn">sell</span>
                                                 <span class="view_icon"><i class="far fa-eye"></i> 9</span>
                                             </div>
                                             <div class="img_bttom">
@@ -434,8 +382,38 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_5 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_6 rent">
                                 <a href="#">
                                     <div class="listing_item">
                                         <div class="listing_img">
@@ -464,8 +442,368 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_7 sell">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_8 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_9 sell">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_1 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_2 sell">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_3 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_4 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_5 sell">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_6 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_7 sell">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_8 rent">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">sell</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 grid-item cat_9 sell">
+                                <a href="#">
+                                    <div class="listing_item">
+                                        <div class="listing_img">
+											<img src="assets/image/smart_city_object/house/house_1.jpg" alt="image">
+											<div class="grid-item__hover"></div>
+                                            <div class="img_btn">
+                                                <span class="bage_btn">rent</span>
+                                                <span class="view_icon"><i class="far fa-eye"></i> 9</span>
+                                            </div>
+                                            <div class="img_bttom">
+                                                <span class="price">$200</span>     
+                                                <div class="icon">
+                                                    <span class="wish_icon"><i class="far fa-heart"></i></span>
+                                                    <span><i class="fas fa-random"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing_txt">
+                                            <h6>Extension Newhaven</h6>
+                                            <p>10 hasib vila, saplabag, sylhet</p>
+                                            <ul>
+                                                <li><i class="fas fa-bed"></i> <span>3 beds</span></li>
+                                                <li><i class="fas fa-bath"></i> <span>2 bath</span></li>
+                                                <li><i class="fas fa-newspaper"></i> <span>2500 sqft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="load_more_btn_2 text-center">
                         <a href="#" class="btn">load more <i class="fas fa-redo-alt"></i></a>
@@ -616,7 +954,9 @@
     <script src="assets/js/plugin/jquery.toTop.min.js"></script>
       <!--=== smooth scroll js===-->
 	  <script src="assets/js/plugin/smoothscroll.js"></script>
-	  <script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
+      <script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
+            		<!--=== Isotop Filtering JS===-->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!--=== Custom JS ===-->
     <script src="assets/js/main.js"></script>
 

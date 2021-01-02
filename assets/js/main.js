@@ -421,7 +421,26 @@
 	$('.edu_sub_cntrol_5').click(function(){
 		$('.sub_cat_htel_5').toggle();
 	});
+// SMART HOUSE LISTING PAGE ISOTOP FILTER START
+	var $grid3 = $('.house_iso_list').isotope({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		masonry: {
+		  // use outer width of grid-sizer for columnWidth
+		  columnWidth: 1
+		}
+	  })
+	  // filter items on button click
+	$('.property_type').on( 'click', 'li a', function() {
+		var filterValue = $(this).attr('data-filter');
+		$grid3.isotope({ filter: filterValue });
+	});
+	$('.filter_btn').on( 'click', '.brand_item', function() {
+		var filterValue = $(this).attr('data-filter');
+		$grid3.isotope({ filter: filterValue });
+	});
 
+// SMART HOUSE LISTING PAGE ISOTOP FILTER END
 	// INNERBG Animation START
 	var multi_shap = "";
 	for (var i = 1; i <= 50; i++) {
@@ -433,7 +452,55 @@
 	
 	document.querySelector(".shape").innerHTML += multi_shap;
 // INNERBG Animation END
-	
+	// Isotop masonary layout for subcat area start
+$('.subcat_iso_area').isotope({
+	itemSelector: '.grid-item',
+	percentPosition: true,
+	masonry: {
+	  // use outer width of grid-sizer for columnWidth
+	  columnWidth: 1
+	}
+  });
+	  // Isotop masonary layout for subcat area end
+	//   Isotop for smart house latest listing area start
+	var $grid1 = $('.listing_iso_area').isotope({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		masonry: {
+		  // use outer width of grid-sizer for columnWidth
+		  columnWidth: 1
+		}
+	  });
+	  // filter items on button click
+	$('.latest_listing_menu').on( 'click', 'button', function() {
+		var filterValue = $(this).attr('data-filter');
+		$grid1.isotope({ filter: filterValue });
+	});
+	// Active class add & remove js start
+	$('.latest_listing_menu button').on('click', function(event){
+		$(this).siblings('.active').removeClass('active');
+		$(this).addClass('active');
+		event.preventDefault();
+	});
+	// Active class add & remove js end
+
+	var $grid2 = $('.listing_iso_area').isotope({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		masonry: {
+		  // use outer width of grid-sizer for columnWidth
+		  columnWidth: 2
+		}
+	  });
+	  // filter items on button click
+	$('.latest_listing_menu').on( 'click', 'button', function() {
+		var filterValue = $(this).attr('data-filter');
+		$grid2.isotope({ filter: filterValue });
+	});
+	//   Isotop for smart house latest listing area end
+
+
+
 	// ACCRODION
 	$('.ziehharmonika').ziehharmonika({
 

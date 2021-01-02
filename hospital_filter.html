@@ -30,7 +30,7 @@
 </head>
 <body>
 	<!-- LOADER AREA START -->
-	<div class="loader_box">
+	<!-- <div class="loader_box">
 		<div class='box1'></div>
 		<div class='container'>
 			<div class='box2'></div>
@@ -38,7 +38,7 @@
 			<div class='box4'></div>
 			<div class='box5'></div>
 		</div>
-	</div>
+	</div> -->
     <!-- LOADER AREA END -->
     
 <!-- HEADER AREA START-->
@@ -56,14 +56,14 @@
 						<li><a href="#">Home</a></li>
 						<li>
 							<a href="#">Category <i class="fas fa-angle-down"></i></a>
-							<ul class="sub_menu">
-								<li><a href="smart_house.html">Smart house</a></li>
-								<li><a href="hotel.html">Hotel</a></li>
-								<li><a href="education.html">Education</a></li>
-								<li><a href="int_shopping.html">Shopping</a></li>
-								<li><a href="hospital.html">Hospital</a></li>
-								<li><a href="restaurant.html">Restaurant</a></li>
-							</ul>
+                            <ul class="sub_menu">
+                                <li class="item_1"><a href="smart_house.html">Smart house</a></li>
+                                <li class="item_2"><a href="hotel.html">Hotel</a></li>
+                                <li class="item_3"><a href="education.html">Education</a></li>
+                                <li class="item_4"><a href="int_shopping.html">Shopping</a></li>
+                                <li class="item_5"><a href="hospital.html">Hospital</a></li>
+                                <li class="item_6"><a href="restaurant.html">Restaurant</a></li>
+                            </ul>
 						</li>
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">About</a></li>
@@ -129,8 +129,16 @@
                                 <div class="titel">
                                     <h5>Hospital category</h5>
                                 </div>
-                                <div class="box_ctn">
-                                    <div class="brand_item">
+                                <div class="box_ctn filter_btn">
+                                    <div class="brand_item" data-filter="*">
+                                        <div class="form-group">
+                                            <label>All hospital
+                                                <input type="checkbox">
+                                                <span class="check_mark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="brand_item" data-filter=".gov_hospital">
                                         <div class="form-group">
                                             <label>Government hospital
                                                 <input type="checkbox">
@@ -138,7 +146,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".pri_hospital">
                                         <div class="form-group">
                                             <label>Private hospital
                                                 <input type="checkbox">
@@ -146,7 +154,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".clinic">
                                         <div class="form-group">
                                             <label>Clinic
                                                 <input type="checkbox">
@@ -154,7 +162,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".community_clinic">
                                         <div class="form-group">
                                             <label>Community clinic
                                                 <input type="checkbox">
@@ -162,7 +170,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".dental_clinic">
                                         <div class="form-group">
                                             <label>Dental clinic
                                                 <input type="checkbox">
@@ -180,8 +188,8 @@
                                 <div class="titel">
                                     <h5>Type of hospital</h5>
                                 </div>
-                                <div class="box_ctn">
-                                    <div class="brand_item">
+                                <div class="box_ctn filter_btn">
+                                    <div class="brand_item" data-filter=".hospital">
                                         <div class="form-group">
                                             <label>Hospital
                                                 <input type="checkbox">
@@ -189,7 +197,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".medical">
                                         <div class="form-group">
                                             <label>Medical college
                                                 <input type="checkbox">
@@ -197,7 +205,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".dental_hospital">
                                         <div class="form-group">
                                             <label>Dental hospital
                                                 <input type="checkbox">
@@ -205,7 +213,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".dental_college">
                                         <div class="form-group">
                                             <label>Dental college
                                                 <input type="checkbox">
@@ -213,7 +221,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".dental_clinic">
                                         <div class="form-group">
                                             <label>Dental clinic
                                                 <input type="checkbox">
@@ -229,10 +237,10 @@
                         <div class="col-sm-12 col-12 col-xl-12 col-lg-12 col-md-12">
                             <div class="hotel_filter_box">
                                 <div class="titel">
-                                    <h5>Special arevice</h5>
+                                    <h5>Special srevice</h5>
                                 </div>
-                                <div class="box_ctn">
-                                    <div class="brand_item">
+                                <div class="box_ctn filter_btn">
+                                    <div class="brand_item" data-filter=".icu">
                                         <div class="form-group">
                                             <label>ICU
                                                 <input type="checkbox">
@@ -240,7 +248,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".ccu">
                                         <div class="form-group">
                                             <label>CCU
                                                 <input type="checkbox">
@@ -248,7 +256,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".pharmacy">
                                         <div class="form-group">
                                             <label>24/7 pharmacy facility
                                                 <input type="checkbox">
@@ -256,7 +264,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".diagnotic">
                                         <div class="form-group">
                                             <label>Diagnotic center
                                                 <input type="checkbox">
@@ -264,7 +272,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="brand_item">
+                                    <div class="brand_item" data-filter=".ambulance">
                                         <div class="form-group">
                                             <label>Ambulance
                                                 <input type="checkbox">
@@ -281,8 +289,8 @@
             <div class="col-xl-9 col-lg-8 col-md-6 col-sm-12 col-12 px-3 px-lg-3 px-xl-0">
                 <div class="hotel_list">	
                     <div class="hotel_listing_ctn">
-                        <ul>
-                            <li>
+                        <div class="row house_iso_list">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item gov_hospital diagnotic medical pharmacy icu ccu">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
@@ -311,8 +319,38 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item pri_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item clinic diagnotic icu">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
@@ -341,8 +379,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  community_clinic">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
@@ -371,398 +409,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Marie Stopes Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Jalalabad Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>MAGO Medical College Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>MAGO Medical College Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>MAGO Medical College Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>MAGO Medical College Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Ibn Sina Hospital Sylhet Ltd</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Jalalabad Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>MAGO Medical College Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Jalalabad Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>JRR Medical College & Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Marie Stopes Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>MAGO Medical College Hospital</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  dental_clinic">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
@@ -791,98 +439,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Mamoni Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Ibn Sina Hospital Sylhet Ltd</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="listing_item">
-                                    <div class="listing_img">
-                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
-                                        <div class="grid-item__hover"></div>
-                                    </div>
-                                    <div class="listing_txt">
-                                        <h6>Jalalabad Clinic</h6>
-                                        <div class="rating">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
-                                            </ul>
-                                            <p>120 reviews</p>
-                                        </div>
-                                        <div class="location_map">
-                                            <ul>
-                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
-                                                <li><a href="#">dhaka</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="details_btn">
-                                            <a href="#">details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item dental_hospital">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
@@ -911,8 +469,38 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item dental_college">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Marie Stopes Clinic</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital diagnotic medical pharmacy icu ccu">
                                 <div class="listing_item">
                                     <div class="listing_img">
                                         <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
@@ -941,8 +529,428 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  pri_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Jalalabad Clinic</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item hospital dental_cllege diagnotic">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  pri_hospital diagnotic">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Jalalabad Clinic</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Ibn Sina Hospital Sylhet Ltd</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  community_clinic">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item pri_hospital diagnotic medical">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Jalalabad Clinic</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  dental_clinic diagnotic medical pharmacy">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Marie Stopes Clinic</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item  gov_hospital diagnotic medical pharmacy icu ccu">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>MAGO Medical College Hospital</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item clinic">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Mamoni Clinic</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 grid-item community_clinic">
+                                <div class="listing_item">
+                                    <div class="listing_img">
+                                        <img src="assets/image/smart_city_object/hospital/hospital_1.jpg" alt="Hospital">
+                                        <div class="grid-item__hover"></div>
+                                    </div>
+                                    <div class="listing_txt">
+                                        <h6>Ibn Sina Hospital Sylhet Ltd</h6>
+                                        <div class="rating">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                            </ul>
+                                            <p>120 reviews</p>
+                                        </div>
+                                        <div class="location_map">
+                                            <ul>
+                                                <li><a href="#"><i class="fas fa-map-marked-alt"></i></a></li>
+                                                <li><a href="#">dhaka</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="details_btn">
+                                            <a href="#">details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="load_more_btn_2 text-center">
                         <a href="#" class="btn">load more <i class="fas fa-redo-alt"></i></a>
@@ -1095,6 +1103,8 @@
       <!--=== smooth scroll js===-->
       <script src="assets/js/plugin/smoothscroll.js"></script>
       <script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
+      	  		<!--=== Isotop Filtering JS===-->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!--=== Custom JS ===-->
     <script src="assets/js/main.js"></script>
 </body>
