@@ -244,19 +244,14 @@
   .inner_banner_area .banner_content .inner_titel {
     font-size: 34px;
   }
-  .letest_listing_area .listing_tab .latest_nav {
-    display: inline-block;
+  .letest_listing_area .latest_listing_menu {
+    margin-bottom: 20px;
   }
-  .letest_listing_area .listing_tab {
-    margin-bottom: 30px;
-  }
-  .letest_listing_area .listing_tab .nav .nav-link {
+  .letest_listing_area .latest_listing_menu button {
     font-size: 14px;
-    padding: 10px 12px;
     margin-bottom: 10px;
-    display: inline-block;
-    width: 138px;
-    margin-right: 4px;
+    width: 47%;
+    margin-right: 6px;
   }
   .hotel_list_area .filter_area .hotel_filter_box .box_ctn .search_for p a.btn {
     width: 100%;
@@ -267,112 +262,11 @@
   .house_list_area .filter_area {
     margin-bottom: 30px;
   }
-  .house_list_area .house_list .listing_ctn ul li {
-    margin-right: 0px;
-  }
-  .house_list_area .house_list .listing_ctn ul li:last-child {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(3) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(6) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(9) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(12) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(15) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(18) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(21) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(24) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(26) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li:nth-child(29) {
-    margin-right: 0;
-  }
-  .house_list_area .house_list .listing_ctn ul li a .listing_item {
-    width: 290px;
-  }
   .hotel_list_area .filter_area {
     margin-bottom: 30px;
   }
   .hotel_list_area .filter_area .hotel_filter_box .box_ctn .search_for p a.btn {
     width: 100%;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul {
-    display: inline;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li {
-    margin-right: 0px;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:last-child {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(3) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(6) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(9) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(12) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(15) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(18) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(21) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(24) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(26) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li:nth-child(29) {
-    margin-right: 0;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li .listing_item {
-    width: 290px;
-    margin-bottom: 20px;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li .listing_item .listing_img img {
-    height: 184px;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li .listing_item .listing_txt .rating {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li .listing_item .listing_txt .rating ul {
-    margin-right: 80px;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li .listing_item .listing_txt .rating ul li {
-    margin-right: 0px;
-    display: inline-block;
-  }
-  .hotel_list_area .hotel_list .hotel_listing_ctn ul li .listing_item .listing_txt .rating ul li a i {
-    color: #F7BA62;
-    font-size: 12px;
   }
   .hotel_list_area .restaurent_list .hotel_listing_ctn ul li .listing_item .listing_txt .rating {
     display: -webkit-box;
@@ -653,35 +547,14 @@
   .hotel_list_area .restaurent_list .hotel_listing_ctn ul li .listing_item .location_map ul li {
     display: inline-block;
   }
-  .letest_listing_area .listing_tab .latest_nav {
-    display: inline-block;
+  .letest_listing_area .latest_listing_menu {
+    margin-bottom: 20px;
   }
-  .letest_listing_area .listing_tab {
-    margin-bottom: 30px;
-  }
-  .letest_listing_area .listing_tab .nav .nav-link {
-    padding: 10px 12px;
+  .letest_listing_area .latest_listing_menu button {
+    font-size: 14px;
     margin-bottom: 10px;
-    display: inline-block;
-    width: 156px;
-    margin-right: 11px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item {
-    width: 520px;
-    margin: 0 auto 30px auto;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img img {
-    height: 220px;
-  }
-  .hotel_area .all_hotel ul li {
-    width: 520px;
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li .card .hotel_img img {
-    height: 220px;
+    width: 31%;
+    margin-right: 6px;
   }
 }
 
@@ -772,148 +645,14 @@
   .top_stores_ctn .slick-slide {
     margin: 0 4px;
   }
-  .letest_listing_area .listing_tab .latest_nav {
-    display: inline-block;
+  .letest_listing_area .latest_listing_menu {
+    margin-bottom: 20px;
   }
-  .letest_listing_area .listing_tab {
-    margin-bottom: 30px;
-  }
-  .letest_listing_area .listing_tab .nav .nav-link {
-    padding: 10px 12px;
+  .letest_listing_area .latest_listing_menu button {
+    font-size: 16px;
     margin-bottom: 10px;
-    display: inline-block;
-    width: 156px;
-    margin-right: 11px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul {
-    display: inline;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:last-child {
-    margin-right: 20px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(2) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(3) {
-    margin-right: 20px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(4) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(6) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(8) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(9) {
-    margin-right: 20px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(10) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(12) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(14) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(15) {
-    margin-right: 20px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(16) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(18) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(20) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(21) {
-    margin-right: 20px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(22) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(24) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(26) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(28) {
-    margin-right: 0px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:nth-child(29) {
-    margin-right: 20px;
-  }
-  .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item {
-    width: 330px;
-  }
-  .edu_lis .listing_tab .nav .nav-link {
-    width: 214px;
-    font-size: 14px;
-  }
-  .hotel_area .all_hotel ul li {
-    width: 330px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(2) {
-    margin-right: 0;
-  }
-  .hotel_area .all_hotel ul li:nth-child(3) {
-    margin-right: 20px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(4) {
-    margin-right: 0;
-  }
-  .hotel_area .all_hotel ul li:nth-child(6) {
-    margin-right: 0;
-  }
-  .hotel_area .all_hotel ul li:nth-child(8) {
-    margin-right: 0;
-  }
-  .hotel_area .all_hotel ul li:nth-child(9) {
-    margin-right: 20px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(10) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(12) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(14) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(15) {
-    margin-right: 20px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(16) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(18) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(20) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(21) {
-    margin-right: 20px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(22) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(24) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(26) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(28) {
-    margin-right: 0px;
-  }
-  .hotel_area .all_hotel ul li:nth-child(29) {
-    margin-right: 20px;
+    width: 23%;
+    margin-right: 6px;
   }
   .house_list_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn {
     width: 100%;
@@ -1090,21 +829,14 @@
   .top_stores_ctn .slick-slide {
     margin: 0 5px;
   }
-  .letest_listing_area .listing_tab .latest_nav {
-    display: inline-block;
+  .letest_listing_area .latest_listing_menu {
+    margin-bottom: 20px;
   }
-  .letest_listing_area .listing_tab {
-    margin-bottom: 30px;
-  }
-  .letest_listing_area .listing_tab .nav .nav-link {
-    padding: 10px 12px;
+  .letest_listing_area .latest_listing_menu button {
+    font-size: 16px;
     margin-bottom: 10px;
-    display: inline-block;
-    width: 170px;
-    margin-right: 11px;
-  }
-  .edu_lis .listing_tab .nav .nav-link {
-    width: 238px;
+    width: 18%;
+    margin-right: 6px;
   }
   .house_list_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn {
     width: 100%;

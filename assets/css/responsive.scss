@@ -256,20 +256,14 @@ $inputColor: #bbbbbb;
     .inner_banner_area .banner_content .inner_titel {
         font-size: 34px;
     }
-    .letest_listing_area .listing_tab .latest_nav {
-        display: inline-block;
-      }
-      .letest_listing_area .listing_tab {
-        margin-bottom: 30px;
+    .letest_listing_area .latest_listing_menu {
+        margin-bottom: 20px;
     }
-
-      .letest_listing_area .listing_tab .nav .nav-link {
+    .letest_listing_area .latest_listing_menu button {
         font-size: 14px;
-        padding: 10px 12px;
         margin-bottom: 10px;
-        display: inline-block;
-        width: 138px;
-        margin-right: 4px;
+        width: 47%;
+        margin-right: 6px;
     }
     .hotel_list_area .filter_area .hotel_filter_box .box_ctn .search_for p a.btn {
         width: 100%;
@@ -282,54 +276,6 @@ $inputColor: #bbbbbb;
     .house_list_area{
         .filter_area{
             margin-bottom: 30px;
-        }
-        .house_list{
-            .listing_ctn{
-                ul{
-                    li{
-                        margin-right: 0px;
-                        &:last-child{
-                            margin-right: 0;
-                        }
-                        &:nth-child(3){
-                            margin-right: 0;
-                        }
-                        &:nth-child(6){
-                            margin-right: 0;
-                        }
-                        &:nth-child(9){
-                            margin-right: 0;
-                        }
-                        &:nth-child(12){
-                            margin-right: 0;
-                        }
-                        &:nth-child(15){
-                            margin-right: 0;
-                        }
-                        &:nth-child(18){
-                            margin-right: 0;
-                        }
-                        &:nth-child(21){
-                            margin-right: 0;
-                        }
-                        &:nth-child(24){
-                            margin-right: 0;
-                        }
-                        &:nth-child(26){
-                            margin-right: 0;
-                        }
-                        &:nth-child(29){
-                            margin-right: 0;
-                        }
-                        a{
-                            .listing_item{
-                                width: 290px;
-                            }
-    
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -349,78 +295,6 @@ $inputColor: #bbbbbb;
     
             }
         }
-    .hotel_list{
-        
-        .hotel_listing_ctn{
-            ul{
-                display: inline;
-                li{
-                    margin-right:0px;
-                    &:last-child{
-                        margin-right: 0;
-                    }
-                    &:nth-child(3){
-                        margin-right: 0;
-                    }
-                    &:nth-child(6){
-                        margin-right: 0;
-                    }
-                    &:nth-child(9){
-                        margin-right: 0;
-                    }
-                    &:nth-child(12){
-                        margin-right: 0;
-                    }
-                    &:nth-child(15){
-                        margin-right: 0;
-                    }
-                    &:nth-child(18){
-                        margin-right: 0;
-                    }
-                    &:nth-child(21){
-                        margin-right: 0;
-                    }
-                    &:nth-child(24){
-                        margin-right: 0;
-                    }
-                    &:nth-child(26){
-                        margin-right: 0;
-                    }
-                    &:nth-child(29){
-                        margin-right: 0;
-                    }
-                    .listing_item{
-                        width: 290px;
-                        margin-bottom: 20px;
-                        .listing_img{
-                            img{
-                                height: 184px;
-                            }  
-                        }
-                        .listing_txt{
-                            .rating{
-                                display: flex;
-                                ul{
-                                    margin-right: 80px;
-                                    li{
-                                        margin-right: 0px;
-                                        display: inline-block;
-                                        a{
-                                            i{
-                                                color: #F7BA62;
-                                                font-size: 12px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    
-        }
-    }
     .restaurent_list{
         .hotel_listing_ctn{
             ul{
@@ -769,41 +643,14 @@ header.header_area{
     }
 }
 }
-
-// .hotel_list_area .filter_area .hotel_filter_box .box_ctn .search_for p a.btn {
-//     width: 100%;
-// }
-
-.letest_listing_area .listing_tab .latest_nav {
-    display: inline-block;
-  }
-  .letest_listing_area .listing_tab {
-    margin-bottom: 30px;
+.letest_listing_area .latest_listing_menu {
+    margin-bottom: 20px;
 }
-
-.letest_listing_area .listing_tab .nav .nav-link {
-    padding: 10px 12px;
+.letest_listing_area .latest_listing_menu button {
+    font-size: 14px;
     margin-bottom: 10px;
-    display: inline-block;
-    width: 156px;
-    margin-right: 11px;
-}
-.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li {
-    margin-right: 0px;
-}
-.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item {
-    width: 520px;
-    margin: 0 auto 30px auto;
-}
-.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img img {
-    height: 220px;
-}
-.hotel_area .all_hotel ul li {
-    width: 520px;
-    margin-right: 0px;
-}
-.hotel_area .all_hotel ul li .card .hotel_img img {
-    height: 220px;
+    width: 31%;
+    margin-right: 6px;
 }
 }
 
@@ -898,175 +745,15 @@ header.header_area{
     }
 
     // smart city
-    .letest_listing_area .listing_tab .latest_nav {
-        display: inline-block;
-      }
-      .letest_listing_area .listing_tab {
-        margin-bottom: 30px;
+    .letest_listing_area .latest_listing_menu{
+        margin-bottom: 20px;
     }
-    
-    .letest_listing_area .listing_tab .nav .nav-link {
-        padding: 10px 12px;
+    .letest_listing_area .latest_listing_menu button {
+        font-size: 16px;
         margin-bottom: 10px;
-        display: inline-block;
-        width: 156px;
-        margin-right: 11px;
+        width: 23%;
+        margin-right: 6px;
     }
-    .letest_listing_area{
-        .listing_tab_ctn{
-            .listings_item_detail{
-                .listing_ctn{
-                    ul{
-                        display: inline;
-                        li{
-                            &:last-child{
-                                margin-right: 20px;
-                            }
-                            &:nth-child(2){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(3){
-                                margin-right: 20px;
-                            }
-                            &:nth-child(4){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(6){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(8){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(9){
-                                margin-right: 20px;
-                            }
-                            &:nth-child(10){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(12){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(14){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(15){
-                                margin-right: 20px;
-                            }
-                            &:nth-child(16){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(18){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(20){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(21){
-                                margin-right: 20px;
-                            }
-                            &:nth-child(22){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(24){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(26){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(28){
-                                margin-right: 0px;
-                            }
-                            &:nth-child(29){
-                                margin-right: 20px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item {
-        width: 330px;
-    }
-    .edu_lis{
-        .listing_tab{
-            // margin-top: 64px;
-            .nav{
-                .nav-link{
-                    width: 214px;
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-
-    .hotel_area{
-        .all_hotel{
-            ul{
-                li{
-                    width: 330px;
-                    &:nth-child(2){
-                        margin-right: 0;
-                    }
-                    &:nth-child(3){
-                        margin-right: 20px;
-                    }
-                    &:nth-child(4){
-                        margin-right: 0;
-                    }
-                    &:nth-child(6){
-                        margin-right: 0;
-                    }
-                    &:nth-child(8){
-                        margin-right: 0;
-                    }
-                    &:nth-child(9){
-                        margin-right: 20px;
-                    }
-                    &:nth-child(10){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(12){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(14){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(15){
-                        margin-right: 20px;
-                    }
-                    &:nth-child(16){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(18){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(20){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(21){
-                        margin-right: 20px;
-                    }
-                    &:nth-child(22){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(24){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(26){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(28){
-                        margin-right: 0px;
-                    }
-                    &:nth-child(29){
-                        margin-right: 20px;
-                    }
-            }
-        }
-    }
-
-}
 .house_list_area{
     .filter_area{
         .hospital_filter_box{
@@ -1302,34 +989,16 @@ header.header_area{
     .top_stores_ctn .slick-slide{
         margin: 0 5px;
     }
-
-    
     // smart city
-    .letest_listing_area .listing_tab .latest_nav {
-        display: inline-block;
-      }
-      .letest_listing_area .listing_tab {
-        margin-bottom: 30px;
+    .letest_listing_area .latest_listing_menu{
+        margin-bottom: 20px;
     }
-    
-    .letest_listing_area .listing_tab .nav .nav-link {
-        padding: 10px 12px;
+    .letest_listing_area .latest_listing_menu button {
+        font-size: 16px;
         margin-bottom: 10px;
-        display: inline-block;
-        width: 170px;
-        margin-right: 11px;
+        width: 18%;
+        margin-right: 6px;
     }
-    .edu_lis{
-        .listing_tab{
-            // margin-top: 64px;
-            .nav{
-                .nav-link{
-                 width: 238px;
-                }
-            }
-        }
-    }
-
     .house_list_area{
         .filter_area{
             .hospital_filter_box{
