@@ -331,6 +331,13 @@ $inputColor: #bbbbbb;
         }
     }
     }
+    .adli_mb_20{
+        margin-bottom: 20px;
+    }
+    .add_listing_area .notification_email input {
+        width: 100%;
+        margin: 0;
+    }
 }
 @media (min-width: 576px) and(max-width:767px){
    .menu-shrink{
@@ -652,6 +659,13 @@ header.header_area{
     width: 31%;
     margin-right: 6px;
 }
+.add_listing_area .submit_listing .submit_ctn .card .card-body .business_hour_input .all_time span {
+    font-size: 14px;
+}
+.add_listing_area .notification_email input {
+    width: 100%;
+    margin: 0;
+}
 }
 
 
@@ -946,7 +960,9 @@ header.header_area{
     }
 }
 }
-
+ .adli_mb_20{
+     margin-bottom: 20px;
+ }
 }
 @media (min-width: 992px) and (max-width: 1199px){
     .menu-shrink{
@@ -1217,6 +1233,10 @@ header.header_area{
             }
         }
     }
+    }
+    .add_listing_area .submit_listing .submit_ctn .card .card-body .business_hour_input .all_time span {
+        font-size: 13px;
+        line-height: 2.7;
     }
 }
 

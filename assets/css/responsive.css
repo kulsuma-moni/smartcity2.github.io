@@ -291,6 +291,13 @@
   .hotel_list_area .restaurent_list .hotel_listing_ctn ul li .listing_item .location_map ul li {
     display: inline-block;
   }
+  .adli_mb_20 {
+    margin-bottom: 20px;
+  }
+  .add_listing_area .notification_email input {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -556,6 +563,13 @@
     width: 31%;
     margin-right: 6px;
   }
+  .add_listing_area .submit_listing .submit_ctn .card .card-body .business_hour_input .all_time span {
+    font-size: 14px;
+  }
+  .add_listing_area .notification_email input {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -787,6 +801,9 @@
   .hotel_list_area .restaurent_list .hotel_listing_ctn ul li .listing_item .location_map ul li {
     display: inline-block;
   }
+  .adli_mb_20 {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -998,6 +1015,10 @@
     font-size: 12px;
     font-weight: 600;
     margin-top: 5px;
+  }
+  .add_listing_area .submit_listing .submit_ctn .card .card-body .business_hour_input .all_time span {
+    font-size: 13px;
+    line-height: 2.7;
   }
 }
 

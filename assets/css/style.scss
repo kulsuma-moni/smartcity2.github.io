@@ -12663,6 +12663,7 @@ z-index: 0;
       .card{
         border: transparent;
         .card-body{
+			padding: 14px;
           .form-group{
             margin-bottom: 16px;
             label{
@@ -12678,15 +12679,19 @@ z-index: 0;
               &::placeholder{
                 font-size: 14px;
                 line-height: 1.5;
-                &:focus{
-                  border-color:#3a3535;
-                  box-shadow: none;
-                }
-              }
+			  }
+			  &:focus{
+				border-color:#8c8383;
+				box-shadow: none;
+			  }
             }
             textarea{
               width: 100%;
-              height: 130px;
+			  height: 130px;
+			  &:focus{
+				border-color:#8c8383;
+				box-shadow: none;
+			  }
             }
             .day_time_input{
               .day{
@@ -12719,19 +12724,39 @@ z-index: 0;
                 }
               }
             }
-
+            select{
+				font-size: 14px;
+				line-height: 1.5;
+				text-transform: capitalize;
+				&:focus{
+				  border-color:#8c8383;
+				  box-shadow: none;
+				}
+			  }
           }
           .business_hour_input{
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             select{
               font-size: 14px;
               line-height: 1.5;
-              text-transform: capitalize;
+			  text-transform: capitalize;
+			  &:focus{
+				border-color:#8c8383;
+				box-shadow: none;
+			  }
             }
             .all_time{
               // display: flex;
-              input{
-                width: 16px;
+              input[type="checkbox"]{
+				width: 16px;
+				&::placeholder{
+					font-size: 14px;
+					line-height: 1.5;
+				  }
+				  &:focus{
+					border-color:#8c8383;
+					box-shadow: none;
+				  }
               }
               span{
                 font-size: 16px;
@@ -12763,9 +12788,7 @@ z-index: 0;
             }
           }
           .cover_image{
-            label{
-
-            }
+            margin-bottom: 20px;
             .image_box{
               border: 1px dashed #b3afaf;
               padding: 30px 20px;
@@ -12828,12 +12851,28 @@ z-index: 0;
     }
     input{
       width: 56%;
-      margin: 0 auto;
+	  margin: 0 auto;
+	  &::placeholder{
+		font-size: 14px;
+		line-height: 1.5;
+	  }
+	  &:focus{
+		border-color:#8c8383;
+		box-shadow: none;
+	  }
     }
   }
   .account_confirmation{
     input{
-      width: 20px;
+	  width: 20px;
+	  &::placeholder{
+		font-size: 14px;
+		line-height: 1.5;
+	  }
+	  &:focus{
+		border-color:#8c8383;
+		box-shadow: none;
+	  }
     }
     label{
       font-weight: 500;
