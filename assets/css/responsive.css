@@ -1001,6 +1001,12 @@
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1338px) {
+  .smart_city_area .hero_btn ul li {
+    margin-right: 4px;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .smart_city_area .hero_btn ul li {
     margin-right: 6px;
@@ -1044,7 +1050,7 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    top: 9%;
+    top: 4%;
     right: 2%;
   }
   .sm_header_area .logo {
@@ -1265,7 +1271,7 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    top: 9%;
+    top: 4%;
     right: 2%;
   }
   .sm_header_area .logo {
@@ -1520,7 +1526,7 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    top: 9%;
+    top: 6%;
     right: 2%;
   }
   .sm_header_area .logo {

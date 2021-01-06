@@ -9713,7 +9713,7 @@ z-index: 0;
                             color: $basic_color_2;
                             line-height: 1.5;
                             font-weight: 600;
-                            margin-right:6px ;
+                            margin-right:4px ;
                             i{
                                 margin-right: 2px;
                                 font-size: 16px;
@@ -12639,3 +12639,232 @@ z-index: 0;
   }
 }
 // Newsletter Area CSS End
+// ADD LISTING PAGE CSS START
+.add_listing_area{
+  .listing_starting{
+    background: #f3f6f7;
+    padding: 14px 0;
+    margin-bottom: 70px;
+    p{
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 0;
+      font-weight: 600;
+      color: $color1;
+      a{
+        text-decoration: none;
+        cursor: pointer;
+        color: $basic_color_3;
+      }
+    }
+  }
+  .submit_listing{
+    .submit_ctn{
+      .card{
+        border: transparent;
+        .card-body{
+          .form-group{
+            margin-bottom: 16px;
+            label{
+              font-weight: 600;
+              line-height: 1.5;
+              font-size: 16px;
+              text-transform: capitalize;
+              color: $text_color;
+              margin-bottom: 10px;
+            }
+            input{
+              border: 1px solid #b3afaf;
+              &::placeholder{
+                font-size: 14px;
+                line-height: 1.5;
+                &:focus{
+                  border-color:#3a3535;
+                  box-shadow: none;
+                }
+              }
+            }
+            textarea{
+              width: 100%;
+              height: 130px;
+            }
+            .day_time_input{
+              .day{
+                p{
+                  color: $text_color;
+                  font-size: 14px;
+                  line-height: 1.6;
+                  font-weight: 600;
+                }
+              }
+              .time{
+                p{
+                  color: $text_color;
+                  font-size: 14px;
+                  line-height: 1.6;
+                  font-weight: 400;
+                }
+              }
+              .delete{
+                p{
+                  color: rgb(224, 52, 52);
+                  font-size: 14px;
+                  line-height: 1.6;
+                  font-weight: 600;
+                  cursor: pointer;
+                  opacity: .9;
+                  &:hover{
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+
+          }
+          .business_hour_input{
+            margin-bottom: 16px;
+            select{
+              font-size: 14px;
+              line-height: 1.5;
+              text-transform: capitalize;
+            }
+            .all_time{
+              // display: flex;
+              input{
+                width: 16px;
+              }
+              span{
+                font-size: 16px;
+                line-height: 2.2;
+              }
+            }
+            .add_btn{
+              p{
+                a{
+                  opacity: .8; 
+                  i{
+                    color: $color3;
+                    background-color: $basic_color_3;
+                    font-size: 16px;
+                    padding: 2px 8px;
+                    line-height: 1.8;
+                    text-align: center;
+                    border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                    }
+                  &:hover{
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+          .cover_image{
+            label{
+
+            }
+            .image_box{
+              border: 1px dashed #b3afaf;
+              padding: 30px 20px;
+              p{
+                margin-bottom: 0;
+                i{
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: $basic_color_3;
+                  transition: .3s;
+                  -webkit-transition: .3s;
+                  -moz-transition: .3s;
+                  -ms-transition: .3s;
+                  -o-transition: .3s;
+                  &:hover{
+                    transform: translateY(-6px);
+                    -webkit-transform: translateY(-6px);
+                    -moz-transform: translateY(-6px);
+                    -ms-transform: translateY(-6px);
+                    -o-transform: translateY(-6px);
+                  }
+                }
+              }
+              .btn{
+                font-size: 16px;
+                color: $color2;
+                text-transform: capitalize;
+                line-height: 1.5;
+                font-weight: 600;
+                background-color: $basic_color_3;
+                border-radius: 6px;
+                margin-top: 20px;
+                padding: 8px 26px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                box-shadow: inset 0 0 0 0 $basic_color;
+                transition: ease-out 0.6s;
+                -webkit-transition: ease-out 0.6s;
+                -moz-transition: ease-out 0.6s;
+                -ms-transition: ease-out 0.6s;
+                &:hover{
+                  box-shadow: inset 400px 0 0 0 $basic_color;
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .notification_email{
+    label{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.6;
+      color: $text_color;
+      margin-bottom: 16px;
+    }
+    input{
+      width: 56%;
+      margin: 0 auto;
+    }
+  }
+  .account_confirmation{
+    input{
+      width: 20px;
+    }
+    label{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+  .submit_btn{
+    .btn{
+      font-size: 16px;
+      color: $color2;
+      text-transform: capitalize;
+      line-height: 1.5;
+      font-weight: 600;
+      background-color: $basic_color_3;
+      border-radius: 6px;
+      margin-top: 30px;
+      padding: 8px 46px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      box-shadow: inset 0 0 0 0 $basic_color;
+      transition: ease-out 0.6s;
+      -webkit-transition: ease-out 0.6s;
+      -moz-transition: ease-out 0.6s;
+      -ms-transition: ease-out 0.6s;
+      &:hover{
+        box-shadow: inset 400px 0 0 0 $basic_color;
+    }
+    }
+  }
+}
+// ADD LISTING PAGE CSS END
