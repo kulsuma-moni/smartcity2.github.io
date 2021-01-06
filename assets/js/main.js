@@ -429,7 +429,7 @@
 		  // use outer width of grid-sizer for columnWidth
 		  columnWidth: 1
 		}
-	  })
+	  });
 	  // filter items on button click
 	$('.property_type').on( 'click', 'li a', function() {
 		var filterValue = $(this).attr('data-filter');
@@ -441,6 +441,31 @@
 	});
 
 // SMART HOUSE LISTING PAGE ISOTOP FILTER END
+
+		// SINGLE DIVISION PAGE JS START
+		$('#house_cntl_btn').click(function(){
+			$('.education,.hotel, .restaurant,.hospital').hide();
+			$('.more_house').show();
+		});
+		$('#education_cntl_btn').click(function(){
+			$('.house,.hotel, .restaurant,.hospital').hide();
+			$('.more_institution').show();
+		});
+		$('#hotel_cntl_btn').click(function(){
+			$('house,.education,.restaurant,.hospital').hide();
+			$('.more_hotel').show();
+		});
+
+
+		$('#restaurant_cntl_btn').click(function(){
+			$('.house,.education,.hotel,.hospital').hide();
+			$('.more_restaurant').show();
+		});
+		$('#hospital_cntl_btn').click(function(){
+			$('.house,.education,.hotel, .restaurant').hide();
+			$('.more_hospital').show();
+		});
+		// SINGLE DIVISION PAGE JS END
 	// INNERBG Animation START
 	var multi_shap = "";
 	for (var i = 1; i <= 50; i++) {
@@ -532,5 +557,6 @@ $('.subcat_iso_area').isotope({
 		scroll: true
 		
 		});
+
 
 })(jQuery);
