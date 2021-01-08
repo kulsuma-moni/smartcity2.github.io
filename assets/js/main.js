@@ -406,6 +406,9 @@
 	$('.hotel_sub_cntrol').click(function(){
 		$('.sub_cat_htel').toggle();
 	});
+	$('.hotel_sub_cntrol_11').click(function(){
+		$('.sub_cat_htel_11').toggle();
+	});
 	$('.edu_sub_cntrol_1').click(function(){
 		$('.sub_cat_htel_1').toggle();
 	});
