@@ -427,7 +427,8 @@
 		percentPosition: true,
 		masonry: {
 		  // use outer width of grid-sizer for columnWidth
-		  columnWidth: 1
+		  columnWidth: 1,
+		  columnHeight:1665
 		}
 	  });
 	  // filter items on button click
@@ -443,27 +444,25 @@
 // SMART HOUSE LISTING PAGE ISOTOP FILTER END
 
 		// SINGLE DIVISION PAGE JS START
-		$('#house_cntl_btn').click(function(){
-			$('.education,.hotel, .restaurant,.hospital').hide();
-			$('.more_house').show();
+		$(".house_cntl_btn").click(function(e) {
+			e.preventDefault();
+			$('.division_service_list').toggleClass("house_show");
 		});
-		$('#education_cntl_btn').click(function(){
-			$('.house,.hotel, .restaurant,.hospital').hide();
-			$('.more_institution').show();
+		$(".education_cntl_btn").click(function(e) {
+			e.preventDefault();
+			$('.division_service_list').toggleClass("institution_show");
 		});
-		$('#hotel_cntl_btn').click(function(){
-			$('house,.education,.restaurant,.hospital').hide();
-			$('.more_hotel').show();
+		$(".hotel_cntl_btn").click(function(e) {
+			e.preventDefault();
+			$('.division_service_list').toggleClass("hotel_show");
 		});
-
-
-		$('#restaurant_cntl_btn').click(function(){
-			$('.house,.education,.hotel,.hospital').hide();
-			$('.more_restaurant').show();
+		$(".restaurant_cntl_btn").click(function(e) {
+			e.preventDefault();
+			$('.division_service_list').toggleClass("restaurant_show");
 		});
-		$('#hospital_cntl_btn').click(function(){
-			$('.house,.education,.hotel, .restaurant').hide();
-			$('.more_hospital').show();
+		$(".hospital_cntl_btn").click(function(e) {
+			e.preventDefault();
+			$('.division_service_list').toggleClass("hospital_show");
 		});
 		// SINGLE DIVISION PAGE JS END
 	// INNERBG Animation START
