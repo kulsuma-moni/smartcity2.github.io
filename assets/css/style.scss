@@ -12807,7 +12807,10 @@ z-index: 0;
   .more_house{
      visibility: hidden;
      position: absolute;
-     width: 100%;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
   }
 
   }
@@ -12990,7 +12993,10 @@ z-index: 0;
     .more_institution{
       visibility: hidden;
       position: absolute;
-      width: 100%;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
     }
   }
   .hotel{
@@ -13170,7 +13176,10 @@ z-index: 0;
 		.more_hotel{
       visibility: hidden;
       position: absolute;
-      width: 100%;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
 		}
   }
 	.restaurant{
@@ -13350,14 +13359,20 @@ z-index: 0;
 		.more_restaurant{
       visibility: hidden;
       position: absolute;
-      width: 100%;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
 		}
 	}
 	.hospital{
 		.more_hospital{
       visibility: hidden;
       position: absolute;
-      width: 100%;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
 		}
 		.hospital_ctn{
 			.listing_item{
@@ -13605,3 +13620,121 @@ z-index: 0;
 
 }
 // SINGLE DIVISION PAGE CSS END
+// ADMINASTRATION GEOGRAPHY AREA CSS START
+.adminastration_area{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+  .adminastration_tree_area{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    .tree ul {
+      padding-top: 20px;
+      position: relative;
+      transition: all 2s;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+}
+    
+    .tree li {
+      float: left;
+      text-align: center;
+      list-style-type: none;
+      position: relative;
+      padding: 20px 5px 0 5px;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+}
+    
+    /*We will use ::before and ::after to draw the connectors*/
+    
+    .tree li::before, .tree li::after{
+      content: '';
+      position: absolute; top: 0; right: 50%;
+      border-top: 1px solid #ccc;
+      width: 50%; height: 20px;
+    }
+    .tree li::after{
+      right: auto; left: 50%;
+      border-left: 1px solid #ccc;
+    }
+    
+    /*We need to remove left-right connectors from elements without 
+    any siblings*/
+    .tree li:only-child::after, .tree li:only-child::before {
+      display: none;
+    }
+    
+    /*Remove space from the top of single children*/
+    .tree li:only-child{ padding-top: 0;}
+    
+    /*Remove left connector from first child and 
+    right connector from last child*/
+    .tree li:first-child::before, .tree li:last-child::after{
+      border: 0 none;
+    }
+    /*Adding back the vertical connector to the last nodes*/
+    .tree li:last-child::before{
+      border-right: 1px solid #ccc;
+      border-radius: 0 5px 0 0;
+      -webkit-border-radius: 0 5px 0 0;
+      -moz-border-radius: 0 5px 0 0;
+    }
+    .tree li:first-child::after{
+      border-radius: 5px 0 0 0;
+      -webkit-border-radius: 5px 0 0 0;
+      -moz-border-radius: 5px 0 0 0;
+    }
+    
+    /*Time to add downward connectors from parents*/
+    .tree ul ul::before{
+      content: '';
+      position: absolute; top: 0; left: 50%;
+      border-left: 1px solid #ccc;
+      width: 0; height: 20px;
+    }
+    
+    .tree li a{
+      text-transform: capitalize;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: $text_color;
+      font-size: 1em;
+      display: inline-block;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+}
+    
+    /*Time for some hover effects*/
+    /*We will apply the hover effect the the lineage of the element also*/
+    .tree li a:hover, .tree li a:hover+ul li a {
+      background: #d1c4e9; color: #000; border: 1px solid #d1c4e9;
+    }
+    /*Connector styles on hover*/
+    .tree li a:hover+ul li::after, 
+    .tree li a:hover+ul li::before, 
+    .tree li a:hover+ul::before, 
+    .tree li a:hover+ul ul::before{
+      border-color:  #94a0b4;
+    }
+  }
+}
+
+// ADMINASTRATION GEOGRAPHY AREA CSS END
