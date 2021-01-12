@@ -1,3 +1,4 @@
+
 (function($){
 	"use strict";
 	
@@ -11,7 +12,6 @@
         jQuery('.top_mid_menu').meanmenu();
 	});
 	// END MEANMENU JS CODE
-	
 	// START MENU JS CODE
 	// $(window).on('scroll', function() {
 	// 	if ($(this).scrollTop() > 100) {
@@ -164,7 +164,7 @@
 			{
 			breakpoint: 1024,
 			settings: {
-				slidesToShow: 4,
+				slidesToShow: 3,
 				slidesToScroll: 2,
 				infinite: true,
 				dots: false,
@@ -173,7 +173,7 @@
 			{
 			breakpoint: 600,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 2,
 				slidesToScroll: 1
 			}
 			},
@@ -562,3 +562,6 @@ $('.subcat_iso_area').isotope({
 
 
 })(jQuery);
+
+
+// Custom map

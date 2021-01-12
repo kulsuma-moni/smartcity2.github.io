@@ -1165,7 +1165,7 @@ header.sm_header_area{
     position: relative;
     // top: 94px;
     top: 0;
-    text-align: center;
+    // text-align: center;
     height: 400px;
     width: 100%;
     // margin: 0 0 94px 0;
@@ -1208,6 +1208,98 @@ header.sm_header_area{
                 }
             }
         }
+    }
+    .house_banner_content{
+      position: absolute;
+      z-index: 1;
+      top: 60%;
+      width: 82%;
+      .houser_inner_left{
+        .pro_info{
+          .titel{
+            h1{
+              color: $color2;
+              text-transform: capitalize;
+              font-size: 28px;
+              line-height: 1.4;
+              font-weight: 600;
+              letter-spacing: 1.3px;
+              margin-bottom: 0;
+            }
+            p{
+              margin-bottom: 0px;
+              color: $color2;
+              line-height: 1.6;
+              text-transform: capitalize;
+              font-weight: 400;
+              letter-spacing: 1.3px;
+              font-size: 14px;
+            }
+            .price{
+              span{
+                font-size: 30px;
+                font-weight: 600;
+                font-style: italic;
+              }
+            }
+            .contact{
+              span{
+                letter-spacing: 0px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+      .house_inner_right{
+		  margin-top:50px ;
+		  text-align: right;
+        .reference{
+          p{
+			color: $color2;
+			font-size: 14px;
+			line-height: 1.6;
+			text-transform: capitalize;
+			font-weight: 400;
+          }
+        }
+        ul{
+          li{
+			  margin-right: 10px;
+			  &:last-child{
+				  margin-right: 0;
+			  }
+            a.btn{
+				font-size: 16px;
+				color: $color2;
+				line-height: 1.5;
+				font-weight: 600;
+				background-color:transparent;
+				border: 1px solid $color2;
+				border-radius: 6px;
+				padding: 8px 26px;
+				-webkit-border-radius: 6px;
+				-moz-border-radius: 6px;
+				-ms-border-radius: 6px;
+				-o-border-radius: 6px;
+				box-shadow: inset 0 0 0 0 $color2;
+				transition: ease-out 0.6s;
+				-webkit-transition: ease-out 0.6s;
+				-moz-transition: ease-out 0.6s;
+				-ms-transition: ease-out 0.6s;
+				i{
+					font-size: 16px;
+					padding-right: 7px;
+				}
+				&:hover{
+					box-shadow: inset 400px 0 0 0 $color2;
+					border: 1px solid transparent;
+					color: $basic_color_3;
+				}
+            }
+          }
+        }
+      }
     }
   }
 //   .banner_content .inner_titel{
@@ -13619,7 +13711,6 @@ z-index: 0;
   }
 
 }
-// SINGLE DIVISION PAGE CSS END
 // ADMINASTRATION GEOGRAPHY AREA CSS START
 .adminastration_area{
 	background-position: center;
@@ -13738,3 +13829,300 @@ z-index: 0;
 }
 
 // ADMINASTRATION GEOGRAPHY AREA CSS END
+// SINGLE DIVISION PAGE CSS END
+// SINGLE HOUSE RENT DETAILS PAGE CSS START
+.property_description_area{
+	.property_description_left{
+		.titel_1{
+			h2{
+				color: $text_color;
+				text-transform: capitalize;
+				font-size: 28px;
+				line-height: 1.4;
+				font-weight: 600;
+				letter-spacing: 1.3px;
+				margin-bottom: 15px;
+			}
+		}
+		.titel{
+			h2{
+				color: $text_color;
+				text-transform: capitalize;
+				font-size: 28px;
+				line-height: 1.4;
+				font-weight: 600;
+				letter-spacing: 1.3px;
+				margin-bottom: 20px;
+			}
+		}
+		.property_description{
+			margin-bottom: 30px;
+			p{
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 1.7;
+				color: $text_color;
+			}
+
+		}
+		.product_diplay{
+			.main_img{
+				text-align: center;
+			}
+			ul{
+				margin-top: 30px;
+				li{
+					width: 100px;
+					display: inline-block;
+					a{
+						border: 2px solid transparent;
+						&:active img,
+						&.active img{
+							border: 2px solid $basic_color_3;
+						}
+					}
+				}
+			}
+		}
+	}
+	.property_detail_info{
+		.location_map{
+			margin-bottom: 30px;
+			#map-container-2{
+				// height: 200px !important;
+				width: 100%;
+				border-radius: 6px;
+				-webkit-border-radius: 6px;
+				-moz-border-radius: 6px;
+				-ms-border-radius: 6px;
+				-o-border-radius: 6px;
+			}
+		}
+		.titel_2{
+			h2{
+				color: $text_color;
+				text-transform: capitalize;
+				font-size: 28px;
+				line-height: 1.4;
+				font-weight: 600;
+				letter-spacing: 1.3px;
+				margin-bottom: 20px;
+			}
+		}
+		.details{
+			.table-responsive{
+				.table{
+					tbody{
+						tr{
+							td{
+								font-weight: 500;
+								font-size: 14px;
+								line-height: 1.4;
+								color: $text_color;
+								border-top: 1px dashed $color1;
+								text-transform: capitalize;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.related_listing_area{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	.related_pro_slider{
+		position: relative;
+		.listing_item{
+			margin:0 9px 30px 9px;
+			background-color: $color2;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			.listing_img{
+				position: relative;
+				margin-bottom: 10px;
+				overflow: hidden;
+					img{
+					border-radius: 6px;
+					-webkit-border-radius: 6px;
+					-moz-border-radius: 6px;
+					-ms-border-radius: 6px;
+					-o-border-radius: 6px;
+					transition: .5s;
+					-webkit-transition: .5s;
+					-moz-transition: .5s;
+					-ms-transition: .5s;
+					-o-transition: .5s;
+					width: 100%;
+					height: 184px;
+				}
+				.grid-item__hover {
+				  visibility: hidden;
+				  display: block;
+				  position: absolute;
+				  top: 0;
+				  left: 0;
+				  right: 0;
+				  bottom: 0;
+				  background:radial-gradient(rgba(57, 64, 77, 0.2), rgba(62, 4, 120, 0.5));
+				  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.15);
+				  border-radius: 0;
+				  transition: visibility 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+				  opacity: 0;
+				}
+				.img_btn{
+					.bage_btn{
+						position: absolute;
+						top: 2%;
+						left: 2%;
+						background-color: $basic_color_3;
+						text-transform: capitalize;
+						padding: 6px 8px;
+						line-height: 1;
+						color: $color2;
+						font-size: 14px;
+						font-weight: 600;
+						
+					}
+					.view_icon{
+						position: absolute;
+						top: 2%;
+						right: 5%;
+						color: $color2;
+						font-size: 14px;
+						display: none;
+							i{
+								margin-right: 4px;
+							}
+						}
+				}
+				.img_bttom{
+					.price{
+						position: absolute;
+						bottom: 3%;
+						left: 2%;
+						text-transform: capitalize;
+						padding: 6px 8px;
+						line-height: 1;
+						color: $color2;
+						font-size: 26px;
+						font-weight: 600;
+					}
+					.icon{
+						position: absolute;
+						bottom: 2%;
+						right: 8%;
+					   display: none;
+						span{
+							font-size: 14px;
+							line-height: 1;
+							color: $color2;
+							line-height: 1;
+							font-size: 20px;
+							i{
+								margin-right: 2px;
+
+							}
+						}
+					}
+				}
+			}
+			.listing_txt{
+				padding: 0 10px 20px 10px;
+				h6{
+					font-weight: 600;
+					font-size: 18px;
+					color: $text_color;
+					line-height: 1.5;
+					margin-bottom: 7px;
+					text-transform: capitalize;
+				}
+				p{
+					font-weight: 400;
+					font-size: 14px;
+					color: $text_color;
+					line-height: 1.5;
+					margin-bottom: 10px;
+				}
+				ul{
+					li{
+						font-size: 14px;
+						color: $basic_color_2;
+						line-height: 1.5;
+						font-weight: 600;
+						margin-right:4px ;
+						i{
+							margin-right: 2px;
+							font-size: 16px;
+						}
+						&:hover{
+							color: $basic_color_3;
+							transform: translateY(-4px);
+							-webkit-transform: translateY(-4px);
+							-moz-transform: translateY(-4px);
+							-ms-transform: translateY(-4px);
+							-o-transform: translateY(-4px);
+							transition: .4s;
+							-webkit-transition: .4s;
+							-moz-transition: .4s;
+							-ms-transition: .4s;
+							-o-transition: .4s;
+						}
+
+					}
+				}
+			}
+			&:hover{
+				box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+			}  
+			&:hover .img_btn .view_icon{
+				display: block;
+			}
+			&:hover .img_bttom .icon{
+				display: block;
+			}
+			&:hover .listing_img {
+				border-radius:5px;
+				-webkit-border-radius:5px;
+				-moz-border-radius:5px;
+				-ms-border-radius:5px;
+				-o-border-radius:5px;
+				img{
+					transform: scale(1.2);
+					-webkit-transform: scale(1.2);
+					-moz-transform: scale(1.2);
+					-ms-transform: scale(1.2);
+					-o-transform: scale(1.2);
+				   
+				} 
+				.grid-item__hover{
+				  visibility: visible;
+				  opacity: 1;
+				}
+			} 
+		}
+		.slick-prev.slick-arrow i{
+            font-size: 40px;
+            color: $basic_color_3;
+            position: absolute;
+            top: -100px;
+            left: -44px;
+        }
+
+        .slick-next.slick-arrow i{
+            font-size: 40px;
+            color: $basic_color_3;
+            position: absolute;
+            top: -100px;
+            right: -44px;
+        }
+	}
+}
+// SINGLE HOUSE RENT DETAILS PAGE CSS END
+

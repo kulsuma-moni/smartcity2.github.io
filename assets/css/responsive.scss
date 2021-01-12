@@ -338,6 +338,33 @@ $inputColor: #bbbbbb;
         width: 100%;
         margin: 0;
     }
+    .inner_banner_area .house_banner_content .houser_inner_left .pro_info .titel h1 {
+        font-size: 22px;
+    }
+    .inner_banner_area .house_banner_content .houser_inner_left .pro_info .titel .price span {
+        font-size: 24px;
+    }
+    .inner_banner_area .house_banner_content {
+        top: 31%;
+    }
+    .inner_banner_area .house_banner_content .house_inner_right {
+        margin-top: 0px;
+        text-align: left;
+    }
+    .inner_banner_area .house_banner_content .house_inner_right ul li a.btn {
+        font-size: 14px;
+        padding: 4px 18px;
+    }
+    .slick-prev {
+        left: 27px;
+    }
+    .related_listing_area .related_pro_slider .slick-prev.slick-arrow i {
+        font-size: 28px;
+    }
+    .related_listing_area .related_pro_slider .slick-next.slick-arrow i {
+        font-size: 28px;
+        right: 2px;
+    }
 }
 @media (min-width: 576px) and(max-width:767px){
    .menu-shrink{
@@ -666,6 +693,29 @@ header.header_area{
     width: 100%;
     margin: 0;
 }
+.related_listing_area .related_pro_slider .listing_item .listing_txt ul li i {
+    margin-right: 0px;
+    font-size: 14px;
+}
+.related_listing_area .related_pro_slider .listing_item .listing_txt ul li {
+	font-size: 13px;
+}
+.slick-prev {
+    left: 14px;
+}
+.slick-next {
+    right: 14px;
+}
+.inner_banner_area .house_banner_content {
+    top: 52%;
+    width: 88%;
+}
+.inner_banner_area .house_banner_content .house_inner_right ul li a.btn span{
+    display: none;
+}
+.inner_banner_area .house_banner_content .house_inner_right {
+    margin-top: -83px;
+}
 }
 
 
@@ -963,6 +1013,26 @@ header.header_area{
  .adli_mb_20{
      margin-bottom: 20px;
  }
+ .inner_banner_area .house_banner_content {
+    top: 50%;
+    width: 87%;
+}
+.inner_banner_area .house_banner_content .house_inner_right ul li a.btn span{
+    display: none;
+}
+.inner_banner_area .house_banner_content .house_inner_right {
+    margin-top: 26px;
+}
+.inner_banner_area .house_banner_content .house_inner_right ul li a.btn i {
+    padding-right: 0px;
+}
+.slick-next {
+    right: 12px;
+}
+.slick-prev {
+    left: 12px;
+}
+
 }
 @media (min-width: 992px) and (max-width: 1199px){
     .menu-shrink{
@@ -1237,6 +1307,20 @@ header.header_area{
     .add_listing_area .submit_listing .submit_ctn .card .card-body .business_hour_input .all_time span {
         font-size: 13px;
         line-height: 2.7;
+    }
+
+    .slick-next {
+        right: 18px;
+    }
+    .slick-prev {
+        left: 15px;
+    }
+    .inner_banner_area .house_banner_content .house_inner_right ul li a.btn {
+
+        padding: 8px 21px;
+    }
+    .inner_banner_area .house_banner_content {
+        width: 94%;
     }
 }
 
