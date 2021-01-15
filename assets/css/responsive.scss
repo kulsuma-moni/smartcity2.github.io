@@ -365,6 +365,12 @@ $inputColor: #bbbbbb;
         font-size: 28px;
         right: 2px;
     }
+    .inner_banner_area .hotel_banner_content .houser_inner_left .pro_info .titel h1 {
+        font-size: 18px;
+    }
+    .inner_banner_area .house_banner_content .house_inner_right .reference p {
+        margin-bottom: 8px;
+    }
 }
 @media (min-width: 576px) and(max-width:767px){
    .menu-shrink{
@@ -715,6 +721,13 @@ header.header_area{
 }
 .inner_banner_area .house_banner_content .house_inner_right {
     margin-top: -83px;
+}
+.inner_banner_area .hotel_banner_content .houser_inner_left .pro_info .titel h1 {
+    font-size: 20px;
+}
+.inner_banner_area .hotel_banner_content {
+    top: 60%;
+    width: 88%;
 }
 }
 
