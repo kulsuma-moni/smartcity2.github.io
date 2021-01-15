@@ -3,9 +3,9 @@
 	"use strict";
 	
     	 // PRELOADER JS CODE
-	 jQuery(window).on('load',function(){
-		jQuery(".loader_box").fadeOut(500);
-		});
+	//  jQuery(window).on('load',function(){
+	// 	jQuery(".loader_box").fadeOut(500);
+	// 	});
 	// END PRELOADER JS CODE
 	// START MEANMENU JS CODE
     jQuery(document).ready(function () {
