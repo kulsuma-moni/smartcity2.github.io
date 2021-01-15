@@ -95,6 +95,7 @@
 								<h1>House for sell</h1>
 								<p class="price">price:<span> Tk 5,15,000/-</span></p>
 								<p class="contact">contact no : <span>013122xxxxx</span></p>
+								<p class="category"><a href="smart_house.html">Category :<i class="fas fa-home"></i><span> Smart houses</span></a></p>
 								<p class="date">posted on 12 january 21</p>
 							</div>
 						</div>
@@ -170,47 +171,56 @@
 			<div class="col-xl-4 col-lg-5 col-md-4 col-sm-12 col-12">
 				<div class="property_detail_info">
                    <div class="location_map">
+					<h4><i class="far fa-hand-point-right"></i> Get Directions</h4>
 						<!--Google map-->
 						<div id="map-container-2" class="z-depth-1" style="height: 300px"></div>
 				   </div>
-					<div class="titel_2">
-						<h2>Property information</h2>
-					</div>
 					<div class="details">
-						<div class="table-responsive">
-							<table class="table">
-								<tbody>
-									<tr>
-										<td>Owner</td>
-										<td>Touhid zaman</td>
-									</tr>
-									<tr>
-										<td>type</td>
-										<td>apartment</td>
-									</tr>
-									<tr>
-										<td>address</td>
-										<td>65,bonosri, Mirapara,Sylhet</td>
-									</tr>
-									<tr>
-										<td>floor</td>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>beds</td>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>baths</td>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>Floor type</td>
-										<td>Carpeted</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+							<h4>Property information</h4>
+						<ul>
+							<li>
+								<span>Owner</span>
+								<div class="details_right">
+									<span>Touhid zaman</span>
+								</div>
+							</li>
+							<li>
+								<span>type</span>
+								<div class="details_right">
+									<span>apartment</span>
+								</div>
+							</li>
+							<li>
+								<span>address</span>
+								<div class="details_right">
+									<span>65,bonosri, Mirapara,Sylhet</span>
+								</div>
+							</li>
+							<li>
+								<span>floor</span>
+								<div class="details_right">
+									<span>4</span>
+								</div>
+							</li>
+							<li>
+								<span>beds</span>
+								<div class="details_right">
+									<span>4</span>
+								</div>
+							</li>
+							<li>
+								<span>baths</span>
+								<div class="details_right">
+									<span>4</span>
+								</div>
+							</li>
+							<li>
+								<span>Floor type</span>
+								<div class="details_right">
+									<span>Carpeted</span>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -649,7 +659,8 @@
             $("#zoom_03").ezPlus({
                 gallery: 'gallery_demo',
                 cursor: 'pointer',
-                galleryActiveClass: "active",
+				galleryActiveClass: "active",
+				lensSize:550,
                 // imageCrossfade: true,
                 // loadingIcon: "images/spinner.gif"
                 zoomType: 'inner',
