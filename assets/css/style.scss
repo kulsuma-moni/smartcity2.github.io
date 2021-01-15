@@ -13918,7 +13918,7 @@ z-index: 0;
 							
 							i{
 								padding-right: 10px;
-								color: $basic_color;
+								color: #5c2f8d;
 								font-weight: 900;
 							}
 						}
@@ -14088,9 +14088,10 @@ z-index: 0;
 						border-top: none;
 						display: flex;
 						i{
-							padding-right:4px;
-							font-size: 12px;
-
+							padding-right: 10px;
+							font-size: 9px;
+							padding-top: 7px;
+							color: #5c2f8d;
 						}
 						// flex-direction: row;
 						// &::before{
