@@ -1165,14 +1165,14 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    top: 4%;
+    top: 5%;
     right: 2%;
   }
   .sm_header_area .logo {
     text-align: left;
   }
   header.sm_header_area {
-    top: -1%;
+    top: 0;
   }
   .top_bar_right {
     position: absolute;
@@ -1386,18 +1386,18 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    top: 9%;
+    top: 13%;
     right: 2%;
   }
   .sm_header_area .logo {
     text-align: left;
   }
   header.sm_header_area {
-    top: -1%;
+    top: 0;
   }
   .top_bar_right {
     position: absolute;
-    right: -76%;
+    right: -60%;
     top: -55px;
   }
   .mean-container .mean-nav {
@@ -1411,6 +1411,8 @@
     border: 1px solid #06acde;
     background: #06acde;
     color: #fff;
+    position: absolute;
+    right: 10% !important;
   }
   .mean-container a.meanmenu-reveal span {
     background: #fff none repeat scroll 0 0;
@@ -1641,24 +1643,26 @@
     position: absolute;
     width: 100%;
     z-index: 99;
-    top: 9%;
+    top: 8%;
     right: 2%;
   }
   .sm_header_area .logo {
     text-align: left;
   }
   header.sm_header_area {
-    top: -2%;
+    top: 0;
   }
   .top_bar_right {
     position: absolute;
-    right: -56%;
+    right: -48%;
     top: -58px;
   }
   .mean-container a.meanmenu-reveal {
     border: 1px solid #06acde;
     background: #06acde;
     color: #fff;
+    position: absolute;
+    right: 2% !important;
   }
   .mean-container a.meanmenu-reveal span {
     background: #fff none repeat scroll 0 0;

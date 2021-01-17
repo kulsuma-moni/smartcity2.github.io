@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/image/favicon.ico">
+    <title>smart city</title>
+    <!--=== ALL CSS Here ===-->
+    <!--=== Bootstrap ===-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+    <!--=== Fontawesome icon ===-->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!--=== slick slider ===-->
+	<link rel="stylesheet" href="assets/css/plugin/slick.css">
+	<link rel="stylesheet" href="assets/css/plugin/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/plugin/meanmenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="assets/css/plugin/t-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/plugin/t-datepicker-main.css">
+	<!--=== OWL CAROUSEL ===-->
+	<link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/plugin/owl.theme.default.min.css">
+    <!--=== wow animation ===-->
+    <link rel="stylesheet" href="assets//css/plugin/animate.css">
+    <!--=== Custom CSS ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	<!-- LOADER AREA START -->
+	<!-- <div class="loader_box">
+		<div class='box1'></div>
+		<div class='container'>
+			<div class='box2'></div>
+			<div class='box3'></div>
+			<div class='box4'></div>
+			<div class='box5'></div>
+		</div>
+	</div> -->
+	<!-- LOADER AREA END -->
+
+	<!-- HEADER AREA START-->
+	<header class="sm_header_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+					<div class="logo">
+						<a href="index.html"><img src="assets/image/logo-1.png" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col_xl_6 col-lg-6 col-md-6 col-sm-12 col-12">
+					<div class="top_mid_menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Category <i class="fas fa-angle-down"></i></a>
+								<ul class="sub_menu">
+									<li class="item_1"><a href="smart_house.html">Smart house</a></li>
+									<li class="item_2"><a href="hotel.html">Hotel</a></li>
+									<li class="item_3"><a href="education.html">Education</a></li>
+									<li class="item_4"><a href="int_shopping.html">Shopping</a></li>
+									<li class="item_5"><a href="hospital.html">Hospital</a></li>
+									<li class="item_6"><a href="restaurant.html">Restaurant</a></li>
+								</ul>
+							</li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col_xl_3 col-lg-3 col-md-6 col-sm-6 col-6">
+					<div class="top_bar_right">
+						<ul>
+							<li><a href="seller_signin.html" class="log_btn"><i class="far fa-user"></i></a></li>
+							<li><a href="add_listing.html" class="top_btn"><i class="fas fa-plus"></i> Add listing</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- HEADER AREA END-->
+<!--===  Inner Banner Area Start ===-->
+<section class="inner_banner_area section_padding" data-background="assets/image/smart_city_object/house/house_details_inner_bg.jpg">
+    <div class="container">
+        <div class="house_banner_content hotel_banner_content">
+            <div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
+					<div class="houser_inner_left">
+						<div class="pro_info">
+							<div class="titel">
+                                <h1>Hotel Valley Garden, Sylhet</h1>
+                                <p>3.5-star resort in Sylhet with restaurant and 24-hour health club </p>
+                                <p class="category"><a href="hotel.html">Category :<i class="fas fa-home"></i><span> Hotel</span></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 cl-sm-5 col-12">
+					<div class="house_inner_right">
+						<div class="reference">
+							<p>Reference no. : Sm- ID4924446</p>
+						</div>
+						<ul>
+							<li><a href="#" class="btn"><i class="far fa-heart"></i> <span>save</span></a></li>
+							<li><a href="#" class="btn"><i class="far fa-share-square"></i> <span>share</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section>
+<!--===  Inner Banner Area End ===-->
+<!-- BOOKING PROCESS AREA START -->
+<div class="booking_process_area sm_section_padding_3">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-7 col-md-8 col-sm-12 col-12">
+                <div class="step-1" id="checkout-progress" data-current-step="1">
+                    <div class="progress-bar text-center">
+                        <ul>
+                            <li>
+                                <div class="step step-1 active"><span> 1</span>
+                                    <div class="fa fa-check opaque"></div>
+                                    <div class="step-label">Customer information</div>
+                                </div>
+                            </li>
+                            <li>                              
+                                <div class="step step-2"><span> 2</span>
+                                    <div class="fa fa-check opaque"></div>
+                                    <div class="step-label">Payment information</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step step-3"><span> 3</span>
+                                    <div class="fa fa-check opaque"></div>
+                                    <div class="step-label">Booking information</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<div id="boking_step_1">
+					<div class="process__stepint">
+						<p><i class="far fa-user"></i> <a href="#">Sign in</a> to book with your saved details to manage your bookings on the go!</p>
+					</div>
+					<div class="process__step_titel">
+						<h5>Enter your details</h5>
+					</div>
+					<div class="process_start">
+						<div class="row">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label>First name<span>*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label>Last name<span>*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label>Email address <span>*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label>Confirm Email address <span>*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+								<div class="form-group">
+									<label>Phone number<span>*</span></label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+								<label>Country<span>*</span></label>
+								<select class="form-control">
+									<option value="bangladesh">Bangladesh</option>
+									<option value="bangladesh">India</option>
+									<option value="bangladesh">Pakistan</option>
+									<option value="bangladesh">England</option>
+									<option value="bangladesh">Africa</option>
+									<option value="bangladesh">Canada</option>
+									<option value="bangladesh">German</option>
+								</select>
+							</div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<label class="condition">
+									<input type="checkbox" id="condition"><span> Please mark if you are booking for someone else.</span>
+								</label>
+							</div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div id="guest_information">
+									<h3>Guest information</h3>
+									<div class="row">
+										<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+											<div class="form-group">
+												<label>full name<span>*</span></label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+											<div class="form-group">
+												<label>Email address <span>*</span></label>
+												<input type="email" class="form-control">
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+											<label>Country <span>*</span></label>
+											<select class="form-control">
+												<option value="bangladesh">Bangladesh</option>
+												<option value="bangladesh">India</option>
+												<option value="bangladesh">Pakistan</option>
+												<option value="bangladesh">England</option>
+												<option value="bangladesh">Africa</option>
+												<option value="bangladesh">Canada</option>
+												<option value="bangladesh">German</option>
+											</select>	
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div id="sp_request">
+								<h3>Special request</h3>
+									<p>Please write your requests in English - we will share it with the property.</p>
+									<p>Special requests cannot be guaranteed–but the accommodation will do its best to meet your needs.</p>
+									<p>You can always make a special request after your booking is complete!
+									</p>
+									<textarea class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div id="arrival_info">
+									<h3>Let the property know your planned arrival time (optional)</h3>
+									<p>You may hear a response from the property regarding your arrival time.</p>
+									<select class="form-control">
+										<option value="I don't know.">I don't know.</option>
+										<option value="2.00 - 3.00">2.00 - 3.00"</option>
+										<option value="3.00 - 4.00">3.00 - 4.00</option>
+										<option value="4.00 - 5.00">4.00 - 5.00</option>
+										<option value="5.00 - 6.00">5.00 - 6.00</option>
+										<option value="6.00 - 7.00">6.00 - 7.00</option>
+										<option value="7.00 - 8.00">7.00 - 8.00</option>
+										<option value="8.00 - 9.00">8.00 - 9.00</option>
+										<option value="9.00 - 10.00">9.00 - 10.00</option>
+										<option value="10.00 - 11.00">10.00 - 11.00</option>
+										<option value="11.00 - 12.00">11.00 - 12.00</option>
+										<option value="12.00 - 13.00">12.00 - 13.00</option>
+										<option value="14.00 - 15.00">14.00 - 15.00</option>
+										<option value="15.00 - 16.00">15.00 - 16.00</option>
+										<option value="17.00 - 18.00">17.00 - 18.00</option>
+										<option value="18.00 - 19.00">18.00 - 19.00</option>
+										<option value="19.00 - 20.00">19.00 - 20.00</option>
+										<option value="21.00 - 22.00">21.00 - 22.00</option>
+										<option value="22.00 - 23.00">22.00 - 23.00</option>
+										<option value="23.00 - 24.00">23.00 - 24.00</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<label class="condition_agree">
+									<input type="checkbox"><span> By proceeding with this booking, I agree to Agoda’s <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</span>
+								</label>
+							</div>
+						</div>
+						<div class="button-container first_btn">
+							<div class="btn btn-next go_next_1"> next</div>
+						</div>
+					</div>
+				</div>
+				<div id="boking_step_2">
+					<div class="payment_confirmation">
+						<div class="ann">
+							<p><i class="fas fa-lock"></i> All card information is fully encrypted, secure and protected.</p>
+						</div>
+						<div class="payment">
+							<div class="row">
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+									<div class="card_header">
+										<div class="row">
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+												<div class="titel">
+													<p>CREDIT/DEBIT CARD</p>
+												</div>
+											</div>
+											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+												<div class="payment_methods">
+													<img src="assets/image/smart_city_object/hotel/card.png" alt="card">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+									<div class="form-group">
+										<label>Card holder name<span>*</span></label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-group lock_pw">
+										<label>CREDIT/DEBIT card number<span>*</span></label>
+										<input type="email" class="form-control">
+										<a href="#" class="btn lock_icon"><i class="fas fa-lock"></i></a>
+									</div>
+									<div class="row">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+											<div class="form-group">
+												<label>Expiry date<span>*</span></label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+											<div class="form-group">
+												<label>CVC/CVV<span>*</span></label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+									<div class="card_vie">
+										<img src="assets/image/smart_city_object/hotel/visa-classic-350.png" alt="card">
+									</div>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+									<label class="condition_agree">
+										<input type="checkbox"><span> Email me exclusive <a href="index.html">Smart city</a> promotions. I can opt out later as stated in the Privacy Policy.</span>
+									</label>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+									<label class="condition_agree con_agre">
+										<input type="checkbox"><span> By proceeding with this booking, I agree to Agoda’s <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</span>
+									</label>
+								</div>
+							</div>
+							<p class="con_mail">We'll send confirmation of your booking to example12@yahoo.com</p>
+							<div class="button-container">
+								<div class="btn btn-prev disabled go_back_2"> Back</div>
+								<div class="btn btn-next go_next_2"> next</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="boking_step_3">
+					<div class="booking_final">
+						<h3>booking confirmation</h3>
+						<div class="form-group">
+							<label>Please enter your confirmation code send in your email<span>*</span></label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="button-container">
+							<div class="btn btn-prev disabled go_back_3"> Back</div>
+							<div class="btn btn-next go_next_3"> submit</div>
+						</div>
+					</div>
+				</div>
+				<div id="boking_step_4">
+					<div class="modalbox success center animate">
+						<div class="icon">
+						  <img src="assets/image/smart_city_object/hotel/checkmark-for-verification.png" alt="icon image">
+						</div>
+						<!--/.icon-->
+						<h5>Booking Confirm successfuly!!</h5>
+						<p>We've sent a confirmation to your e-mail.</p>
+						<a href="index.html" class="btn">ok</a>
+						<span class="change">-- Click to see opposite state --</span>
+					  </div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-5 col-md-4 col-sm-12 col-12">
+				<div class="booking_details_right">
+					<div class="booking_info">
+						<div class="titel">
+							<h4>Your booking details</h4>
+						</div>
+						<div class="info_ctn">
+							<ul>
+								<li>
+									<p>check-in</p>
+									<div class="time_info">
+										<span>wed 24 jan 2021</span>
+										<span>14:00 - 21:00</span>
+									</div>
+								</li>
+								<li class="info_be">
+									<p>check-out</p>
+									<div class="time_info">
+										<span>wed 28 jan 2021</span>
+										<span>10:00 - 20:00</span>
+									</div>
+								</li>
+							</ul>
+							<p>total length of stay:<span> 4 nights</span></p>
+							<p><a href="#">Travelling on different dates?</a></p>
+						</div>
+						<div class="change_selection">
+							<p>You selected:<br><span>Superior Double or Twin Room</span></p>
+							<p><a href="#">Change your selection</a></p>
+						</div>
+						<div class="booking_cost">
+							<ul class="cost_ctn_1">
+								<li>
+									<span>Price</span>
+									<br>
+									 <span class="de_tel">(for 2 nights & all guests)</span>
+								</li>
+								<li>
+									<span>US$200</span>
+								</li>
+							</ul>
+							<p>Additional charges</p>
+							<ul class="cost_ctn_2">
+								<li>
+									<span>tax</span>
+									<span class="text-right">US$10</span>
+								</li>
+								<li>
+									<span>Property service charge</span>
+									<span class="text-right">US$30.60</span>
+								</li>
+							</ul>
+							<p>Your payment schedule</p>
+							<ul class="cost_ctn_2">
+								<li>
+									<span>After 12 January you'll pay</span>
+									<span class="text-right">US$400</span>
+								</li>
+							</ul>
+							<div class="cancel">
+								<p>How much will it cost to cancel?</p>
+								<p>
+									<a href="#">FREE cancellation until 23:59 on 11 jan</a>
+								</p>
+							</div>
+							<p>Your booking includes</p>
+							<ul class="bok_fc">
+								<li>Breakfast</li>
+								<li>Free WiFi</li>
+								<li>Room service</li>
+								<li>Free parking</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- BOOKING PROCESS AREA END-->
+	<!-- FOOTER AREA START -->
+	<section class="sm_footer_area sm_section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 px-3 px-lg-3 px-md-0">
+					<div class="fotter_ctn wow fadeInLeft">
+						<div class="footer_logo">
+							<h4><a href="#"><img src="assets/image/logo-1.png" alt="logo"></a></h4>
+						</div>
+						<div class="footer_links contact_link">
+							<ul>
+								<li><a href="#"><i class="fas fa-headset"></i> (+0214)0 315 215</a></li>
+								<li><a href=""><i class="fas fa-envelope-open-text"></i> help_sylcart@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="footer_links social_media">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="far fa-envelope"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+						<div class="apps_download">
+							<ul>
+								<li><a href="#" class="payment_1"><img src="assets/image/footer/app-store.png" alt="apps"></a></li>
+								<li><a href="#" class="payment_2"><img src="assets/image/footer/play-store-logo.png" alt="apps"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInUp">
+						<div class="footer_titel">
+							<h4>Our services</h4>
+						</div>
+						<div class="footer_links">
+							<ul>
+								<li><a href="#">Smart home</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Hospital</a></li>
+								<li><a href="#">Hotel</a></li>
+								<li><a href="#">shopping</a></li>
+								<li><a href="#">Restaurant</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInUp">
+						<div class="footer_titel">
+							<h4>useful links</h4>
+						</div>
+						<div class="footer_links">
+							<ul>
+								<li><a href="index.html">home</a></li>
+								<li><a href="">blog</a></li>
+								<li><a href="">F.A.Q.</a></li>
+								<li><a href="#">about us</a></li>
+								<li><a href="">contact us</a></li>
+								<li><a href="">castomer care</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="fotter_ctn wow fadeInRight">
+						<div class="footer_titel">
+							<h4>News Feeds</h4>
+						</div>
+						<div class="footer_news">
+							<div class="single-news">
+								<div class="news-img">
+									<a href="#"><img src="assets/image/main_home/br1.jpg" alt=""></a>
+								</div>
+								<div class="news-text">
+									<span class="date"><i class="far fa-calendar-alt"></i>24th November 2020</span>
+									<a href="#">Lorem ipsum dolor sit amet ipsum</a>
+								</div>
+							</div>
+							<div class="single-news">
+								<div class="news-img">
+									<a href="#"><img src="assets/image/main_home/br1.jpg" alt=""></a>
+								</div>
+								<div class="news-text">
+									<span class="date"><i class="far fa-calendar-alt"></i>24th November 2020</span>
+									<a href="#">Lorem ipsum dolor sit amet ipsum</a>
+								</div>
+							</div>
+							<div class="single-news mb-0">
+								<div class="news-img">
+									<a href="#"><img src="assets/image/main_home/br1.jpg" alt=""></a>
+								</div>
+								<div class="news-text">
+									<span class="date"><i class="far fa-calendar-alt"></i>24th November 2020</span>
+									<a href="#">Lorem ipsum dolor sit amet ipsum</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER AREA END -->
+   <!--===  Copyright Area start ===-->
+   <section>
+	<div class="sm_copyright_area">
+		<div class="container">
+			<div class="copyright text-center">
+				<p>&copy; Copyright Reserved. <a href="#"> 2021 Smart City.</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--===  Copyright Area End ===-->
+<!-- Scroll to Top button selector -->
+<a class="to-top"><i class="fas fa-chevron-up"></i></a>
+
+
+
+
+    <!--=== ALL JS Here ===-->
+    <!--=== jQuery 3.4.1 ===-->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<!--=== Bootstrap js ===-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--=== All Plugin Js===-->
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/t-datepicker.min.js"></script>
+	<script src="assets/js/plugin/owl.carousel.min.js"></script>
+	<script src="assets/js/plugin/slick.js"></script>
+	<script src="assets/js/plugin/jquery.carousel.js"></script>
+	<!--GOOGLE MAP-->
+	<script src="https://maps.google.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/plugin/rangerslider.js"></script>
+    <!--=== to top  js===-->
+	<script src="assets/js/plugin/jquery.toTop.min.js"></script>
+	<!-- GALLERY JS START -->
+	<script src="assets/js/plugin/jquery.ez-plus.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+	<!-- GALLERY JS END -->
+      <!--=== smooth scroll js===-->
+      <script src="assets/js/plugin/smoothscroll.js"></script>
+      <script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
+      	  		<!--=== Isotop Filtering JS===-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="assets/js/plugin/ziehharmonika.js"></script>
+
+    <!--=== Custom JS ===-->
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

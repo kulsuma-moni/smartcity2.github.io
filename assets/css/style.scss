@@ -191,7 +191,9 @@ outline:0;
       -webkit-transform: $t;
       -ms-transform: $t;
       transform: $t;
-    }
+      -moz-transform: $t;
+      -o-transform: $t;
+}
 
     @for $i from 2 through 5 {
       @keyframes small-shape#{$i} {
@@ -14567,13 +14569,6 @@ z-index: 0;
 									letter-spacing: 1px;
 								}
 							}
-							.room_details{
-								a{
-									img{
-									
-									}
-								}
-							}
 							.room_benefits{
 								ul{
 									li{
@@ -14605,9 +14600,6 @@ z-index: 0;
 									color: $color1;
 								}
 							}
-							select{
-
-							}
 							.btn{
 								text-transform: capitalize;
 								font-size: 16px;
@@ -14638,3 +14630,1042 @@ z-index: 0;
 	}
 }
 // SINGLE HOTEL DETAILS PAGE CSS END
+// HOTEL BOOKING PROCESS AREA START
+.booking_process_area{
+	#boking_step_2{
+		display: none;
+	}
+	#boking_step_3{
+		display: none;
+	}
+	#boking_step_4{
+		display: none;
+	}
+	#guest_information{
+		display: none;
+	}
+  .hidden {
+    display: none;
+    }
+    
+    .opaque {
+    opacity: 0;
+    transition: 0.3s ease;
+    }
+    
+    .disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    }
+    #checkout-progress {
+    // width: 90%;
+    // margin: 0px auto;
+    font-size: 16px;
+    font-weight: 900;
+    position: relative;
+    }
+    @media (max-width: 767px) {
+    #checkout-progress {
+      font-size: 1.5em;
+    }
+    }
+    #checkout-progress:before {
+    content: "";
+    position: absolute;
+    left: 18%;
+    top: 19%;
+    height: 10px;
+    width: 64%;
+    background-color: #ccc;
+    transform: translateY(-50%) perspective(1000px);
+    -webkit-transform: translateY(-50%) perspective(1000px);
+    -moz-transform: translateY(-50%) perspective(1000px);
+    -ms-transform: translateY(-50%) perspective(1000px);
+    -o-transform: translateY(-50%) perspective(1000px);
+    margin: 0 auto;
+  }
+    #checkout-progress:after {
+    content: "";
+    position: absolute;
+    left: 18%;
+    top: 19%;
+    height: 10px;
+    width: 64%;
+    background-color: $basic_color_3;
+    transform: scaleX(0) translateY(-50%) perspective(1000px);
+    transform-origin: left center;
+    transition: transform 0.5s ease;
+    -webkit-transform: scaleX(0) translateY(-50%) perspective(1000px);
+    -moz-transform: scaleX(0) translateY(-50%) perspective(1000px);
+    -ms-transform: scaleX(0) translateY(-50%) perspective(1000px);
+    -o-transform: scaleX(0) translateY(-50%) perspective(1000px);
+  }
+    #checkout-progress.step-2:after {
+    transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+    -webkit-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+    -moz-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+    -ms-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+    -o-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+  }
+    #checkout-progress.step-3:after {
+    transform: scaleX(1) translateY(-50%) perspective(1000px);
+    -webkit-transform: scaleX(1) translateY(-50%) perspective(1000px);
+    -moz-transform: scaleX(1) translateY(-50%) perspective(1000px);
+    -ms-transform: scaleX(1) translateY(-50%) perspective(1000px);
+    -o-transform: scaleX(1) translateY(-50%) perspective(1000px);
+  }
+  #checkout-progress.step-4:after {
+    transform: scaleX(1.05) translateY(-50%) perspective(1000px);
+    -webkit-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
+    -moz-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
+    -ms-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
+    -o-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
+}
+    #checkout-progress .progress-bar {
+    width: 100%;
+    display: inline-block;
+    background: transparent !important;
+      justify-content: right;
+      color: #fff;
+      text-align: right;
+      background-color: #007bff;
+      transition: width .6s ease;
+    }
+    #checkout-progress .progress-bar .step {
+    z-index: 2;
+    position: relative;
+  
+    }
+    #checkout-progress .progress-bar .step .step-label {
+    transform: translateX(-50%) perspective(1000px);
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ccc;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+    -webkit-transform: translateX(-50%) perspective(1000px);
+    -moz-transform: translateX(-50%) perspective(1000px);
+    -ms-transform: translateX(-50%) perspective(1000px);
+    -o-transform: translateX(-50%) perspective(1000px);
+    text-align: right;
+    margin-left: 113px;
+  }
+    @media (max-width: 767px) {
+    #checkout-progress .progress-bar .step .step-label {
+      top: calc(100% + 15px);
+    }
+    }
+    #checkout-progress .progress-bar .step span {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 10px;
+    transition: 0.3s ease;
+    display: block;
+    margin-bottom: 20px;
+    transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+    -webkit-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+    -moz-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+    -ms-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+    -o-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+  }
+    #checkout-progress .progress-bar .step .fa-check {
+    color: #fff;
+    position: absolute;
+    right:43%;
+    top: 12%;
+    transition: transform 0.3s ease;
+    transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+    -moz-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+    -ms-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+    -o-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+  }
+    #checkout-progress .progress-bar .step.active span, #checkout-progress .progress-bar .step.active .step-label {
+    color: #2C3E50;
+    }
+    #checkout-progress .progress-bar .step.valid .fa-check {
+    transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+    -webkit-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+    -moz-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+    -ms-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+    -o-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+  }
+    #checkout-progress .progress-bar .step.valid span {
+    color: $basic_color_3;
+    transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+    -webkit-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+    -moz-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+    -ms-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+    -o-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+  }
+    #checkout-progress .progress-bar .step.valid .step-label {
+    color: $basic_color_3 !important;
+    }
+    #checkout-progress .progress-bar .step:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right:36%;
+    top: 12%;
+    transform: translate(-50%, -50%) perspective(1000px);
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    transition: 0.3s ease;
+    -webkit-transform: translate(-50%, -50%) perspective(1000px);
+    -moz-transform: translate(-50%, -50%) perspective(1000px);
+    -ms-transform: translate(-50%, -50%) perspective(1000px);
+    -o-transform: translate(-50%, -50%) perspective(1000px);
+  }
+    @media (max-width: 767px) {
+    #checkout-progress .progress-bar .step:after {
+      width: 40px;
+      height: 40px;
+    }
+    }
+    #checkout-progress .progress-bar .step.active:after {
+    border: 5px solid $basic_color_3;
+    }
+    #checkout-progress .progress-bar .step.valid:after {
+    background-color: $basic_color_3;
+    border: 5px solid $basic_color_3;
+    }   
+    .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0 0 0;
+	}
+	.first_btn{
+		justify-content: end;
+	}
+    .button-container .btn {
+		text-transform: capitalize;
+		font-size: 16px;
+		color: $color2;
+		line-height: 1.5;
+		font-weight: 600;
+		background-color: $basic_color;
+		border-radius: 6px;
+		padding: 8px 30px;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		-o-border-radius: 6px;
+		box-shadow: inset 0 0 0 0 $basic_color_3;
+		transition: ease-out 0.6s;
+		-webkit-transition: ease-out 0.6s;
+		-moz-transition: ease-out 0.6s;
+		-ms-transition: ease-out 0.6s;
+		&:hover{
+			box-shadow: inset 400px 0 0 0 $basic_color_3;
+			color: $color2 !important;
+		}
+    }
+    @media (max-width: 767px) {
+    .button-container .btn {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    }
+    .button-container .btn:hover {
+    background-color: transparent;
+    color: #2C3E50;
+    transform: scale(1.02) perspective(1000px);
+	}
+	#boking_step_1{
+		.process__stepint{
+			margin-top: 40px;
+			margin-bottom: 30px;
+			box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+			padding: 10px 15px;
+			p{
+				font-size: 14px;
+				text-transform:initial;
+				color: $text_color;
+				font-weight: 400;
+				line-height: 1.6;
+				margin-bottom: 0;
+				position: relative;
+				i{
+					color: $basic_color_3;
+					padding-right: 10px;
+				}
+				a{
+					color: $basic_color_3;
+					text-decoration: none;
+					&:hover{
+						color: $basic_color;
+					}
+				}
+				&::before{
+					content: '';
+					position: absolute;
+					border-left: 4px solid $basic_color;
+					top: -40%;
+					left: -2%;
+					width: 2px;
+					height: 100%;
+					padding: 20px 0;
+				}
+			}
+		}
+		.process__step_titel{
+			
+			h5{
+				font-size: 20px;
+				text-transform: capitalize;
+				line-height: 1.6;
+				color: $basic_color_3;
+				font-weight: 500;
+				letter-spacing: normal;
+				margin-bottom: 20px;
+			}
+		}
+		.process_start{
+			box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+			padding: 10px 15px;
+			label{
+				font-size: 14px;
+				text-transform:capitalize;
+				color: $text_color;
+				font-weight: 400;
+				line-height: 1.6;
+				span{
+					color: rgb(126, 21, 61);
+				}
+			}
+			input{
+				&:focus{
+					border: 1px solid $basic_color;
+				}
+				&::placeholder{
+					font-size: 14px;
+					text-transform:capitalize;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+				}
+			}
+			select{
+				font-size: 14px;
+				text-transform:initial;
+				color: $text_color;
+				font-weight: 400;
+				line-height: 1.6;
+				&:focus{
+					border: 1px solid $basic_color;
+				}
+			}
+			.condition{
+				input[type="checkbox"]{
+					width: 20px;
+					&:focus{
+						border: 1px solid $basic_color_3;
+					}
+					&:hover{
+						border: 1px solid $basic_color_3;
+					}
+				}
+				span{
+					color: $text_color;
+					text-transform: initial;
+					font-size: 14px;
+				}
+			}
+			#guest_information{
+				margin-top: 15px;
+				margin-left: 20px;
+				h3{
+					font-size: 18px;
+					text-transform: capitalize;
+					line-height: 1.6;
+					color: $basic_color_3;
+					font-weight: 500;
+					letter-spacing:normal;
+				}
+				label{
+					font-size: 14px;
+					text-transform:capitalize;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					span{
+						color: rgb(126, 21, 61);
+					}
+				}
+				input{
+					&:focus{
+						border: 1px solid $basic_color;
+					}
+					&::placeholder{
+						font-size: 14px;
+						text-transform:capitalize;
+						color: $text_color;
+						font-weight: 400;
+						line-height: 1.6;
+					}
+				}
+				select{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					&:focus{
+						border: 1px solid $basic_color;
+					}
+				}
+			}
+			#sp_request{
+				margin-top: 30px;
+				margin-bottom: 30px;
+				h3{
+					font-size: 18px;
+					text-transform: capitalize;
+					line-height: 1.6;
+					color: $basic_color_3;
+					font-weight: 500;
+					letter-spacing:normal;
+				}
+				p{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					margin-bottom: 6px;
+				}
+				textarea{
+					width: 60%;
+					height: 150px;
+					margin-top: 20px;
+					&:focus{
+						border: 1px solid $basic_color;
+					}
+					&::placeholder{
+						font-size: 14px;
+						text-transform:capitalize;
+						color: $text_color;
+						font-weight: 400;
+						line-height: 1.6;
+					}
+				}
+			}
+			#arrival_info{
+				h3{
+					font-size: 18px;
+					text-transform: capitalize;
+					line-height: 1.6;
+					color: $basic_color_3;
+					font-weight: 500;
+					letter-spacing: normal;
+				}
+				p{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					margin-bottom: 15px;
+				}
+				select{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					width: 40%;
+					&:focus{
+						border: 1px solid $basic_color;
+					}
+				}
+			}
+			.condition_agree{
+				margin-top: 20px;
+				input[type="checkbox"]{
+					width: 20px;
+					&:focus{
+						border: 1px solid $basic_color_3;
+					}
+					&:hover{
+						border: 1px solid $basic_color_3;
+					}
+				}
+				span{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					a{
+						color: $basic_color_3;
+					}
+				}
+			}
+		}
+	}
+	#boking_step_2{
+		.payment_confirmation{
+			.ann{
+				margin-top: 40px;
+				margin-bottom: 30px;
+				box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+				padding: 10px 15px;
+				p{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					margin-bottom: 0;
+					position: relative;
+					i{
+						color: $basic_color_3;
+						padding-right: 10px;
+					}
+					&::before{
+						content: '';
+						position: absolute;
+						border-left: 4px solid $basic_color;
+						top: -40%;
+						left: -2%;
+						width: 2px;
+						height: 100%;
+						padding: 20px 0;
+					}
+				}
+			}
+
+			.payment{
+				box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+				padding: 20px 15px;
+				.card_header{
+					background-color: $basic_color_3;
+					border: 1px solid $basic_color_3;
+					padding: 10px 15px;
+					margin-bottom: 30px;
+				}
+				p.con_mail{
+					font-size: 14px;
+					text-transform:initial;
+					color:$text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					margin-bottom: 0;
+					margin-top: 30px;
+				}
+				.titel{
+					p{
+						font-size: 16px;
+						text-transform:initial;
+						color: $color2;
+						font-weight: 600;
+						line-height: 1.6;
+						margin-bottom: 0;
+					}
+				}
+			}
+			label{
+				font-size: 14px;
+				text-transform:capitalize;
+				color: $text_color;
+				font-weight: 400;
+				line-height: 1.6;
+				span{
+					color: rgb(126, 21, 61);
+				}
+			}
+			input{
+				&:focus{
+					border: 1px solid $basic_color;
+				}
+				&::placeholder{
+					font-size: 14px;
+					text-transform:capitalize;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+				}
+			}
+			.lock_pw{
+				position: relative;
+				.lock_icon{
+					position: absolute;
+					top: 47%;
+					right: 0;
+					background-color:#f7f2f2;
+					padding:5px 8px;
+					i{
+						color: $basic_color_3;
+						font-size: 14px;
+
+					}
+				}
+			}
+			.condition_agree{
+				margin-top: 20px;
+				margin-bottom: 0;
+				span{
+					font-size: 14px;
+					text-transform:initial;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+					a{
+						color: $basic_color_3;
+					}
+				}
+			}
+			.con_agre{
+				margin-top: 0;
+			}
+		}
+	}
+	#boking_step_3{
+		.booking_final{
+			box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+			padding: 20px 15px;
+			h3{
+				font-size: 20px;
+				text-transform: capitalize;
+				line-height: 1.6;
+				color: $basic_color_3;
+				font-weight: 500;
+				letter-spacing: normal;
+				margin-bottom: 20px;
+			}
+			label{
+				font-size: 14px;
+				text-transform:capitalize;
+				color: $text_color;
+				font-weight: 400;
+				line-height: 1.6;
+				span{
+					color: rgb(126, 21, 61);
+				}
+			}
+			input{
+				width: 50%;
+				&:focus{
+					border: 1px solid $basic_color;
+				}
+
+				&::placeholder{
+					font-size: 14px;
+					text-transform:capitalize;
+					color: $text_color;
+					font-weight: 400;
+					line-height: 1.6;
+				}
+			}
+		}
+	}
+	#boking_step_4{
+
+		.modalbox.success{
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			background: #fff;
+			padding: 25px 25px 15px;
+			text-align: center;
+			margin-top: 100px;
+			h5{
+				font-size: 26px;
+				text-transform: capitalize;
+				line-height: 1.6;
+				color: $text_color;
+				font-weight: 500;
+				letter-spacing: normal;
+				margin-bottom: 10px;
+				margin-top: 20px;
+			}
+		  }
+		  .modalbox.success.animate .icon{
+			-webkit-animation: fall-in 0.75s;
+			-moz-animation: fall-in 0.75s;
+			-o-animation: fall-in 0.75s;
+			animation: fall-in 0.75s;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		  }
+		  .modalbox.success .btn{
+			text-transform: capitalize;
+			font-size: 16px;
+			color: $color2;
+			line-height: 1.5;
+			font-weight: 600;
+			background-color: $basic_color;
+			border-radius: 6px;
+			padding: 8px 26px;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			-ms-border-radius: 6px;
+			-o-border-radius: 6px;
+			box-shadow: inset 0 0 0 0 $basic_color_3;
+			transition: ease-out 0.6s;
+			-webkit-transition: ease-out 0.6s;
+			-moz-transition: ease-out 0.6s;
+			-ms-transition: ease-out 0.6s;
+			&:hover{
+				box-shadow: inset 400px 0 0 0 $basic_color_3;
+			}
+		}
+
+		  .modalbox.success .icon {
+			position: relative;
+			margin: 0 auto;
+			margin-top: -75px;
+			background: $basic_color_3;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+		  }
+		  .modalbox.success .icon img{
+			text-align: center;
+			padding-top: 20px;
+		  }
+		  
+		  .center .change {
+			clear: both;
+			display: block;
+			font-size: 10px;
+			color: #ccc;
+			margin-top: 10px;
+		  }
+		  @-webkit-keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+		  @-moz-keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+		  @-o-keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+		  @-moz-keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+		  @-webkit-keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+		  @-o-keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+		  @keyframes fall-in {
+			0% {
+			  -ms-transform: scale(3, 3);
+			  -webkit-transform: scale(3, 3);
+			  transform: scale(3, 3);
+			  opacity: 0;
+			}
+			50% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			  opacity: 1;
+			}
+			60% {
+			  -ms-transform: scale(1.1, 1.1);
+			  -webkit-transform: scale(1.1, 1.1);
+			  transform: scale(1.1, 1.1);
+			}
+			100% {
+			  -ms-transform: scale(1, 1);
+			  -webkit-transform: scale(1, 1);
+			  transform: scale(1, 1);
+			}
+		  }
+	}
+	.booking_details_right{
+		box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+		.booking_info{
+			
+			.titel{
+				h4{
+					font-size: 18px;
+					text-transform: capitalize;
+					line-height: 1.6;
+					color: $color2;
+					font-weight: 600;
+					letter-spacing: 1px;
+					background-color:$basic_color_3;
+					padding: 10px 10px;
+					margin-bottom: 0;
+				}
+			}
+			.info_ctn{
+				padding:10px 15px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #eae5e5;
+				ul{
+					li{
+						p{
+							font-size: 14px;
+							text-transform: capitalize;
+							color: $text_color;
+							font-weight: 400;
+							line-height: 1.6;
+							margin-bottom: 0;
+						}
+						.time_info{
+							span{
+								font-size: 14px;
+								text-transform: capitalize;
+								color: $text_color;
+								font-weight: 600;
+								line-height: 1.6;
+								letter-spacing: .5px;
+							}
+						}
+					}
+					.info_be{
+						margin-top: 10px;
+						margin-bottom: 15px;
+					}
+				}
+				p{
+					text-transform: capitalize;
+					line-height: 1.6;
+					font-size: 14px;
+					margin-bottom: 6px;
+					color: $text_color;
+					font-weight: 400;
+					span{
+						font-weight: 600;
+					}
+					a{
+						color: $basic_color_3;
+					}
+				}
+			}
+			.change_selection{
+				padding:10px 15px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid #eae5e5;
+				p{
+					text-transform: capitalize;
+					line-height: 1.6;
+					font-size: 14px;
+					margin-bottom: 0px;
+					color: $text_color;
+					font-weight: 600;
+					span{
+						font-weight: 400;
+					}
+					a{
+						color: $basic_color_3;
+						font-weight: 400;
+					}
+				}
+			}
+			.booking_cost{
+				padding:0px 15px;
+				.cost_ctn_1{
+					padding:10px 0px;
+					display: flex;
+					border-bottom: 1px solid #eae5e5;
+					margin-bottom: 20px;
+					li{
+						span{
+							font-size: 20px;
+							line-height: 1.6;
+							text-transform: capitalize;
+							color: $text_color;
+							font-weight: 600;
+						}
+						.de_tel{
+							font-size: 12px;
+							font-weight: 400;
+						}
+					}
+				}
+				p{
+					// padding:10px 0px;
+					text-transform: capitalize;
+					line-height: 1.6;
+					font-size: 16px;
+					margin-bottom: 6px;
+					color: $text_color;
+					font-weight: 600;
+				}
+				.cost_ctn_2{
+					margin-bottom: 20px;
+					li{
+						width: 100%;
+						span{
+							width: 47%;
+							display: inline-block;
+							text-transform: capitalize;
+							line-height: 1.6;
+							font-size: 14px;
+							margin-bottom: 6px;
+							color: $text_color;
+						}
+					}
+				}
+				.cancel{
+					padding:10px 0px;
+					border-top: 1px solid #eae5e5;
+					p{
+						text-transform: none;
+						line-height: 1.6;
+						font-size: 16px;
+						margin-bottom: 6px;
+						color: $text_color;
+						font-weight: 600;
+						a{
+							font-size: 14px;
+							font-weight: 400;
+							color: $basic_color_3;
+						}
+					}
+				}
+				.bok_fc{
+					padding:10px 0px;
+					border-top: 1px solid #eae5e5;
+					li{
+						display: block;
+						line-height: 1.6;
+						font-size: 14px;
+						margin-bottom: 6px;
+						color: $text_color;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+// HOTEL BOOKING PROCESS AREA END

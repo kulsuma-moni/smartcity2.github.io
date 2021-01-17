@@ -3,9 +3,9 @@
 	"use strict";
 	
     	 // PRELOADER JS CODE
-	//  jQuery(window).on('load',function(){
-	// 	jQuery(".loader_box").fadeOut(500);
-	// 	});
+	 jQuery(window).on('load',function(){
+		jQuery(".loader_box").fadeOut(500);
+		});
 	// END PRELOADER JS CODE
 	// START MEANMENU JS CODE
     jQuery(document).ready(function () {
@@ -468,6 +468,87 @@
 			$('.division_service_list').toggleClass("hospital_show");
 		});
 		// SINGLE DIVISION PAGE JS END
+		// HOTEL BOOKING PROCESS STEP JS START
+		$('.btn-next').on('click', function() {
+	
+			var currentStepNum = $('#checkout-progress').data('current-step');
+			var nextStepNum = (currentStepNum + 1);
+			var currentStep = $('.step.step-' + currentStepNum);
+			var nextStep = $('.step.step-' + nextStepNum);
+			var progressBar = $('#checkout-progress');
+			$('.btn-prev').removeClass('disabled');
+			if(currentStepNum == 4) {
+				return false;
+			}
+			if(nextStepNum == 4){
+				$(this).addClass('disabled');
+			}
+			$('.checkout-progress').removeClass('.step-' + currentStepNum).addClass('.step-' + (currentStepNum + 1));
+			
+			currentStep.removeClass('active').addClass('valid');
+			currentStep.find('span').addClass('opaque');
+			currentStep.find('.fa.fa-check').removeClass('opaque');
+			
+			nextStep.addClass('active');
+			progressBar.removeAttr('class').addClass('step-' + nextStepNum).data('current-step', nextStepNum);
+		});
+		
+		
+		$('.btn-prev').on('click', function() {
+			
+			var currentStepNum = $('#checkout-progress').data('current-step');
+			var prevStepNum = (currentStepNum - 1);
+			var currentStep = $('.step.step-' + currentStepNum);
+			var prevStep = $('.step.step-' + prevStepNum);
+			var progressBar = $('#checkout-progress');
+			$('.btn-next').removeClass('disabled');
+			if(currentStepNum == 1) {
+				return false;
+			}
+			if(prevStepNum == 1){
+				$(this).addClass('disabled');
+			}
+			$('.checkout-progress').removeClass('.step-' + currentStepNum).addClass('.step-' + (prevStepNum));
+			
+			currentStep.removeClass('active');
+			prevStep.find('span').removeClass('opaque');
+			prevStep.find('.fa.fa-check').addClass('opaque');
+			
+			prevStep.addClass('active').removeClass('valid');
+			progressBar.removeAttr('class').addClass('step-' + prevStepNum).data('current-step', prevStepNum);
+		});
+		// $('.go_next_1').click(function(){
+		// 	$('#boking_step_2, #boking_step_3').hide();
+		// 	$('#boking_step_1').show();
+		// });
+		$('.go_next_1').click(function(){
+			$('#boking_step_1, #boking_step_3, #boking_step_4').hide();
+			$('#boking_step_2').show();
+		});
+		$('.go_next_2').click(function(){
+			$('#boking_step_1, #boking_step_2, #boking_step_4').hide();
+			$('#boking_step_3').show();
+		});
+		$('.go_next_3').click(function(){
+			$('#boking_step_1,#boking_step_2, #boking_step_3').hide();
+			$('#boking_step_4').show();
+		});
+		$('.go_back_2').click(function(){
+			$('#boking_step_2, #boking_step_3, #boking_step_4').hide();
+			$('#boking_step_1').show();
+		});
+		$('.go_back_3').click(function(){
+			$('#boking_step_1, #boking_step_3, #boking_step_4').hide();
+			$('#boking_step_2').show();
+		});
+		$('#condition').click(function(){
+			$('#guest_information').toggle();
+		});
+		// $('.redo').click(function() {
+		// 	$('.success').toggle();
+		// });
+// HOTEL BOOKING PROCESS STEP JS END
+
 	// INNERBG Animation START
 	var multi_shap = "";
 	for (var i = 1; i <= 50; i++) {
@@ -560,6 +641,7 @@ $('.subcat_iso_area').isotope({
 		
 		});
 
+		
 
 })(jQuery);
 
