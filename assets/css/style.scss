@@ -14658,16 +14658,9 @@ z-index: 0;
     pointer-events: none;
     }
     #checkout-progress {
-    // width: 90%;
-    // margin: 0px auto;
     font-size: 16px;
     font-weight: 900;
     position: relative;
-    }
-    @media (max-width: 767px) {
-    #checkout-progress {
-      font-size: 1.5em;
-    }
     }
     #checkout-progress:before {
     content: "";
@@ -14715,22 +14708,24 @@ z-index: 0;
     -o-transform: scaleX(1) translateY(-50%) perspective(1000px);
   }
   #checkout-progress.step-4:after {
-    transform: scaleX(1.05) translateY(-50%) perspective(1000px);
-    -webkit-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
-    -moz-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
-    -ms-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
-    -o-transform: scaleX(1.05) translateY(-50%) perspective(1000px);
+    transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+    -webkit-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+    -moz-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+    -ms-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+    -o-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
 }
     #checkout-progress .progress-bar {
     width: 100%;
     display: inline-block;
     background: transparent !important;
-      justify-content: right;
-      color: #fff;
-      text-align: right;
-      background-color: #007bff;
-      transition: width .6s ease;
-    }
+	color: #fff;
+	text-align: center;
+	background-color: #007bff;
+	transition: width .6s ease;
+	}
+	#checkout-progress .progress-bar ul li{
+		width: 32%;
+	}
     #checkout-progress .progress-bar .step {
     z-index: 2;
     position: relative;
@@ -14748,14 +14743,9 @@ z-index: 0;
     -moz-transform: translateX(-50%) perspective(1000px);
     -ms-transform: translateX(-50%) perspective(1000px);
     -o-transform: translateX(-50%) perspective(1000px);
-    text-align: right;
-    margin-left: 113px;
+	text-align: right;
+	margin-left: 117px;
   }
-    @media (max-width: 767px) {
-    #checkout-progress .progress-bar .step .step-label {
-      top: calc(100% + 15px);
-    }
-    }
     #checkout-progress .progress-bar .step span {
     color: #ccc;
     font-size: 16px;
@@ -14820,12 +14810,6 @@ z-index: 0;
     -ms-transform: translate(-50%, -50%) perspective(1000px);
     -o-transform: translate(-50%, -50%) perspective(1000px);
   }
-    @media (max-width: 767px) {
-    #checkout-progress .progress-bar .step:after {
-      width: 40px;
-      height: 40px;
-    }
-    }
     #checkout-progress .progress-bar .step.active:after {
     border: 5px solid $basic_color_3;
     }
@@ -14866,12 +14850,6 @@ z-index: 0;
 			color: $color2 !important;
 		}
     }
-    @media (max-width: 767px) {
-    .button-container .btn {
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    }
     .button-container .btn:hover {
     background-color: transparent;
     color: #2C3E50;
@@ -14883,6 +14861,7 @@ z-index: 0;
 			margin-bottom: 30px;
 			box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
 			padding: 10px 15px;
+			position: relative;
 			p{
 				font-size: 14px;
 				text-transform:initial;
@@ -14890,7 +14869,6 @@ z-index: 0;
 				font-weight: 400;
 				line-height: 1.6;
 				margin-bottom: 0;
-				position: relative;
 				i{
 					color: $basic_color_3;
 					padding-right: 10px;
@@ -14902,16 +14880,15 @@ z-index: 0;
 						color: $basic_color;
 					}
 				}
-				&::before{
-					content: '';
-					position: absolute;
-					border-left: 4px solid $basic_color;
-					top: -40%;
-					left: -2%;
-					width: 2px;
-					height: 100%;
-					padding: 20px 0;
-				}
+			}
+			&::before{
+				content: '';
+				position: absolute;
+				border-left: 4px solid $basic_color;
+				top: 0%;
+				left: 0%;
+				width: 2px;
+				height: 100%;
 			}
 		}
 		.process__step_titel{
@@ -15116,6 +15093,7 @@ z-index: 0;
 				margin-bottom: 30px;
 				box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
 				padding: 10px 15px;
+				position: relative;
 				p{
 					font-size: 14px;
 					text-transform:initial;
@@ -15123,21 +15101,19 @@ z-index: 0;
 					font-weight: 400;
 					line-height: 1.6;
 					margin-bottom: 0;
-					position: relative;
 					i{
 						color: $basic_color_3;
 						padding-right: 10px;
 					}
-					&::before{
-						content: '';
-						position: absolute;
-						border-left: 4px solid $basic_color;
-						top: -40%;
-						left: -2%;
-						width: 2px;
-						height: 100%;
-						padding: 20px 0;
-					}
+				}
+				&::before{
+					content: '';
+					position: absolute;
+					border-left: 4px solid $basic_color;
+					top: 0%;
+					left: 0%;
+					width: 2px;
+					height: 100%;
 				}
 			}
 
@@ -15230,6 +15206,7 @@ z-index: 0;
 		.booking_final{
 			box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
 			padding: 20px 15px;
+			margin-top: 50px;
 			h3{
 				font-size: 20px;
 				text-transform: capitalize;
@@ -15595,6 +15572,7 @@ z-index: 0;
 				.cost_ctn_1{
 					padding:10px 0px;
 					display: flex;
+					justify-content: space-between;
 					border-bottom: 1px solid #eae5e5;
 					margin-bottom: 20px;
 					li{

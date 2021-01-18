@@ -371,6 +371,39 @@ $inputColor: #bbbbbb;
     .inner_banner_area .house_banner_content .house_inner_right .reference p {
         margin-bottom: 8px;
     }
+    .booking_process_area #checkout-progress .progress-bar .step .step-label {
+        white-space: break-spaces;
+        margin-left: 40px;
+    }
+    .booking_process_area #checkout-progress .progress-bar .step::after {
+        right: 13%;
+        top: 9%;
+    }
+    .booking_process_area #boking_step_1 .process__stepint p {
+        font-size: 13px;
+    }
+    .booking_process_area #boking_step_1 .process_start .condition {
+        margin-top: 20px;
+    }
+    .booking_process_area #boking_step_1 .process_start #sp_request textarea {
+        width: 100%;
+    }
+    .booking_process_area #boking_step_1 .process_start #arrival_info select {
+        width: 100%;
+    }
+    .booking_process_area .booking_details_right {
+        margin-top: 40px;
+    }
+    .booking_process_area #checkout-progress .progress-bar .step .fa-check {
+        right: 33%;
+        top: 9%;
+    }
+    .booking_process_area #boking_step_2 .payment_confirmation .con_agre {
+        margin-top: 15px;
+    }
+    .booking_process_area #boking_step_3 .booking_final input {
+        width: 100%;
+    }
 }
 @media (min-width: 576px) and(max-width:767px){
    .menu-shrink{
@@ -729,6 +762,36 @@ header.header_area{
     top: 60%;
     width: 88%;
 }
+.booking_process_area #checkout-progress .progress-bar .step::after {
+    right: 29%;
+}
+.booking_process_area #checkout-progress .progress-bar .step .step-label {
+    margin-left: 72px;
+}
+.booking_process_area #boking_step_1 .process_start .condition {
+    margin-top: 10px;
+}
+.booking_process_area #boking_step_1 .process_start #sp_request textarea {
+    width: 100%;
+    }
+.booking_process_area .booking_details_right {
+    margin-top: 40px;
+    }
+    .booking_process_area .booking_details_right .booking_info .info_ctn ul .info_be {
+        margin-left: 20px;
+    }
+    .booking_process_area #boking_step_1 .process_start #arrival_info select {
+        width: 100%;
+    }
+    .booking_process_area #boking_step_2 .payment_confirmation .payment .titel p {
+        margin-bottom: 10px;
+    }
+    .booking_process_area #boking_step_3 .booking_final input {
+        width: 60%;
+    }
+    .booking_process_area #checkout-progress .progress-bar .step .fa-check {
+        right: 40%;
+    }
 }
 
 
@@ -1045,6 +1108,24 @@ header.header_area{
 .slick-prev {
     left: 12px;
 }
+.booking_process_area #checkout-progress .progress-bar .step::after {
+    right: 27%;
+}
+.booking_process_area #checkout-progress .progress-bar .step .step-label {
+    margin-left: 53px;
+}
+.booking_process_area #checkout-progress .progress-bar .step .fa-check {
+    right: 39%;
+}
+.booking_process_area #boking_step_3 .booking_final input {
+    width: 60%;
+}
+.booking_process_area #boking_step_1 .process_start #sp_request textarea {
+    width: 100%;
+    }
+    .booking_process_area #boking_step_1 .process_start #arrival_info select {
+        width: 100%;
+    }
 
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -1335,6 +1416,18 @@ header.header_area{
     .inner_banner_area .house_banner_content {
         width: 94%;
     }
+    .booking_process_area #checkout-progress .progress-bar .step .step-label {
+        margin-left: 65px;
+    }
+    .booking_process_area #checkout-progress .progress-bar .step::after {
+        right: 31%;
+    }
+    .booking_process_area #boking_step_1 .process_start #sp_request textarea {
+        width: 100%;
+        }
+        .booking_process_area #boking_step_1 .process_start #arrival_info select {
+            width: 60%;
+            }
 }
 
 @media (min-width:1200px) and (max-width:1338px){
