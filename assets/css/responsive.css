@@ -364,6 +364,18 @@
   .booking_process_area #boking_step_3 .booking_final input {
     width: 100%;
   }
+  .property_description_area .property_description_left .property_description .facilitics_list ul li {
+    width: 70%;
+  }
+  .sm_section_padding_3 {
+    padding: 40px 0 60px;
+  }
+  .sm_section_padding {
+    padding: 60px 0;
+  }
+  .property_description_area .property_detail_info .details ul li .details_right {
+    width: 70%;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -650,7 +662,7 @@
     right: 14px;
   }
   .inner_banner_area .house_banner_content {
-    top: 52%;
+    top: 44%;
     width: 88%;
   }
   .inner_banner_area .house_banner_content .house_inner_right ul li a.btn span {
@@ -695,6 +707,9 @@
   }
   .booking_process_area #checkout-progress .progress-bar .step .fa-check {
     right: 40%;
+  }
+  .property_description_area .property_detail_info .details ul li .details_right {
+    width: 70%;
   }
 }
 
@@ -938,7 +953,7 @@
     display: none;
   }
   .inner_banner_area .house_banner_content .house_inner_right {
-    margin-top: 26px;
+    margin-top: 73px;
   }
   .inner_banner_area .house_banner_content .house_inner_right ul li a.btn i {
     padding-right: 0px;
@@ -966,6 +981,9 @@
   }
   .booking_process_area #boking_step_1 .process_start #arrival_info select {
     width: 100%;
+  }
+  .inner_banner_area .house_banner_content {
+    top: 41%;
   }
 }
 

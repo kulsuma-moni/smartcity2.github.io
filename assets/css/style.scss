@@ -330,7 +330,7 @@ outline:0;
         input{
             width:100%;
             height: 40px;
-            border:2px solid $basic_color;
+            border:2px solid $basic_color_3;
             &::placeholder{
                 font-weight:400;
                 font-size: 16px;
@@ -346,7 +346,7 @@ outline:0;
             position: absolute;
             top: 0;
             right: 0;
-            background: $basic_color;
+            background: $basic_color_3;
             color: #fff;
             padding: 5px 16px;
             font-size: 20px;
@@ -375,7 +375,7 @@ outline:0;
                 position: absolute;
                 top: -7px;
                 right: -1px;
-                background: $basic_color;
+                background: $basic_color_3;
                 border-radius: 50%;
                 height: 18px;
                 width: 18px;
@@ -401,7 +401,7 @@ header.header_area{
         
         .header_left_titel{
             padding: 7px 0;
-            background: $basic_color;
+            background: $basic_color_3;
             position: relative;
             #nav_icon{
                 width: 30px;
@@ -475,7 +475,7 @@ header.header_area{
                         text-transform: capitalize;
                         cursor: pointer;
                         &:hover{
-                            color: $basic_color;
+                            color: $basic_color_3;
                         }
                     }
                     i{
@@ -536,7 +536,7 @@ header.header_area{
                     line-height: 1.5;
                     letter-spacing: .5px;
                     &:hover{
-                        color: $basic_color;
+                        color: $basic_color_3;
                     }
                 }
             }
@@ -560,7 +560,7 @@ header.header_area{
                 font-weight: 600;
                 &:hover{
                     text-decoration: underline;
-                    color: $basic_color;
+                    color: $basic_color_3;
                 }
             }
         }
@@ -1116,7 +1116,7 @@ header.sm_header_area{
                 border-radius: 30px;
             }
           .owl-dots .owl-dot.active span{
-              background:$basic_color;
+              background:$basic_color_3;
               width: 30px;
               height: 10px;
             }
@@ -1168,7 +1168,7 @@ header.sm_header_area{
     // top: 94px;
     top: 0;
     // text-align: center;
-    height: 400px;
+    height: 300px;
     width: 100%;
     // margin: 0 0 94px 0;
     &::after{
@@ -1214,7 +1214,7 @@ header.sm_header_area{
     .house_banner_content{
       position: absolute;
       z-index: 1;
-      top: 60%;
+      top: 44%;
       width: 82%;
       .houser_inner_left{
         .pro_info{
@@ -1246,8 +1246,13 @@ header.sm_header_area{
             }
             .contact{
               span{
+				color: $color2;
                 letter-spacing: 0px;
-                font-weight: 600;
+				font-weight: 600;
+				&:hover{
+					text-decoration: underline;
+					color: $color2;
+				}
               }
 			}
 			.category{
@@ -1270,7 +1275,7 @@ header.sm_header_area{
         }
       }
       .house_inner_right{
-		  margin-top:50px ;
+		  margin-top:72px ;
 		  text-align: right;
         .reference{
           p{
@@ -1320,7 +1325,7 @@ header.sm_header_area{
 	  }
 	}
 	.hotel_banner_content{
-		top: 75%;
+		top: 66%;
 		.house_inner_right{
 			margin-top:0px ;
 		}
@@ -1517,7 +1522,7 @@ header.sm_header_area{
                             }
                         }
                         &:hover .overlay{
-                            background-color:hsla(97, 73%, 39%, 0.7);
+                            background-color:$basic_color_3;
                             opacity: .8;
                         }
                         &:hover .border.after,.border.before{
@@ -1546,7 +1551,7 @@ header.sm_header_area{
                         text-align: center;
                         background-color:$color2;
                         p{
-                            color: $basic_color;
+                            color: $basic_color_3;
                             // color: #73a706;
                             font-size: 14px;
                             line-height: 1.5;
@@ -1616,7 +1621,7 @@ header.sm_header_area{
                         }
                         .card-body{
                             p{
-                                color: $basic_color;
+                                color: $basic_color_3;
                                 // color: #73a706;
                                 font-size: 14px;
                                 line-height: 1.5;
@@ -1650,7 +1655,7 @@ header.sm_header_area{
 // TOP STORE AREA CSS END
 // NEWSLETTER AREA START
 .newsletter_area{
-    background: $basic_color;
+    background: $basic_color_3;
     padding: 40px 0;
 
     .newsletter_ctn{
@@ -1666,7 +1671,7 @@ header.sm_header_area{
             height: 40px;
             width: 100%;
             box-shadow: none;
-            background: #fff;
+            // background: #fff;
             border: 1px solid $color3;
             border-radius: 5px;
             -webkit-border-radius: 5px;
@@ -1676,13 +1681,11 @@ header.sm_header_area{
             &::placeholder{
                 color: #4d4d4d;
                 text-transform: capitalize;
-                background: #fff;
                 
             }
             &:focus{
                 outline: 0;
-                background:#fff;
-                border:1px solid $basic_color;
+                border:1px solid $basic_color_3;
                 border-radius: 5px;
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
@@ -1696,7 +1699,7 @@ header.sm_header_area{
             position: absolute;
             top: 48px;
             right: 0;
-            color: $basic_color;
+            color: $basic_color_3;
             cursor: pointer;
             font-size: 24px;
             line-height: 1.3;
@@ -1710,15 +1713,15 @@ header.sm_header_area{
     padding: 10px 0 30px 0;
     .service_inner_ctn{
         padding: 20px 0;
-        border-bottom: 1px solid $basic_color;
-        border-top: 1px solid $basic_color;
+        border-bottom: 1px solid $basic_color_3;
+        border-top: 1px solid $basic_color_3;
         .service_ctn{
             position: relative;
             display: flex;
             &::after{
                 position: absolute;
                 content: '';
-                border-right: 2px solid $basic_color;
+                border-right: 2px solid $basic_color_3;
                 width: 2px;
                 height: 100%;
                 top: 0;
@@ -2011,7 +2014,7 @@ header.sm_header_area{
                     content: '';
                     left: 0;
                     bottom: -8px;
-                    border: 2px solid #51AA1B;
+                    border: 2px solid $basic_color_3;
                     width: 33%;
                     height: 2px;
                     border-radius: 20px;
@@ -2029,7 +2032,7 @@ header.sm_header_area{
                     a{
                         text-transform:lowercase !important;
                         i{
-                            color: $basic_color;
+                            color: $basic_color_3;
                             font-size: 16px;
                             margin-right: 5px;
                             line-height: 1.7;
@@ -2048,7 +2051,7 @@ header.sm_header_area{
                         display: block;
                         width: 36px;
                         height: 36px;
-                        background-color:$basic_color;
+                        background-color:$basic_color_3;
                         text-align: center;
                         transition: .5s;
                         box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
@@ -2068,7 +2071,7 @@ header.sm_header_area{
                             left: -5px;
                             height: 100%;
                             width: 5px;
-                            background: $basic_color;
+                            background: $basic_color_3;
                             transition: .5s;
                             transform:skewY(-45deg)                    ;
                             -webkit-transform:skewY(-45deg);
@@ -2087,7 +2090,7 @@ header.sm_header_area{
                             left: -3px;
                             height: 4px;
                             width: 100%;
-                            background: $basic_color;
+                            background: $basic_color_3;
                             transition: .5s;
                             transform:skewX(-45deg);
                             -webkit-transform:skewX(-45deg);
@@ -2398,7 +2401,7 @@ header.sm_header_area{
     .to-top{
         i{
             font-size: 40px;
-            color: $basic_color_3;
+            color: $basic_color;
         }
     
     }
@@ -2596,7 +2599,7 @@ a.to-top {
                 border-radius: 30px;
             }
           .owl-dots .owl-dot.active span{
-              background:$basic_color;
+              background:$basic_color_3;
               width: 30px;
               height: 10px;
             }
@@ -2690,7 +2693,7 @@ a.to-top {
                 z-index: 1;
                 color: #fff;
                 font-size: 20px;
-                background: $basic_color;
+                background: $basic_color_3;
                 font-weight: 500;
                 line-height: 1;
                 display: inline-block;
@@ -2705,7 +2708,7 @@ a.to-top {
                 text-align: center;
                 letter-spacing: 1px;
                 &::before{
-                    background: $basic_color;
+                    background: $basic_color_3;
                     content: '';
                     height: 100%;
                     left: 0;
@@ -2722,7 +2725,7 @@ a.to-top {
                 &::after{
                     border-bottom: 15px solid transparent;
                     border-left: 15px solid transparent;
-                    border-top: 15px solid $basic_color;
+                    border-top: 15px solid $basic_color_3;
                     bottom: 0;
                     content: '';
                     left: -15px;
@@ -2839,7 +2842,7 @@ a.to-top {
                                                     width: 31px;
                                                     height: 31px;
                                                     fill: #fff;
-                                                    background: $basic_color;
+                                                    background: $basic_color_3;
                                                     padding: 4px 6px;
                                                     border-radius: 50%;
                                                     -webkit-border-radius: 50%;
@@ -2847,7 +2850,7 @@ a.to-top {
                                                     -ms-border-radius: 50%;
                                                     -o-border-radius: 50%;
                                                     &:hover{
-                                                        background: $basic_color_2;
+                                                        background: $basic_color;
                                                         color: $color2;
                                                     }
                                                 }
@@ -2911,7 +2914,7 @@ a.to-top {
                                                 width: 31px;
                                                 height: 31px;
                                                 fill: #fff;
-                                                background: $basic_color;
+                                                background: $basic_color_3;
                                                 padding: 4px 6px;
                                                 border-radius: 50%;
                                                 -webkit-border-radius: 50%;
@@ -2919,7 +2922,7 @@ a.to-top {
                                                 -ms-border-radius: 50%;
                                                 -o-border-radius: 50%;
                                                 &:hover{
-                                                    background: $basic_color_2;
+                                                    background: $basic_color;
                                                     color: $color2;
                                                 }
                                             }
@@ -2943,7 +2946,7 @@ a.to-top {
                             .pro_price{
                                 font-size: 16px;
                                 line-height: 1.5;
-                                color: $basic_color;
+                                color: $basic_color_3;
                                 font-weight: 600;
                             }
                             .product_rating{
@@ -2983,7 +2986,7 @@ a.to-top {
 .product_diplay{
     .main_img{
         text-align: center;
-        width: 550px;
+        width: 100%;
         height: 320px;
     }
     ul{
@@ -3139,7 +3142,7 @@ a.to-top {
                         -o-border-radius: 5px;
                     
                         &.active{
-                            background: $basic_color;
+                            background: $basic_color_3;
                             border: 1px solid transparent;
                             color: #fff;
                         }
@@ -3154,7 +3157,7 @@ a.to-top {
 
                        }
                        &:hover{
-                        background: $basic_color;
+                        background: $basic_color_3;
                         border: 1px solid transparent;
                         color: #fff;
                        }
@@ -3233,8 +3236,8 @@ a.to-top {
                     -o-border-radius: 0px;
                     padding: 6px 14px;
                     &.active{
-                        border-bottom: 3px solid $basic_color;
-                        color: $basic_color;
+                        border-bottom: 3px solid $basic_color_3;
+                        color: $basic_color_3;
                     }
                 }
             }
@@ -3629,7 +3632,7 @@ a.to-top {
                 font-size: 12px;
                 text-transform: uppercase;
                 padding: 8px 30px;
-                background: $basic_color;
+                background: $basic_color_3;
                 text-decoration: none;
                 color: #fff;
                 border-radius: 30px;
@@ -3704,10 +3707,10 @@ a.to-top {
                 
                  &.hasError
                     input{
-                        border-color: $basic_color !important;
+                        border-color: $basic_color_3 !important;
                        }
                     label{
-                        color: $basic_color !important;
+                        color: $basic_color_3 !important;
                       }
                     }
         
@@ -3753,12 +3756,12 @@ a.to-top {
                     z-index: 1;
            
                  &.hasError{
-                        border-color:$basic_color;
+                        border-color:$basic_color_3;
                     }
                     }
         
               span.error{
-                color: $basic_color;
+                color: $basic_color_3;
                 font-size: 12px;
                 position: absolute;
                 bottom: -20px;
@@ -3768,7 +3771,7 @@ a.to-top {
             }
         
               input[type=password]{
-                    color:$basic_color;
+                    color:$basic_color_3;
                 }
         
               .CTA{
@@ -3778,7 +3781,7 @@ a.to-top {
                 font-size: 12px;
                 text-transform: uppercase;
                 padding: 5px 30px;
-                background: $basic_color;
+                background: $basic_color_3;
                 color: #fff;
                 border-radius: 30px;
                 margin-right: 14px;
@@ -3796,7 +3799,7 @@ a.to-top {
                     -ms-transition: all 0.3s;
                     -o-transition: all 0.3s;
                     &:hover{
-                        color: $basic_color;
+                        color: $basic_color_3;
                       }
                     }
                    }
@@ -4292,9 +4295,9 @@ a.to-top {
                         background: linear-gradient(#666, #333);
                         position: relative;
                         &.active{
-                            background: $basic_color;
+                            background: $basic_color_3;
                             &::after{
-                                background: $basic_color;
+                                background: $basic_color_3;
                             }
                         }
                         &::after{
@@ -4419,7 +4422,7 @@ a.to-top {
                         input[type=checkbox]{
                             width: 12px;
                             height: 12px;
-                            color: $basic_color;
+                            color: $basic_color_3;
                         }
                         label{
                             font-size: 16px;
@@ -4482,7 +4485,7 @@ a.to-top {
                             padding: 20px;
                             border: 1px solid $color1;
                             &:focus{
-                                border: 1px solid $basic_color;
+                                border: 1px solid $basic_color_3;
                                 outline: 0;
                             }
                         }
@@ -4576,7 +4579,7 @@ a.to-top {
         ul{
             li{
                 a.continu_btn{
-                    background: $basic_color;
+                    background: $basic_color_3;
                     font-size: 16px;
                     line-height: 1;
                     text-transform: uppercase;
@@ -5014,7 +5017,7 @@ a.to-top {
     background-position: left top;
     height: 100vh;
     .signin_area{
-        border: 1px solid $basic_color;
+        border: 1px solid $basic_color_3;
         padding: 30px 40px;
         background: $color2;
         border-radius: 16px;
@@ -5029,7 +5032,7 @@ a.to-top {
                 margin-bottom: 30px;
                 line-height: 1.5;
                 text-transform: capitalize;
-                color: $basic_color;
+                color: $basic_color_3;
             }
         }
         form{
@@ -5041,7 +5044,7 @@ a.to-top {
                     -moz-border-radius: 16px;
                     -ms-border-radius: 16px;
                     -o-border-radius: 16px;
-                    background-color: $basic_color;
+                    background-color: $basic_color_3;
                     &::placeholder{
                         text-transform: capitalize;
                         font-size: 16px;
@@ -5049,11 +5052,11 @@ a.to-top {
                         color:$color2;
                     }
                     &:focus{
-                        border: 1px solid $basic_color;
+                        border: 1px solid $basic_color_3;
                         font-size: 16px;
                         line-height: 1.5;
                         color:$color2;
-                        background-color: $basic_color;
+                        background-color: $basic_color_3;
                         outline: 0;
                         border-radius: 16px;
                         -webkit-border-radius: 16px;
@@ -5076,7 +5079,7 @@ a.to-top {
                     text-transform: capitalize;
                     font-weight: 600;
                     line-height: 20px;
-                    background:$basic_color;
+                    background:$basic_color_3;
                     padding: 6px 40px;
                     font-size: 18px;
                     color: #fff;
@@ -5110,7 +5113,7 @@ a.to-top {
                a{
                 font-size: 14px;
                 line-height: 1.5;
-                color: $basic_color;
+                color: $basic_color_3;
                 font-weight: 500;
                 &:hover{
                     color: $basic_color;
@@ -5154,7 +5157,7 @@ a.to-top {
     background-size: cover;
     background-position: left top;
     .signup_area{
-        border: 1px solid $basic_color;
+        border: 1px solid $basic_color_3;
         padding: 30px 40px;
         background: $color2;
         border-radius: 16px;
@@ -5169,7 +5172,7 @@ a.to-top {
                 margin-bottom: 30px;
                 line-height: 1.5;
                 text-transform: capitalize;
-                color: $basic_color;
+                color: $basic_color_3;
             }
         }
         form{
@@ -5181,7 +5184,7 @@ a.to-top {
                     -moz-border-radius: 16px;
                     -ms-border-radius: 16px;
                     -o-border-radius: 16px;
-                    background-color: $basic_color;
+                    background-color: $basic_color_3;
                     &::placeholder{
                         text-transform: capitalize;
                         font-size: 16px;
@@ -5189,11 +5192,11 @@ a.to-top {
                         color:$color2;
                     }
                     &:focus{
-                        border: 1px solid $basic_color;
+                        border: 1px solid $basic_color_3;
                         font-size: 16px;
                         line-height: 1.5;
                         color:$color2;
-                        background-color: $basic_color;
+                        background-color: $basic_color_3;
                         outline: 0;
                         border-radius: 16px;
                         -webkit-border-radius: 16px;
@@ -5217,7 +5220,7 @@ a.to-top {
                     text-transform: capitalize;
                     font-weight: 600;
                     line-height: 20px;
-                    background: $basic_color;
+                    background: $basic_color_3;
                     padding: 6px 40px;
                     font-size: 18px;
                     color: #fff;
@@ -5251,10 +5254,10 @@ a.to-top {
                a{
                 font-size: 14px;
                 line-height: 1.5;
-                color: $basic_color;
+                color: $basic_color_3;
                 font-weight: 500;
                 &:hover{
-                    color: $basic_color;
+                    color: $basic_color_3;
                 }
                }
             }
@@ -5301,7 +5304,7 @@ a.to-top {
                 line-height: 1.5;
                 font-weight: 400;
                 margin-bottom: 8px;
-                color: $basic_color;
+                color: $basic_color_3;
             }
         }
     }
@@ -5316,7 +5319,7 @@ a.to-top {
             -moz-border-radius: 16px;
             -ms-border-radius: 16px;
             -o-border-radius: 16px;
-            background-color: $basic_color;
+            background-color: $basic_color_3;
             &::placeholder{
                 text-transform: capitalize;
                 font-size: 16px;
@@ -5324,11 +5327,11 @@ a.to-top {
                 color:$color2;
             }
             &:focus{
-                border: 1px solid $basic_color;
+                border: 1px solid $basic_color_3;
                 font-size: 16px;
                 line-height: 1.5;
                 color:$color2;
-                background-color: $basic_color;
+                background-color: $basic_color_3;
                 outline: 0;
                 border-radius: 16px;
                 -webkit-border-radius: 16px;
@@ -9567,7 +9570,38 @@ z-index: 0;
                                 font-family: "Font Awesome 5 Free";
                             }
                         }
-                    }
+					}
+					.sm_sort_by_option{
+						position: absolute;
+						background: #fff;
+						width: 220px;
+						z-index: 1;
+						right: 0px;
+						top: 35px;
+						// border: 1px solid #b3b3b3;
+						display: none;
+						border-radius: 4px;
+						height: 320px;
+						overflow: scroll;
+						box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+						ul{
+							padding:20px 30px;
+							li{
+								display: block;
+								
+								a{
+									text-transform: capitalize;
+									font-weight: 400;
+									font-size: 14px;
+									line-height: 1;
+									color: $text_color;
+									&:hover{
+										color: $basic_color;
+									}
+								}
+							}
+						}
+					}
                 }
                .brand_item{
                 .form-group{
@@ -11635,7 +11669,38 @@ z-index: 0;
                                 font-family: "Font Awesome 5 Free";
                             }
                         }
-                    }
+					}
+					.sm_sort_by_option{
+						position: absolute;
+						background: #fff;
+						width: 220px;
+						z-index: 1;
+						right: 0px;
+						top: 35px;
+						// border: 1px solid #b3b3b3;
+						display: none;
+						border-radius: 4px;
+						height: 320px;
+						overflow: scroll;
+						box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+						ul{
+							padding:20px 30px;
+							li{
+								display: block;
+								
+								a{
+									text-transform: capitalize;
+									font-weight: 400;
+									font-size: 14px;
+									line-height: 1;
+									color: $text_color;
+									&:hover{
+										color: $basic_color;
+									}
+								}
+							}
+						}
+					}
                 }
                .brand_item{
                 .form-group{
@@ -13885,7 +13950,7 @@ z-index: 0;
 			margin-bottom: 20px;
 			p{
 				font-weight: 400;
-				font-size: 14px;
+				font-size: 15px;
 				line-height: 1.8;
 				color: $text_color;
 				margin-bottom: 7px;
@@ -13897,7 +13962,7 @@ z-index: 0;
 				line-height: 1.4;
 				font-weight: 500;
 				letter-spacing: 1px;
-				margin-bottom: 16px;
+				margin: 20px 0 10px;
 				i{
 				  padding-right: 10px;
 				  color: $basic_color_3;
@@ -13910,7 +13975,7 @@ z-index: 0;
 					li{
 						width: 50%;
 						float: left;
-						font-size: 14px;
+						font-size: 15px;
 						text-transform: capitalize;
 						line-height: 1.8;
 						font-weight: 500;
@@ -13937,8 +14002,12 @@ z-index: 0;
 			ul{
 				margin-top: 30px;
 				li{
-					width: 100px;
+					width: 134px;
 					display: inline-block;
+					margin-right: 8px;
+					&:last-child{
+						margin-right: 0;
+					}
 					a{
 						border: 2px solid transparent;
 						&:active img,
@@ -14002,6 +14071,7 @@ z-index: 0;
 				padding: 10px;
 				overflow: hidden;
 				border-top: 1px dashed #d1cece;
+				justify-content: space-between;
 				&:first-child{
 					border-top: none;
 				}
@@ -14011,10 +14081,11 @@ z-index: 0;
 					line-height: 1.4;
 					color: $text_color;
 					text-transform: capitalize;
+					// white-space: nowrap;
 				}
 				.details_right{
 					text-align: right;
-					width: 100%;
+					width: 75%;
 					overflow: hidden;
 					font-weight: 400;
 					font-size: 14px;
@@ -14090,28 +14161,13 @@ z-index: 0;
 						color: $text_color;
 						border-top: none;
 						display: flex;
+						justify-content: left;
 						i{
 							padding-right: 10px;
 							font-size: 9px;
 							padding-top: 7px;
 							color: #5c2f8d;
 						}
-						// flex-direction: row;
-						// &::before{
-						// 	content: '';
-						// 	position: absolute;
-						// 	width: 8px;
-						// 	height: 8px;
-						// 	border-radius: 50%;
-						// 	-webkit-border-radius: 50%;
-						// 	-moz-border-radius: 50%;
-						// 	-ms-border-radius: 50%;
-						// 	-o-border-radius: 50%;
-						// 	background: $text_color;
-						// 	top: 44%;
-						// 	left: 0;
-						// 	margin-right: 8px;
-						// }
 					}
 				}
 			}
@@ -15639,7 +15695,7 @@ z-index: 0;
 						font-size: 14px;
 						margin-bottom: 6px;
 						color: $text_color;
-						font-weight: 500;
+						font-weight: 600;
 					}
 				}
 			}

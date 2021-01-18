@@ -171,7 +171,7 @@
 			}
 			},
 			{
-			breakpoint: 600,
+			breakpoint: 993,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1
@@ -423,6 +423,16 @@
 	});
 	$('.edu_sub_cntrol_5').click(function(){
 		$('.sub_cat_htel_5').toggle();
+	});
+	// SMART HOUSE LISTING FILTER BTTON PAGE JS
+	$('#search_btn_1').click(function(){
+		$('.sort_by_option_1').toggle();
+	});
+	$('#search_btn_2').click(function(){
+		$('.sort_by_option_2').toggle();
+	});
+	$('#search_btn_3').click(function(){
+		$('.sort_by_option_3').toggle();
 	});
 // SMART HOUSE LISTING PAGE ISOTOP FILTER START
 	var $grid3 = $('.house_iso_list').isotope({
