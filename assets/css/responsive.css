@@ -376,6 +376,46 @@
   .property_description_area .property_detail_info .details ul li .details_right {
     width: 70%;
   }
+  .inner_banner_area .search_box .form-group a.loc_btn {
+    position: absolute;
+    top: 102%;
+    right: 0%;
+    border: 1px solid #06acde;
+    height: 100%;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    width: 100%;
+    left: 0;
+    margin: auto;
+    text-align: left;
+    border-radius: 5px;
+  }
+  .search_box .form-group a.search_btn {
+    position: absolute;
+    top: 208%;
+    right: 0;
+    background: #06acde;
+    color: #fff;
+    padding: 6px 28px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    left: 0;
+    margin: auto;
+  }
+  .inner_banner_area .banner_content {
+    position: absolute;
+    top: 24%;
+    left: 0%;
+    right: 0;
+    z-index: 1;
+  }
+  .inner_banner_area .search_box {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -711,6 +751,46 @@
   .property_description_area .property_detail_info .details ul li .details_right {
     width: 70%;
   }
+  .inner_banner_area .search_box .form-group a.loc_btn {
+    position: absolute;
+    top: 102%;
+    right: 0%;
+    border: 1px solid #06acde;
+    height: 100%;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    width: 100%;
+    left: 0;
+    margin: auto;
+    text-align: left;
+    border-radius: 5px;
+  }
+  .search_box .form-group a.search_btn {
+    position: absolute;
+    top: 208%;
+    right: 0;
+    background: #06acde;
+    color: #fff;
+    padding: 6px 28px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    left: 0;
+    margin: auto;
+  }
+  .inner_banner_area .banner_content {
+    position: absolute;
+    top: 24%;
+    left: 0%;
+    right: 0;
+    z-index: 1;
+  }
+  .inner_banner_area .search_box {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -984,6 +1064,35 @@
   }
   .inner_banner_area .house_banner_content {
     top: 41%;
+  }
+  .search_box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    margin-top: 0px;
+    width: 80%;
+    z-index: 1;
+  }
+  .inner_banner_area .search_box .form-group a.loc_btn {
+    position: absolute;
+    top: 0;
+    right: 12%;
+    border-left: 1px solid #06acde;
+    height: 100%;
+    color: #fff;
+    padding: 10px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    width: 24%;
+  }
+  .inner_banner_area .hotel_banner_content .house_inner_right {
+    margin-top: 26px;
+  }
+  .inner_banner_area .hotel_banner_content {
+    top: 58%;
   }
 }
 

@@ -254,7 +254,96 @@
  	// End Play Video JS 
 	// WOW JS
 	new WOW().init();
+	// SINGLE EDUCATION & RESTURENT PAGE JS START
+	document.addEventListener('DOMContentLoaded', function(){
+		const tabs = document.getElementsByClassName('tab');
+		for(let i = 0; i < tabs.length; i++) {
+		  tabs[i].addEventListener('click', tabSwitch);
+		}
+	  
+		function tabSwitch(){
+		  document.getElementsByClassName('is-active')[0].classList.remove('is-active');
+		  this.classList.add('is-active');
+		  document.getElementsByClassName('is-show')[0].classList.remove('is-show');
+		  const arrayTabs = Array.prototype.slice.call(tabs);
+		  const index = arrayTabs.indexOf(this);
+		  document.getElementsByClassName('panel')[index].classList.add('is-show');
+		};
+	  });
 
+	  const tabs = document.querySelectorAll('[data-tab-target]');
+	  const tabContents = document.querySelectorAll('[data-tab-content]');
+	  
+	  tabs.forEach(tab => {
+		tab.addEventListener('click', () => {
+		  const target = document.querySelector(tab.dataset.tabTarget);
+		  tabContents.forEach(tabContent => {
+			tabContent.style.display="none";
+			tabContent.style.transform = "translateY(30px)";
+			tabContent.style.opacity = "0";
+		  })
+		  target.style.display="block";
+		  setTimeout(() => {
+			target.style.opacity = "1";
+			target.style.transform = "translateY(20px)";
+		  }, 100)
+		})
+	  })
+
+		var popup = document.getElementById('popup-wrapper');
+		var btn = document.getElementById("popup-btn");
+		var span = document.getElementById("close");
+		btn.onclick = function() {
+			popup.classList.add('show');
+		}
+		span.onclick = function() {
+			popup.classList.remove('show');
+		}
+
+		window.onclick = function(event) {
+			if (event.target == popup) {
+				popup.classList.remove('show');
+			}
+		}
+
+	const btns = document.querySelectorAll(".tabs__button");
+	const tabContent = document.querySelectorAll(".tab-content");
+
+	for (let i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", () => {
+		addClassFunc(btns[i], "tabs__button--active");
+		clearClassFunc(i, btns, "tabs__button--active");
+
+		addClassFunc(tabContent[i], "tab-content--active");
+		clearClassFunc(i, tabContent, "tab-content--active");
+	});
+	}
+
+	function addClassFunc(elem, elemClass) {
+	elem.classList.add(elemClass);
+	}
+
+	function clearClassFunc(indx, elems, elemClass) {
+	for (let i = 0; i < elems.length; i++) {
+		if (i === indx) {
+		continue;
+		}
+		elems[i].classList.remove(elemClass);
+	}
+	}
+
+		// POPPUP GALLERY JS CODE
+		$('.popup-gallery').magnificPopup({
+			delegate: 'a', // child items selector, by clicking on it popup will open
+			type: 'image'
+			// other options
+		  });
+		// END POPPUP GALLERY JS CODE
+	
+		
+		// MIXITUP JS CODE
+		var mixer = mixitup('#shorting');
+		// SINGLE EDUCATION & RESTURENT PAGE JS START
 	// USER DASHBOARD BREADCRUMB
 
 	$('.items a').on('click', function() {
@@ -433,6 +522,12 @@
 	});
 	$('#search_btn_3').click(function(){
 		$('.sort_by_option_3').toggle();
+	});
+	$('#search_btn_5').click(function(){
+		$('.sort_by_option_5').toggle();
+	});
+	$('#search_btn_6').click(function(){
+		$('.sort_by_option_6').toggle();
 	});
 // SMART HOUSE LISTING PAGE ISOTOP FILTER START
 	var $grid3 = $('.house_iso_list').isotope({
