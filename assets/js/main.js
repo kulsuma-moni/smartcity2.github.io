@@ -69,9 +69,13 @@
       bottom: 30       //numeric value (as pixels) for position from bottom. It will work only if the 'position' is set 'true'
   });
 
-
-	// ROUND TEXT
-	//   $(".circel_text_1").lettering();
+	// Responsive mobile divice shopping search bar
+	$('.mb_search_icon span').click(function(){
+		$('.drop_search_box').show();
+	});
+	$('.hide_se_btn').click(function(){
+		$('.drop_search_box').hide();
+	});
 
 	//   TOP STORES CATAGORY SLICK SLIDER JS START
 	$('.top_stores_ctn').slick({
@@ -197,7 +201,7 @@
 		autoplay:true,
 		autoplayTimeout:3000,
 		autoplayHoverPause:true,
-		dots:true,
+		dots:false,
 		responsive:{
 			0:{
 				items:1
@@ -210,7 +214,6 @@
 			}
 		}
 	});
-
 	// SMART CITY  SINGLE PAGE SLIDER
 	$('.banner_2_img').owlCarousel({
 		loop:true,

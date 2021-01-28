@@ -22,9 +22,6 @@
   .inner_banner_area {
     height: 300px;
   }
-  .top_bar {
-    display: none;
-  }
   header.header_area {
     display: none;
   }
@@ -416,6 +413,26 @@
   .inner_banner_area .search_box {
     margin-top: 40px;
   }
+  .inner_banner_area .banner_content .inner_titel {
+    font-size: 22px;
+  }
+  .inner_banner_area .search_box {
+    margin-top: 30px;
+  }
+  .inner_banner_area .banner_content {
+    top: 27%;
+  }
+  .inner_banner_area .banner_img .banner_item_ctn img {
+    height: 300px;
+  }
+  .top_mb_bar.re_mb_bar {
+    position: relative;
+    top: 2%;
+    padding-bottom: 15px;
+  }
+  .top_mb_bar.re_mb_bar .header_rt_box ul li a .mb_search_icon {
+    color: #4d4d4d;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -424,9 +441,6 @@
   }
   .inner_banner_area {
     height: 300px;
-  }
-  .top_bar {
-    display: none;
   }
   header.header_area {
     display: none;
@@ -783,13 +797,30 @@
   }
   .inner_banner_area .banner_content {
     position: absolute;
-    top: 24%;
+    top: 27%;
     left: 0%;
     right: 0;
     z-index: 1;
   }
   .inner_banner_area .search_box {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+  .inner_banner_area .banner_content .inner_titel {
+    font-size: 28px;
+  }
+  .top_mb_bar .header_rt_box ul li a .drop_search_box {
+    width: 500px;
+  }
+  .inner_banner_area .banner_img .banner_item_ctn img {
+    height: 300px;
+  }
+  .top_mb_bar.re_mb_bar {
+    position: relative;
+    top: 2%;
+    padding-bottom: 15px;
+  }
+  .top_mb_bar.re_mb_bar .header_rt_box ul li a .mb_search_icon {
+    color: #4d4d4d;
   }
 }
 
@@ -799,9 +830,6 @@
   }
   .inner_banner_area {
     height: 300px;
-  }
-  .top_bar {
-    display: none;
   }
   header.header_area {
     display: none;
@@ -830,12 +858,6 @@
   }
   .newsletter_area .newsletter_ctn .btn {
     top: 42px;
-  }
-  .footer_area .fotter_ctn .social_media ul {
-    display: inline;
-  }
-  .footer_area .fotter_ctn .social_media ul li {
-    margin-bottom: 20px;
   }
   .middle_content_area .hero_area_banner .banner_img .owl-dots {
     left: 43%;
@@ -1094,6 +1116,20 @@
   .inner_banner_area .hotel_banner_content {
     top: 58%;
   }
+  .top_mb_bar .header_rt_box ul li a .drop_search_box {
+    width: 700px;
+  }
+  .inner_banner_area .banner_img .banner_item_ctn img {
+    height: 300px;
+  }
+  .top_mb_bar.re_mb_bar {
+    position: relative;
+    top: 2%;
+    padding-bottom: 15px;
+  }
+  .top_mb_bar.re_mb_bar .header_rt_box ul li a .mb_search_icon {
+    color: #4d4d4d;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1102,9 +1138,6 @@
   }
   header.sm_header_area .top_mid_menu ul li {
     margin: 0 16px;
-  }
-  .top_bar .header_rt_box .icons_box .menu_item {
-    margin-right: 12px;
   }
   header.header_area .top_mid_menu ul li {
     margin: 0 3px;
@@ -1343,9 +1376,12 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .smart_city_area .hero_btn ul li a span {
+    font-size: 13px;
+  }
   .smart_city_area .hero_btn ul li {
     margin-right: 6px;
-    width: 15%;
+    width: 13%;
   }
   .smart_city_area .hero_btn ul {
     margin: 0;
@@ -1384,7 +1420,7 @@
     float: left;
     position: absolute;
     width: 100%;
-    z-index: 99;
+    z-index: 99999;
     top: 5%;
     right: 2%;
   }
@@ -1415,7 +1451,7 @@
     background: #fff none repeat scroll 0 0;
   }
   .smart_city_area {
-    height: 400px;
+    height: 580px;
   }
   .smart_city_area h1 {
     position: absolute;
@@ -1449,7 +1485,7 @@
   }
   .smart_city_area .hero_btn ul li {
     margin-right: 6px;
-    width: 15%;
+    width: 20%;
     margin-bottom: 10px;
   }
   .smart_city_area .hero_btn ul li a {
@@ -1605,7 +1641,7 @@
     float: left;
     position: absolute;
     width: 100%;
-    z-index: 99;
+    z-index: 99999;
     top: 13%;
     right: 2%;
   }
@@ -1715,7 +1751,7 @@
   }
   .smart_city_area .hero_btn ul li {
     margin-right: 6px;
-    width: 30%;
+    width: 23%;
     margin-bottom: 10px;
   }
   .smart_city_area .hero_btn ul li a {
@@ -1862,7 +1898,7 @@
     float: left;
     position: absolute;
     width: 100%;
-    z-index: 99;
+    z-index: 99999;
     top: 8%;
     right: 2%;
   }
@@ -1905,11 +1941,11 @@
     margin-right: 5px;
   }
   .smart_city_area {
-    height: 700px;
+    height: 750px;
   }
   .smart_city_area h1 {
     position: absolute;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.5;
     text-transform: uppercase;
     top: 16%;
@@ -1975,7 +2011,7 @@
   }
   .smart_city_area .hero_btn {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 0;
     right: 0;
     padding: 0 15px;
@@ -1986,7 +2022,7 @@
     margin-bottom: 10px;
   }
   .smart_city_area .hero_btn ul li a {
-    padding: 15px 4px;
+    padding: 10px 4px;
   }
   .smart_city_area .hero_btn ul li a i {
     font-size: 30px;
