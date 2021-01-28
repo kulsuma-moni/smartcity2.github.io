@@ -13,13 +13,6 @@
 	});
 	// END MEANMENU JS CODE
 	// START MENU JS CODE
-	// $(window).on('scroll', function() {
-	// 	if ($(this).scrollTop() > 100) {
-	// 		$('.top_bar').addClass('menu-shrink animated slideInDown');
-	// 	} else {
-	// 		$('.top_bar').removeClass('menu-shrink animated slideInUp');
-	// 	}
-	// });
 
 	$(window).on('scroll', function() {
 		if ($(this).scrollTop() > 100) {
@@ -29,15 +22,6 @@
 		}
 	});
 	// // SMART CITY
-	// 	// START MENU JS CODE
-	// 	$(window).on('scroll', function() {
-	// 		if ($(this).scrollTop() > 100) {
-	// 			$('.sm_header_area').addClass('sm_menu-shrink animated slideInDown');
-	// 		} else {
-	// 			$('.sm_header_area').removeClass('sm_menu-shrink animated slideInUp');
-	// 		}
-	// 	});
-  	//   END RESPONSIVE MAIN MENU JS
 	// data-background
 	$("[data-background]").each(function(){
 		$(this).css("background-image", "url("+ $(this).attr("data-background") + ")")
@@ -47,12 +31,8 @@
     
         $(".header_left").click(function(e) {
           e.preventDefault();
-          $(this).toggleClass("menu_show");
+          $('.left_menu').toggle();
 	  });
-	  
-	//   $('.header_left').click(function(){
-	// 	$('#nav_icon').toggleClass('open');
-	// });
 
 	//   SHOPPING HEADER AREA LEFT MENU JS END
 	// TOOLTIP JS START

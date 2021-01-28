@@ -320,81 +320,6 @@ outline:0;
   }
 //   LOADER CSS END
 
-// TOPBAR CSS START
-.top_bar{
-    padding: 10px 0px 10px 0px;
-    background:#fefefe;
-    // background: $color2;
-
-.search_box{
-    position: relative;
-    .form-group{
-        margin-bottom: 0;
-        input{
-            width:100%;
-            height: 40px;
-            border:2px solid $basic_color_3;
-            &::placeholder{
-                font-weight:400;
-                font-size: 16px;
-                color: #4d4c4c;
-            }
-            &:focus{
-                font-weight:400;
-                font-size: 16px;
-                color: #4d4c4c;
-            }
-        }
-        a{
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: $basic_color_3;
-            color: #fff;
-            padding: 5px 16px;
-            font-size: 20px;
-            line-height: 1.5;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            -ms-border-radius: 4px;
-            -o-border-radius: 4px;
-        }
-    }
-}
-.header_rt_box{
-    text-align: right;
-    .icons_box{
-        .menu_item{
-            display:inline;
-            color:$text_color;
-            position: relative;
-            margin-right:9px;
-            cursor: pointer;
-            &:last-child{
-                margin-right: 0;
-            }
-            span{
-                position: absolute;
-                top: -7px;
-                right: -1px;
-                background: $basic_color_3;
-                border-radius: 50%;
-                height: 18px;
-                width: 18px;
-                font-size: 14px;
-                line-height: 1.2;
-                padding-right: 5px;
-                color: #fff;
-                             
-            }
-        }
-    }
-}
-
-}
-// TOPBAR CSS END
-
 // HEADER AREA START
 header.header_area{
   	position: absolute;
@@ -467,7 +392,8 @@ header.header_area{
             background: $color2;
             width:90%;
             padding:20px 30px;
-            visibility: hidden;
+			// visibility: hidden;
+			display: none;
             z-index: 9;
             ul{
                 // display: inline-table;
@@ -524,9 +450,9 @@ header.header_area{
                 }
             }
         }
-        &.menu_show .left_menu{
-            visibility: visible;
-        }
+        // &.menu_show .left_menu{
+        //     visibility: visible;
+        // }
     }
 
     .top_mid_menu{
@@ -939,209 +865,6 @@ header.store_header_area{
   }
 }
 // MOBILE TOP HEADER AREA END
-// MOBILE HEADER AREA START
-// MOBILE HEADER AREA END
-.mb_header_area{
-    display: none;
-    button{
-        padding: 0;
-        i{
-            font-size: 18px;
-            line-height: 1.5;
-            background: $basic_color;
-            color: $color2;
-            padding: 7px 14px;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-        }
-    }
-    .modal{
-            position: fixed;
-            top: 25px;
-            right: 0;
-            bottom: 0;
-            left: -268px;
-            z-index: 1050;
-            display: none;
-            overflow: hidden;
-            outline: 0;
-
-        .modal-content{
-            width: 350px;
-            .modal-header{
-                border-bottom: none;
-                button{
-                    span{
-                        color: $text_color;
-                        font-size: 30px;
-                        &:hover{
-                            color: $basic_color;
-                        }
-                    }
-                }
-            }
-            .modal-body{
-                #myTab{
-                    
-                    border: 1px solid $basic_color;
-                    width:100%;
-                    margin:0px 0 20px 0;
-                    border-radius: 6px;
-                    -webkit-border-radius: 6px;
-                    -moz-border-radius: 6px;
-                    -ms-border-radius: 6px;
-                    -o-border-radius: 6px;
-                    padding: 7px 36px;
-                    li.nav-item{
-                        margin-right: 24px;
-                        &:last-child{
-                            margin-right: 0;
-                        }
-                        a{
-                            background: transparent;
-                            text-transform: capitalize;
-                            font-size: 16px;
-                            line-height: 1.3;
-                            color: $text_color;
-                            padding: 7px 26px;
-                            border: 1px solid $basic_color;
-                            border-radius: 5px;
-                            -webkit-border-radius: 5px;
-                            -moz-border-radius: 5px;
-                            -ms-border-radius: 5px;
-                            -o-border-radius: 5px;
-                            &:hover{
-                                background: $basic_color;
-                                color: $color2;
-                            }
-                            &.active{
-                                background: $basic_color;
-                                color: $color2;
-                            }
-                        }
-                    }
-                }
-                #myTabContent{
-                    .top_mid_menu{
-                        text-align: left;
-                        ul{
-                            position: relative;
-                            top: 10px;
-                            li{
-                                display: block;
-                                margin: 0 6px 10px 0;
-                                a{
-                                    text-transform: capitalize;
-                                    color: $text_color;
-                                    font-weight: 500;
-                                    font-size: 14px;
-                                    line-height: 1.5;
-                                    letter-spacing: .5px;
-                                    &:hover{
-                                        color: $basic_color;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .left_menu{
-                        position: relative;
-                        background: $color2;
-                        width:90%;
-                        padding:20px 30px;
-                        z-index: 9;
-                        ul{
-                            // display: inline-table;
-                            li{
-                                display: block;
-                                margin-bottom: 7px;
-                                a{
-                                    color: $text_color;
-                                    font-size: 14px;
-                                    line-height: 1.5;
-                                    font-weight: 400;
-                                    text-transform: capitalize;
-                                    cursor: pointer;
-                                    &:hover{
-                                        color: $basic_color;
-                                    }
-                                }
-                                i{
-                                    float: right;
-                                }
-                                &:hover{
-                                    color: $basic_color;
-                                }
-                                .sub_menu{
-                                    position:relative;
-                                    background: #fff;
-                                    width:100%;
-                                    right: 0px;
-                                    padding: 10px 20px;
-                                    opacity: 1;
-                                    top: 0;
-                                    display: none;
-                                    transition: .3s;
-                                    -webkit-transition: .3s;
-                                    -moz-transition: .3s;
-                                    -ms-transition: .3s;
-                                    -o-transition: .3s;
-                                }
-                                &:hover .sub_menu{
-                                    display: block;
-                                    opacity: 1;
-                                }
-                                &:hover i{
-                                    transform: rotate(-90deg);
-                                    -webkit-transform: rotate(-90deg);
-                                    -moz-transform: rotate(-90deg);
-                                    -ms-transform: rotate(-90deg);
-                                    -o-transform: rotate(-90deg);
-                                    color: $basic_color;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .search_box{
-        position: relative;
-        .form-group{
-            margin-bottom: 0;
-            input{
-                width:100%;
-                height: 40px;
-                border:2px solid $basic_color;
-                &::placeholder{
-                    font-weight:400;
-                    font-size: 16px;
-                    color: #887788;
-                }
-            }
-            a{
-                position: absolute;
-                top: 0;
-                right: 0;
-                background: $basic_color;
-                color: #fff;
-                padding: 5px 16px;
-                font-size: 20px;
-                line-height: 1.5;
-                border-radius: 4px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                -ms-border-radius: 4px;
-                -o-border-radius: 4px;
-            }
-        }
-    }
-}
-// MOBILE MENU AREA END
 // HEADER AREA START
 
 header.sm_header_area{
@@ -1682,38 +1405,9 @@ header.sm_store_header_area{
         margin: 0 0px 0 0;
         height: 400px;
     }
-  //   position: relative;
-  //   &::after{
-  //     position: absolute;
-  //     content: '';
-  //     background-color: $basic_color_3;
-  //     width: 100%;
-  //     height: 100%;
-  //     top: 0;
-  //     left: 0;
-  //     opacity: .8;
-  //     z-index: 0;
-  // }
 		}
 	}
   }
-//   .banner_content .inner_titel{
-//     font-size: 42px;
-//     text-transform: uppercase;
-//     color: #fff;
-//     font-weight: 800;
-//     line-height: 1.34;
-//     margin: 0 0 10px 0;
-//   }
-//   .banner_content ul li a{
-//     font-size: 18px;
-//     line-height: 1.42857143;
-//     color: #cccccc;
-//     text-transform: capitalize;
-//   }
-//   .banner_content ul li a span{
-//     color: #0084F4;
-//   }
   .section_titel span {
     color: #0084f4;
     font-weight: 800;

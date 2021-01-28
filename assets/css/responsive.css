@@ -28,18 +28,6 @@
   .top_mb_bar {
     display: block;
   }
-  .mb_header_area {
-    display: block;
-  }
-  .mb_header_area .modal .modal-content {
-    width: 310px;
-  }
-  .mb_header_area .modal .modal-content .modal-body #myTab {
-    padding: 7px 20px;
-  }
-  .mb_header_area .modal .modal-content .modal-body #myTab li.nav-item {
-    margin-right: 16px;
-  }
   .shopping_mall_area {
     text-align: center;
   }
@@ -452,12 +440,6 @@
   .top_mb_bar {
     display: block;
   }
-  .mb_header_area {
-    display: block;
-  }
-  .mb_header_area .modal {
-    left: -74px;
-  }
   .shopping_mall_area .all_shopping_mall ul li {
     width: 259px;
     margin-right: 4px;
@@ -841,21 +823,8 @@
   .top_mb_bar {
     display: block;
   }
-  .mb_header_area {
-    display: block;
-  }
-  .mb_header_area .modal .modal-content .modal-body #myTabContent .top_mid_menu ul li .sub_menu {
-    width: 348px;
-  }
   .shopping_mall_area .all_shopping_mall ul li {
     width: 230px;
-  }
-  .footer_area .fotter_ctn .contact_link ul li a i {
-    font-size: 13px;
-    margin-right: 0px;
-  }
-  .footer_area .fotter_ctn .footer_links ul li a {
-    font-size: 14px;
   }
   .newsletter_area .newsletter_ctn h4 {
     font-size: 22px;
@@ -1151,9 +1120,6 @@
   }
   .shopping_mall_area .all_shopping_mall ul li {
     width: 230px;
-  }
-  .footer_area .fotter_ctn .social_media ul li {
-    margin: 0 6px;
   }
   .product_details_area .product_details .product_details_btn ul li a.btn {
     font-size: 13px;
