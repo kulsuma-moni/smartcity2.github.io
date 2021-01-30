@@ -30,7 +30,7 @@
 	//   SHOPPING HEADER AREA LEFT MENU JS START
     
         $(".header_left").click(function(e) {
-          e.preventDefault();
+        //   e.preventDefault();
           $('.left_menu').toggle();
 	  });
 
