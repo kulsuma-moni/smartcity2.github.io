@@ -257,7 +257,7 @@ if (typeof Object.create !== 'function') {
                     backgroundColor: self.options.lensColour,
                     opacity: self.options.lensOpacity,
                     cursor: self.options.cursor,
-                    zIndex: 999,
+                    zIndex: 9,
                     overflow: 'hidden'
                 };
             }
@@ -362,7 +362,7 @@ if (typeof Object.create !== 'function') {
             var targetZoomContainer = isNaN(self.options.zoomWindowPosition) ? 'body' : self.zoomContainer;
             self.zoomWindow = $('<div class="zoomWindow"/>')
                 .css($.extend({
-                    zIndex: 999,
+                    zIndex: 9,
                     top: self.windowOffsetTop,
                     left: self.windowOffsetLeft,
                 }, self.zoomWindowStyle))
@@ -2028,7 +2028,7 @@ if (typeof Object.create !== 'function') {
         zoomWindowPosition: 1, //Possible values: 1-16, but we can also position with a selector string.
         zoomWindowWidth: 400,
         zoomEnabled: true, //false disables zoomwindow from showing
-        zIndex: 999
+        zIndex: 9
     };
 
 })(window.jQuery, window, document);

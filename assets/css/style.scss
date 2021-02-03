@@ -1632,87 +1632,7 @@ header.sm_store_header_area{
     }
 
 }
-// TOP STORE AREA CSS START
-.other_stores_area{
-    padding: 10px 0 20px 0;
-}
-.other_stores{
-    .other_stores_ctn{
-        ul{
-            li{
-                text-align: center;
-                margin-bottom: 30px;
-                a{
-                    .card{
-                        figure{
-                            position: relative;
-                            width: 275px;
-                            height: 174px;
-                            margin: 0;
-                            padding: 0;
-                            background: #fff;
-                            overflow: hidden;
-                            &::before{
-                                position: absolute;
-                                top: 0;
-                                left: -75%;
-                                z-index: 2;
-                                display: block;
-                                content: '';
-                                width: 50%;
-                                height: 100%;
-                                background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-                                background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-                                -webkit-transform: skewX(-25deg);
-                                transform: skewX(-25deg);
-                                -moz-transform: skewX(-25deg);
-                                -ms-transform: skewX(-25deg);
-                                -o-transform: skewX(-25deg);
-                                transition: .6s;
-                                -webkit-transition: .6s;
-                                -moz-transition: .6s;
-                                -ms-transition: .6s;
-                                -o-transition: .6s;
-                            }
-                            img{
-                                width: 100%;
-                                height: 174px;
-                            }
-                        }
-                        .card-body{
-                            p{
-                                color: $basic_color_3;
-                                // color: #73a706;
-                                font-size: 14px;
-                                line-height: 1.5;
-                                text-transform: capitalize;
-                                letter-spacing: 0.75px;
-                                font-weight: 700;
-                                padding: 10px;
-                                margin-bottom: 0;
-                            }
-                        }
-                    }
-                }
-                &:hover figure::before{
-                    -webkit-animation: shine .75s;
-                    animation: shine .75s;
-                }           
-            }
-        }
-    }
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-// TOP STORE AREA CSS END
+
 // NEWSLETTER AREA START
 .newsletter_area{
     background: $basic_color_3;
@@ -9219,6 +9139,7 @@ z-index: 0;
         width: 100%;
         border: none;
         text-align: left;
+        cursor: pointer;
         &::before{
             position: absolute;
             content: '';
@@ -17176,8 +17097,11 @@ z-index: 0;
   }
   
   .event-area{
-	position: relative;
-	
-  
+	position: relative; 
   }
   // SINGLE RESTURENT & EDUCATION PAGE SCSS END
+  // ENTREPRENEURS PAGE SCSS START
+  #more_feen_store{
+    display: none;
+  }
+  // ENTREPRENEURS PAGE SCSS END

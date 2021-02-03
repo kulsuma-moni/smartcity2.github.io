@@ -212,7 +212,7 @@
 				items:1
 			}
 		}
-	})
+	});
 		// Start Play Video JS Start
 	$('#play-video').on('click', function(e){
 		e.preventDefault();
@@ -236,82 +236,6 @@
 	// WOW JS
 	new WOW().init();
 	// SINGLE EDUCATION & RESTURENT PAGE JS START
-	document.addEventListener('DOMContentLoaded', function(){
-		const tabs = document.getElementsByClassName('tab');
-		for(let i = 0; i < tabs.length; i++) {
-		  tabs[i].addEventListener('click', tabSwitch);
-		}
-	  
-		function tabSwitch(){
-		  document.getElementsByClassName('is-active')[0].classList.remove('is-active');
-		  this.classList.add('is-active');
-		  document.getElementsByClassName('is-show')[0].classList.remove('is-show');
-		  const arrayTabs = Array.prototype.slice.call(tabs);
-		  const index = arrayTabs.indexOf(this);
-		  document.getElementsByClassName('panel')[index].classList.add('is-show');
-		};
-	  });
-
-	  const tabs = document.querySelectorAll('[data-tab-target]');
-	  const tabContents = document.querySelectorAll('[data-tab-content]');
-	  
-	  tabs.forEach(tab => {
-		tab.addEventListener('click', () => {
-		  const target = document.querySelector(tab.dataset.tabTarget);
-		  tabContents.forEach(tabContent => {
-			tabContent.style.display="none";
-			tabContent.style.transform = "translateY(30px)";
-			tabContent.style.opacity = "0";
-		  })
-		  target.style.display="block";
-		  setTimeout(() => {
-			target.style.opacity = "1";
-			target.style.transform = "translateY(20px)";
-		  }, 100)
-		})
-	  })
-
-		var popup = document.getElementById('popup-wrapper');
-		var btn = document.getElementById("popup-btn");
-		var span = document.getElementById("close");
-		btn.onclick = function() {
-			popup.classList.add('show');
-		}
-		span.onclick = function() {
-			popup.classList.remove('show');
-		}
-
-		window.onclick = function(event) {
-			if (event.target == popup) {
-				popup.classList.remove('show');
-			}
-		}
-
-	const btns = document.querySelectorAll(".tabs__button");
-	const tabContent = document.querySelectorAll(".tab-content");
-
-	for (let i = 0; i < btns.length; i++) {
-	btns[i].addEventListener("click", () => {
-		addClassFunc(btns[i], "tabs__button--active");
-		clearClassFunc(i, btns, "tabs__button--active");
-
-		addClassFunc(tabContent[i], "tab-content--active");
-		clearClassFunc(i, tabContent, "tab-content--active");
-	});
-	}
-
-	function addClassFunc(elem, elemClass) {
-	elem.classList.add(elemClass);
-	}
-
-	function clearClassFunc(indx, elems, elemClass) {
-	for (let i = 0; i < elems.length; i++) {
-		if (i === indx) {
-		continue;
-		}
-		elems[i].classList.remove(elemClass);
-	}
-	}
 
 		// POPPUP GALLERY JS CODE
 		$('.popup-gallery').magnificPopup({
@@ -320,10 +244,6 @@
 			// other options
 		  });
 		// END POPPUP GALLERY JS CODE
-	
-		
-		// MIXITUP JS CODE
-		var mixer = mixitup('#shorting');
 		// SINGLE EDUCATION & RESTURENT PAGE JS START
 	// USER DASHBOARD BREADCRUMB
 
@@ -454,18 +374,25 @@
 		$('#breadcrumb_nav_ctn, #edit_account, #pass_word, #address_book, #my_wish_list, #order_history, #account_downloads, #reward_points, #product_returns, #your_transactions, #recurring_payments, #affiliate_account').hide();
 		$('#logout').show();
 	});
-
+// SIGNUP PAGE JS START
 	$('.form_vendore_input').click(function(){
 		$('#vendore').show();
 	});
 	$('.form_coustomer_input').click(function(){
 		$('#vendore').hide();
 	});
-
+// SIGNUP PAGE JS END
 	$('#sort_btn').click(function(){
 		$('.sort_by_option').toggle();
 	});
-
+	// ENTREPURNER PAGE SHORT BUTTON
+	$('#en_item_cat_btn').click(function(){
+		$('.en_item_cat').toggle();
+	});
+	$('.en_fe_load_btn_1').click(function(){
+		$('.en_fe_load_btn_1').hide();
+		$('#more_feen_store').show();
+	});
 	// HOUSE FILTER AREA ACTIVE CLASS ADD & REMOVE
 	$('.box_ctn a').click(function(){
 		$('.box_ctn a').removeClass("active");
@@ -603,10 +530,6 @@
 			prevStep.addClass('active').removeClass('valid');
 			progressBar.removeAttr('class').addClass('step-' + prevStepNum).data('current-step', prevStepNum);
 		});
-		// $('.go_next_1').click(function(){
-		// 	$('#boking_step_2, #boking_step_3').hide();
-		// 	$('#boking_step_1').show();
-		// });
 		$('.go_next_1').click(function(){
 			$('#boking_step_1, #boking_step_3, #boking_step_4').hide();
 			$('#boking_step_2').show();
@@ -630,9 +553,6 @@
 		$('#condition').click(function(){
 			$('#guest_information').toggle();
 		});
-		// $('.redo').click(function() {
-		// 	$('.success').toggle();
-		// });
 // HOTEL BOOKING PROCESS STEP JS END
 
 	// INNERBG Animation START
@@ -692,9 +612,6 @@ $('.subcat_iso_area').isotope({
 		$grid2.isotope({ filter: filterValue });
 	});
 	//   Isotop for smart house latest listing area end
-
-
-
 	// ACCRODION
 	$('.ziehharmonika').ziehharmonika({
 
