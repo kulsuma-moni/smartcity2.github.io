@@ -389,10 +389,10 @@
 	$('#en_item_cat_btn').click(function(){
 		$('.en_item_cat').toggle();
 	});
-	$('.en_fe_load_btn_1').click(function(){
-		$('.en_fe_load_btn_1').hide();
-		$('#more_feen_store').show();
-	});
+	// $('.en_fe_load_btn_1').click(function(){
+	// 	$('.en_fe_load_btn_1').hide();
+	// 	$('#more_feen_store').show();
+	// });
 	// HOUSE FILTER AREA ACTIVE CLASS ADD & REMOVE
 	$('.box_ctn a').click(function(){
 		$('.box_ctn a').removeClass("active");
