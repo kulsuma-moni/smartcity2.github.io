@@ -684,7 +684,6 @@
 		for(let i = 0; i < tabs.length; i++) {
 		  tabs[i].addEventListener('click', tabSwitch);
 		}
-	  
 		function tabSwitch(){
 		  document.getElementsByClassName('is-active')[0].classList.remove('is-active');
 		  this.classList.add('is-active');
@@ -694,10 +693,8 @@
 		  document.getElementsByClassName('panel')[index].classList.add('is-show');
 		};
 	  });
-
 	  const tabs = document.querySelectorAll('[data-tab-target]');
 	  const tabContents = document.querySelectorAll('[data-tab-content]');
-	  
 	  tabs.forEach(tab => {
 		tab.addEventListener('click', () => {
 		  const target = document.querySelector(tab.dataset.tabTarget);
@@ -713,23 +710,6 @@
 		  }, 100)
 		})
 	  })
-
-		var popup = document.getElementById('popup-wrapper');
-		var btn_pop = document.getElementById("popup-btn");
-		var span = document.getElementById("close");
-		btn_pop.onclick = function() {
-			popup.classList.add('show');
-		}
-		span.onclick = function() {
-			popup.classList.remove('show');
-		}
-
-		window.onclick = function(event) {
-			if (event.target == popup) {
-				popup.classList.remove('show');
-			}
-		}
-
 	const btns = document.querySelectorAll(".tabs__button");
 	const tabContent = document.querySelectorAll(".tab-content");
 
@@ -742,11 +722,9 @@
 		clearClassFunc(i, tabContent, "tab-content--active");
 	});
 	}
-
 	function addClassFunc(elem, elemClass) {
 	elem.classList.add(elemClass);
 	}
-
 	function clearClassFunc(indx, elems, elemClass) {
 	for (let i = 0; i < elems.length; i++) {
 		if (i === indx) {
