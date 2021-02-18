@@ -9345,6 +9345,7 @@ z-index: 0;
 // SMART HOUSE PAGE CSS END
 // SMART HOUSE LIST PAGE CSS START
 .house_list_area{
+	background-color: #f7f7f7;
     .filter_area{
         border: 1px solid $color1;
         border-radius: 10px;
@@ -9624,7 +9625,7 @@ z-index: 0;
                 -moz-border-radius: 6px;
                 -ms-border-radius: 6px;
                 -o-border-radius: 6px;
-                border:1px solid #652f9b94;
+                // border:1px solid #652f9b94;
                 .listing_img{
                     position: relative;
                     margin-bottom: 10px;
@@ -9769,11 +9770,11 @@ z-index: 0;
                     display: block;
                 }
                 &:hover .listing_img {
-                    border-radius:5px;
-                    -webkit-border-radius:5px;
-                    -moz-border-radius:5px;
-                    -ms-border-radius:5px;
-                    -o-border-radius:5px;
+                    border-radius:6px;
+                    -webkit-border-radius:6px;
+                    -moz-border-radius:6px;
+                    -ms-border-radius:6px;
+                    -o-border-radius:6px;
                     img{
                         transform: scale(1.2);
                         -webkit-transform: scale(1.2);
@@ -11467,6 +11468,7 @@ z-index: 0;
 // HOTEL SUBCATEGORY AREA CSS END
 // HOTEL FILTER PAGE CSS START
 .hotel_list_area{
+	background-color: #f7f7f7;
     .filter_area{
         border: 1px solid $color1;
         border-radius: 10px;
@@ -11768,7 +11770,7 @@ z-index: 0;
         -ms-border-radius: 6px;
         -o-border-radius: 6px;
         background-color: $color2;
-        border:1px solid #652f9b94;
+        // border:1px solid #652f9b94;
         .listing_img{
           position: relative;
             overflow: hidden;
