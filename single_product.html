@@ -15,6 +15,7 @@
 	<!--=== slick slider ===-->
 	<link rel="stylesheet" href="assets/css/plugin/slick.css">
 	<link rel="stylesheet" href="assets/css/plugin/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
 	<!--=== OWL CAROUSEL ===-->
 	<link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/plugin/owl.theme.default.min.css">
@@ -385,30 +386,49 @@
 				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12.col-12">
                     <div class="product_diplay">
                         <img id="zoom_03" class="main_img" src="assets/image/single_store/small/image1.jpg" alt="image" data-zoom-image="assets/image/single_store/large/image1.jpg"/>
-
                         <div id="gallery_demo">
-                            <ul>
-                                <li>
+                            <ul class="banner_3_img owl-carousel">
+                                <li class="item">
                                     <a href="#" data-image="assets/image/single_store/small/image1.jpg" data-zoom-image="assets/image/single_store/large/image1.jpg">
                                         <img id="img_01" src="assets/image/single_store/small/image1.jpg" alt="image"/>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="item">
                                     <a href="#" data-image="assets/image/single_store/small/image2.jpg" data-zoom-image="assets/image/single_store/large/image2.jpg">
                                         <img id="img_02" src="assets/image/single_store/small/image2.jpg" alt="image"/>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="item">
                                     <a href="#" data-image="assets/image/single_store/small/image3.jpg" data-zoom-image="assets/image/single_store/large/image3.jpg">
                                         <img id="img_03" src="assets/image/single_store/small/image3.jpg" alt="image"/>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="item">
                                     <a href="#" data-image="assets/image/single_store/small/image4.jpg" data-zoom-image="assets/image/single_store/large/image4.jpg">
                                         <img id="img_04" src="assets/image/single_store/small/image4.jpg" alt="image"/>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="item">
+                                    <a href="#" data-image="assets/image/single_store/small/image5.jpg" data-zoom-image="assets/image/single_store/large/image5.jpg">
+                                        <img id="img_05" src="assets/image/single_store/small/image5.jpg" alt="image"/>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" data-image="assets/image/single_store/small/image2.jpg" data-zoom-image="assets/image/single_store/large/image2.jpg">
+                                        <img id="img_02" src="assets/image/single_store/small/image2.jpg" alt="image"/>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" data-image="assets/image/single_store/small/image3.jpg" data-zoom-image="assets/image/single_store/large/image3.jpg">
+                                        <img id="img_03" src="assets/image/single_store/small/image3.jpg" alt="image"/>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" data-image="assets/image/single_store/small/image4.jpg" data-zoom-image="assets/image/single_store/large/image4.jpg">
+                                        <img id="img_04" src="assets/image/single_store/small/image4.jpg" alt="image"/>
+                                    </a>
+                                </li>
+                                <li class="item">
                                     <a href="#" data-image="assets/image/single_store/small/image5.jpg" data-zoom-image="assets/image/single_store/large/image5.jpg">
                                         <img id="img_05" src="assets/image/single_store/small/image5.jpg" alt="image"/>
                                     </a>
@@ -457,7 +477,7 @@
                                 <label>Qty :</label>
                                 <div class="form-group">
                                     <a href="#" class="btn input_prepand"><i class="fas fa-minus"></i></a>
-                                    <input type="text" placeholder="1" class="form-conttrol">
+                                    <input type="text" value="1" class="form-conttrol text-center qty">
                                     <a href="#" class="btn input_apand"><i class="fas fa-plus"></i></a>
                                 </div>
                             </div>
@@ -1029,6 +1049,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 	<script src="assets/js/plugin/owl.carousel.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+<!--=== Isotop Filtering JS===-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="assets/js/plugin/slick.js"></script>
     <!--=== to top  js===-->
     <script src="assets/js/plugin/jquery.toTop.min.js"></script>
@@ -1060,6 +1083,9 @@
             });
 
         });
+
+    </script>
+    <script>
 
     </script>
 </body>
